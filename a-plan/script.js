@@ -1,56 +1,127 @@
 var hover_icon_name = ""
 var onmobile = false
+pagemax = 1; // 最大页面数量
 
-// 翻页功能
-// 下列代码用于翻页功能
-function setnum(x) {
-    if (x == 1) {
-        var a = document.getElementsByClassName("page-1")[0];
-        a.classList.remove('hide')
-        var a = document.getElementsByClassName("page-2")[0];
-        a.classList.add('hide')
+
+fetch("icon_data.json")
+.then(function(response) {
+    return response.json();
+})
+.then(function(icons) {
+    let totalPages = Math.ceil(icons.length / 10); // 计算总页数
+    pagemax = totalPages;
+    let placeholder = document.querySelector("#icon-holder");
+
+    // 创建页面占位符
+    for (let i = 1; i <= totalPages; i++) {
+        let out = `<div class="page-${i}"></div>`
+        placeholder.innerHTML += out;
     }
-    if (x == 2) {
-        var a = document.getElementsByClassName("page-1")[0];
-        a.classList.add('hide')
-        var a = document.getElementsByClassName("page-2")[0];
-        a.classList.remove('hide')
+    for (let i = 0; i < icons.length; i++) {
+        let icon = icons[i];
+        let pageIndex = Math.floor(i / 10) + 1; // 计算当前图标所在的页码
+        placeholder = document.querySelector(`#icon-holder .page-${pageIndex}`);
+        let out = `
+            <div id="${icon["name"]}-icon" 
+            class="icon" 
+            onclick="gourl('${icon["url"]}')"
+            style="background-image: url(https://image.baidu.com/search/down?url=${icon["imageurl"]});"></div>
+        `;
+        //这里用了百度下载图片过来，因为我之前用的微博图床，但是微博图床有防盗链，用百度下载一下转换
+        placeholder.innerHTML += out;
+        // 创建每个icon的右键菜单
+        let menuHolder = document.querySelector("#context-menu-holder");
+        out = `        
+        <div id="${icon["name"]}-menu" class="context-menu">
+        `
+        icon["context-menu-item"].forEach(item => {
+            out += `<div class="item" onclick="gourl('${item["url"]}')">${item["name"]}</div>`
+        });
+        out += "</div>";
+        menuHolder.innerHTML += out;
+    console.log("icon and menus loaded");
+
     }
+    // 如果最后一页图标数量不足10个，补充空白图标
+    if (placeholder.children.length < 10) {
+        let emptyIconsCount = 10 - placeholder.children.length;
+
+        for (let k = 0; k < emptyIconsCount; k++) {
+            let out = `<div class="icon empty-icon"></div>`;
+            placeholder.innerHTML += out;
+        }
+    }
+    loadMenus(icons);
+});
+
+// 右键菜单功能
+function addContextMenuListener(item) {
+    // 选中时在鼠标位置显示
+    document.querySelector("#" + item + "-icon").oncontextmenu = function () {
+        let contextElement = document.getElementById(item + "-menu");
+        contextElement.style.top = (event.pageY - 10) + "px";
+        contextElement.style.left = (event.pageX - 10) + "px";
+        contextElement.classList.add("active");
+        event.preventDefault();
+    }
+    //点击外部清除
+    window.addEventListener("click", function () {
+        if (!onmobile) {
+            document.querySelector("#" + item + "-menu").classList.remove("active")
+        }
+    });
 }
+// 给每一个图标添加右键菜单监听器
+function loadMenus(icons) {
+    icons.forEach(icon => {
+        let item = icon["name"];
+        addContextMenuListener(item);
+    });
+}
+
+
+// 下列代码用于翻页功能
+// 翻页功能
+function setnum(x) {
+    for (var i = 1; i <= pagemax; i++) {
+        var page = document.getElementsByClassName("page-" + i)[0];
+        if (i === x) {
+            page.classList.remove('hide');
+        } else {
+            page.classList.add('hide');
+        }
+    }
+    let obj = document.getElementById("pagenum");
+    obj.innerHTML = x;
+}
+
+//设置当前页面为第一页
 setnum(1);
-// 最大页面数量
-pagenummax = 2;
+
 function pageup() {
-    var num = document.getElementById("pagenum").innerHTML;
-    num--;
-    if (num == 0) 
-        num = pagenummax;
-    
-    document.getElementById("pagenum").innerHTML = num;
-    setnum(num)
+    let obj = document.getElementById("pagenum");
+    let num = obj.innerHTML;
+    if (--num == 0) num = pagemax;
+    setnum(num);
 }
 function pagedown() {
-    var num = document.getElementById("pagenum").innerHTML;
-    ++ num;
-    num = (num % (pagenummax + 1));
-    if (num == 0) 
-        num++;
-    
-    document.getElementById("pagenum").innerHTML = num;
-    setnum(num)
+    let obj = document.getElementById("pagenum");
+    let num = obj.innerHTML;
+    if(++ num > pagemax) num = 1;
+    setnum(num);
 }
-// 按键监听
+// 翻页按键监听
 // https://www.freecodecamp.org/news/javascript-keycode-list-keypress-event-key-codes/
 document.addEventListener("keydown", (event) => {
     key = event.key;
     if (key == "w" || key == "ArrowUp") {
-        pageup()
+        pageup();
     }
     if (key == "s" || key == "ArrowDown") {
-        pagedown()
+        pagedown();
     }
 })
-// 滚轮监听（很好玩
+// 翻页滚轮监听（很好玩
 document.addEventListener('wheel', (event) => {
     var whellup = event.deltaY;
     if (whellup < 0) {
@@ -60,6 +131,10 @@ document.addEventListener('wheel', (event) => {
         pagedown()
     }
 });
+
+function gourl(url){
+    window.open(url);
+}
 
 
 //手机上无法使用右键时候可以
@@ -136,112 +211,4 @@ function go(str) {
                 break;
         }
     }
-
-}
-
-
-// 在这里的所有项目都会被添加menu菜单linstener
-var menulist = ["cctv", "bilibili"]
-
-let ele = document.querySelector("#cctv-icon"); // This will not get any element because the page is not even loaded!
-
-
-document.addEventListener("readystatechange", function () {
-    if (this.readyState == "interactive") {
-
-
-        var item = "cctv";
-        // 右键监听
-        document.querySelector("#" + item + "-icon").oncontextmenu = function () {
-            let contextElement = document.getElementById(item + "-menu");
-            contextElement.style.top = (event.pageY - 10) + "px";
-            contextElement.style.left = (event.pageX - 10) + "px";
-            contextElement.classList.add("active");
-            event.preventDefault();
-        }
-        // 点击空白位置
-        window.addEventListener("click", function () {
-            if (! onmobile) {
-                document.querySelector("#" + item + "-menu").classList.remove("active")
-            }
-        });
-
-
-        var item2 = "bilibili";
-        document.querySelector("#" + item2 + "-icon").oncontextmenu = function () {
-            let contextElement = document.getElementById(item2 + "-menu");
-            contextElement.style.top = (event.pageY - 10) + "px";
-            contextElement.style.left = (event.pageX - 10) + "px";
-            contextElement.classList.add("active");
-            event.preventDefault();
-        }
-        window.addEventListener("click", function () {
-            if (! onmobile) {
-                document.querySelector("#" + item2 + "-menu").classList.remove("active")
-            }
-        });
-
-
-        var item3 = "youtube";
-        document.querySelector("#" + item3 + "-icon").oncontextmenu = function () {
-            let contextElement = document.getElementById(item3 + "-menu");
-            contextElement.style.top = (event.pageY - 10) + "px";
-            contextElement.style.left = (event.pageX - 10) + "px";
-            contextElement.classList.add("active");
-            event.preventDefault();
-        }
-        window.addEventListener("click", function () {
-            if (! onmobile) {
-                document.querySelector("#" + item3 + "-menu").classList.remove("active")
-            }
-        });
-
-        var item4 = "acfun";
-        document.querySelector("#" + item4 + "-icon").oncontextmenu = function () {
-            let contextElement = document.getElementById(item4 + "-menu");
-            contextElement.style.top = (event.pageY - 10) + "px";
-            contextElement.style.left = (event.pageX - 10) + "px";
-            contextElement.classList.add("active");
-            event.preventDefault();
-        }
-        window.addEventListener("click", function () {
-            if (! onmobile) {
-                document.querySelector("#" + item4 + "-menu").classList.remove("active")
-            }
-        });
-
-        var item5 = "ddrk";
-        document.querySelector("#" + item5 + "-icon").oncontextmenu = function () {
-            let contextElement = document.getElementById(item5 + "-menu");
-            contextElement.style.top = (event.pageY - 10) + "px";
-            contextElement.style.left = (event.pageX - 10) + "px";
-            contextElement.classList.add("active");
-            event.preventDefault();
-        }
-        window.addEventListener("click", function () {
-            if (! onmobile) {
-                document.querySelector("#" + item5 + "-menu").classList.remove("active")
-            }
-        });
-
-        var item6 = "music";
-        document.querySelector("#" + item6 + "-icon").oncontextmenu = function () {
-            let contextElement = document.getElementById(item6 + "-menu");
-            contextElement.style.top = (event.pageY - 10) + "px";
-            contextElement.style.left = (event.pageX - 10) + "px";
-            contextElement.classList.add("active");
-            event.preventDefault();
-        }
-        window.addEventListener("click", function () {
-            if (! onmobile) {
-                document.querySelector("#" + item6 + "-menu").classList.remove("active")
-            }
-        });
-    }
-});
-
-document.onselectstart = function () {
-    return false;
-};
-// 增加禁止选择功能希望可以让ipad能够实现右键
-
+}   

@@ -1,0 +1,22 @@
+[
+	{
+        "friendly-name":"cctv",
+        "imageurl": "http://124.223.57.166/imgs/cctv.jpg",
+        "name": "cctv",
+        "url": "https://tv.cctv.com/live/cctv13",
+        "context-menu-item": [
+            {
+                "name": "百度一下1",
+                "url": "http://www.baidu.com"
+            },
+            {
+                "name": "百度一下2",
+                "url": "http://www.baidu.com"
+            },
+            {
+                "name": "百度一下3",
+                "url": "http://www.baidu.com"
+            }
+        ]
+	}
+]

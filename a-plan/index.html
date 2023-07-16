@@ -13,30 +13,29 @@
 <body>
     <div class="app">
         <header>
-            <h1> Name <strong><a href="?">🤖</a></strong></h1>
+            <h1> Name <strong>change</strong></h1>
         </header>
         <a class="mobile" style="opacity: 0.3;" onclick="switch_onmoble()">💻</a>
-        <div id="icon-hoder">
+        <div class="controlbox 控制翻页功能">
+            <button onclick="pageup()">⇱</button>
+            <br>
+            <button id="pagenum" onclick="alert('用W/S、上/下、滚轮控制翻页') ">1</button>
+            <br>
+            <button onclick="pagedown()">⇲</button>
+        </div>
+        <div id="icon-holder">
             <div class="page-1">
-                <div id="xxxx-icon" class="icon c1" onclick="go()"></div>
             </div>
             <div class="page-2">
-                <div id="xxxx-icon" class="icon c20" onclick="go('')"></div>
+            </div>
+            <div class="page-3">
+            </div>
+            <div class="page-4">
             </div>
         </div>
-        <div class="controlbox 控制翻页功能">
-            <button onclick="pageup()">🔺</button>
-            <br>
-            <button id="pagenum" onclick="alert('用W/S、上/下控制翻页(空格关闭我)') ">1</button>
-            <br>
-            <button onclick="pagedown()">🔻</button>
-        </div>
+
     </div>
-    <div id="menu-holder">
-        <div id="cctv-menu" class="context-menu">
-            <div class="item" onclick="go('cctv1')">CCTV 1</div>
-            <div class="item" onclick="go('cctv5')">CCTV 5</div>
-        </div>
+    <div id="context-menu-holder">
     </div>
 </body>
 <script src="script.js"></script>

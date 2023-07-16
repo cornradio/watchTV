@@ -8,6 +8,12 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+.controlbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* 其他样式属性 */
+}
 .controlbox button {
     background-color: rgba(0, 0, 0, 0.163);
     color: rgb(218, 215, 215);
@@ -18,14 +24,14 @@ body {
 }
 
 .controlbox button:hover {
-    background-color: rgba(47, 199, 223, 0.436);
+    border-radius: 10px;
+    background-color: rgba(3, 117, 135, 0.663);
 
 }
 
 .controlbox button:active {
     background-color: rgba(131, 230, 246, 0.928);
     color: rgb(131, 130, 130);
-
 }
 
 #pagenum {
@@ -130,7 +136,7 @@ header h1 strong {
 
 .icon:hover {
     transform: scale(1.2);
-    background-color: #f3f3f3;
+    background-color: #f3f3f34b;
     transition: 0.12s;
 
 }
@@ -184,69 +190,6 @@ a {
     text-decoration: none;
 }
 
-
-.c1 {
-    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/7.jpg);
-}
-
-.c2 {
-    /*bili*/
-    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/bili.jpg);
-}
-
-.c3 {
-    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/cctv.jpg);
-}
-
-.c4 {
-    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/xigua.jpg);
-}
-
-.c5 {
-    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/soundcloud.jpg);
-}
-
-.c6 {
-    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/Netflix.jpg);
-}
-
-.c7 {
-    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/acfun.png);
-    background-repeat: no-repeat;
-}
-
-.c8 {
-    /* ddrk */
-    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/ddrk.jpg);
-}
-
-.c9 {
-    /* ponytown */
-    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/pt.jpg);
-}
-
-.c10 {
-    /* tiktok */
-    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/tiktok.jpg);
-    background-repeat: no-repeat;
-
-}
-
-.c11 {
-    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/iqy.jpg);
-    background-repeat: no-repeat;
-}
-
-.c12 {
-    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/course.jpg);
-    background-repeat: no-repeat;
-}
-
-.c13 {
-
-    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/wallheaven.jpg);
-    background-repeat: no-repeat;
-}
 
 .mobile {
     font-size: x-large;
