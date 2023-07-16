@@ -1,0 +1,50 @@
+[
+	{
+		"id": 1,
+		"image": "product-images/bike-1.jpeg",
+		"name": "Orient Vita Pro 28\"",
+		"price": "284.00",
+		"inventory": 4,
+		"productCode": "K203"
+	},
+	{
+		"id": 2,
+		"image": "product-images/bike-2.jpeg",
+		"name": "Orient S-400 26\"",
+		"price": "198.00",
+		"inventory": 14,
+		"productCode": "K433"
+	},
+	{
+		"id": 3,
+		"image": "product-images/bike-3.jpeg",
+		"name": "Bullet Bora 20\"",
+		"price": "350.00",
+		"inventory": 7,
+		"productCode": "K012"
+	},
+	{
+		"id": 4,
+		"image": "product-images/guitar-1.png",
+		"name": "Feder handmade",
+		"price": "790.00",
+		"inventory": 5,
+		"productCode": "G0127"
+	},
+	{
+		"id": 5,
+		"image": "product-images/guitar-2.png",
+		"name": "Ibanez G120",
+		"price": "430.00",
+		"inventory": 2,
+		"productCode": "G1233"
+	},
+	{
+		"id": 6,
+		"image": "product-images/guitar-3.png",
+		"name": "Feder Blues edition",
+		"price": "650.00",
+		"inventory": 6,
+		"productCode": "G4478"
+	}
+]

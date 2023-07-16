@@ -1,0 +1,257 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(ellipse farthest-corner at center top, #3b3b3b, #000000);
+    /*#26d6f5,#04506e*/
+    color: #8b9095;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+.controlbox button {
+    background-color: rgba(0, 0, 0, 0.163);
+    color: rgb(218, 215, 215);
+    border: none;
+    padding: 5px;
+    width: 30px;
+    /* border-radius: 5px; */
+}
+
+.controlbox button:hover {
+    background-color: rgba(47, 199, 223, 0.436);
+
+}
+
+.controlbox button:active {
+    background-color: rgba(131, 230, 246, 0.928);
+    color: rgb(131, 130, 130);
+
+}
+
+#pagenum {
+    background-color: transparent;
+
+    border: none;
+}
+
+.hide {
+    opacity: 0;
+    display: none !important;
+}
+
+.room {
+    color: black;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+.app {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 940px;
+    height: 590px;
+    background: #363535c6;
+    ;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 425px) {
+    body {
+        background: #333334;
+    }
+
+    .app {
+        width: 90%;
+        height: auto;
+        margin-bottom: 50px;
+        top: 0px;
+        left: 0px;
+        transform: none;
+        padding-bottom: 30px;
+    }
+
+    .app div div {
+        object-fit: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+header {
+    padding: 30px;
+    position: relative;
+    height: 70px;
+}
+
+header h1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #c0c6d0;
+}
+
+header h1 strong {
+    background: #4c524f;
+    color: #fff;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 6px;
+    font-size: 83%;
+    line-height: 1;
+    position: relative;
+    top: -1px;
+    left: 2px;
+}
+
+.icon {
+    --iconsize: 124px;
+    --marginsize: 48px;
+    height: var(--iconsize);
+    width: var(--iconsize);
+    margin-left: var(--marginsize);
+    margin-top: var(--marginsize);
+    background-color: #20202031;
+    display: inline-block;
+    transition: 0.22s;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.178), 2px 2px 4px rgba(0, 0, 0, 0.308);
+    border-radius: 30px;
+    background-size: contain;
+
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    background-color: #f3f3f3;
+    transition: 0.12s;
+
+}
+
+.icon:active {
+    transform: scale(1.1);
+    background-color: #f3f3f3;
+}
+
+
+.context-menu {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 10000;
+    width: 150px;
+    background: #ffffff8a;
+    border-radius: 5px;
+    transform-origin: top left;
+    backdrop-filter: blur(20px);
+    transform: scale(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.384);
+}
+
+.active {
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+
+}
+
+.context-menu .item {
+    padding: 8px 10px;
+    font-size: 15px;
+    color: rgb(3, 3, 3);
+    border-left: 2px double rgba(5, 219, 247, 0);
+}
+
+.context-menu .item:hover {
+    border-left: 6px solid rgba(1, 9, 10, 0.993);
+    cursor: alias;
+    transition: 0.2s;
+
+}
+
+.context-menu hr {
+    margin: 0px 0px;
+    border-color: rgba(7, 7, 7, 0.123);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.c1 {
+    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/7.jpg);
+}
+
+.c2 {
+    /*bili*/
+    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/bili.jpg);
+}
+
+.c3 {
+    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/cctv.jpg);
+}
+
+.c4 {
+    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/xigua.jpg);
+}
+
+.c5 {
+    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/soundcloud.jpg);
+}
+
+.c6 {
+    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/Netflix.jpg);
+}
+
+.c7 {
+    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/acfun.png);
+    background-repeat: no-repeat;
+}
+
+.c8 {
+    /* ddrk */
+    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/ddrk.jpg);
+}
+
+.c9 {
+    /* ponytown */
+    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/pt.jpg);
+}
+
+.c10 {
+    /* tiktok */
+    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/tiktok.jpg);
+    background-repeat: no-repeat;
+
+}
+
+.c11 {
+    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/iqy.jpg);
+    background-repeat: no-repeat;
+}
+
+.c12 {
+    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/course.jpg);
+    background-repeat: no-repeat;
+}
+
+.c13 {
+
+    background-image: url(https://image.baidu.com/search/down?url=http://124.223.57.166/imgs/wallheaven.jpg);
+    background-repeat: no-repeat;
+}
+
+.mobile {
+    font-size: x-large;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    opacity: 80%;
+}

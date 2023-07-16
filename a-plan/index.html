@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.emojiall.com/en/header-svg/%F0%9F%93%BA.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>watch TV</title>
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <h1> Name <strong><a href="?">🤖</a></strong></h1>
+        </header>
+        <a class="mobile" style="opacity: 0.3;" onclick="switch_onmoble()">💻</a>
+        <div id="icon-hoder">
+            <div class="page-1">
+                <div id="xxxx-icon" class="icon c1" onclick="go()"></div>
+            </div>
+            <div class="page-2">
+                <div id="xxxx-icon" class="icon c20" onclick="go('')"></div>
+            </div>
+        </div>
+        <div class="controlbox 控制翻页功能">
+            <button onclick="pageup()">🔺</button>
+            <br>
+            <button id="pagenum" onclick="alert('用W/S、上/下控制翻页(空格关闭我)') ">1</button>
+            <br>
+            <button onclick="pagedown()">🔻</button>
+        </div>
+    </div>
+    <div id="menu-holder">
+        <div id="cctv-menu" class="context-menu">
+            <div class="item" onclick="go('cctv1')">CCTV 1</div>
+            <div class="item" onclick="go('cctv5')">CCTV 5</div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
