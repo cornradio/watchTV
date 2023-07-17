@@ -1,11 +1,13 @@
+// https://www.v2ex.com/t/957284#reply12
 var hover_icon_name = ""
 var onmobile = false
 pagemax = 1; // 最大页面数量
 
 
 fetch("icon_data.json")
-.then(function(response) {
-    return response.json();
+.then(async function(response) {
+    return eval(`(${await response.text()})`); // 用eval解析json，可以兼容不太标准的json
+    // return response.json();
 })
 .then(function(icons) {
     let totalPages = Math.ceil(icons.length / 10); // 计算总页数
