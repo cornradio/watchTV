@@ -26,7 +26,7 @@ fetch("icon_data.json")
         let out = `
             <div id="${icon["name"]}-icon" 
             class="icon" 
-            onclick="gourl('${icon["url"]}')"
+            onclick="gourl('${icon["url"]}','${icon["name"]}')"
             style="background-image: url(https://image.baidu.com/search/down?url=${icon["imageurl"]});"></div>
         `;
         //这里用了百度下载图片过来，因为我之前用的微博图床，但是微博图床有防盗链，用百度下载一下转换
@@ -134,8 +134,14 @@ document.addEventListener('wheel', (event) => {
     }
 });
 
-function gourl(url){
-    window.open(url);
+function gourl(url,iconName){
+    if (onmobile) {
+        active_this(iconName);
+        console.log('onmobile' + onmobile+ 'active_this' + iconName )
+    } 
+    else{
+        window.open(url);
+    }
 }
 
 
@@ -157,16 +163,10 @@ function active_this(strname) {
 }
 
 // 用于前往网站
-function go(str) {
+function go(str,iconName) {
     if (onmobile) {
-        if (str.startsWith('cctv')) {
-            if (str == 'cctv') 
-                active_this(str);
-            else 
-                window.open('https://tv.cctv.com/live/' + str);
-            
-        } else 
-            active_this(str);
+        active_this(iconName);
+        console.log('onmobile' + onmobile+ 'active_this' + iconName )
     } else {
         switch (str) {
             case "youtube":
