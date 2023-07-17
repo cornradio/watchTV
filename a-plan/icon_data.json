@@ -1,22 +1,95 @@
 [
-	{
-        "friendly-name":"cctv",
-        "imageurl": "http://124.223.57.166/imgs/cctv.jpg",
-        "name": "cctv",
-        "url": "https://tv.cctv.com/live/cctv13",
+    {"friendly-name":"youtube",
+        "name": "youtube",
+        "imageurl": "http://124.223.57.166/imgs/7.jpg",
+        "url": "https://www.youtube.com/",
         "context-menu-item": [
             {
-                "name": "百度一下1",
-                "url": "http://www.baidu.com"
+                "name": "历史记录",
+                "url": "https://www.youtube.com/feed/history"
             },
             {
-                "name": "百度一下2",
-                "url": "http://www.baidu.com"
+                "name": "稍后观看",
+                "url": "https://www.youtube.com/playlist?list=WL"
             },
             {
-                "name": "百度一下3",
-                "url": "http://www.baidu.com"
+                "name": "订阅列表",
+                "url": "https://www.youtube.com/feed/subscriptions"
             }
         ]
-	}
+	},
+    {"friendly-name":"bilibili",
+        "name": "bilibili",
+        "imageurl": "http://124.223.57.166/imgs/bili.jpg",
+        "url": "https://www.bilibili.com/",
+        "context-menu-item": [
+            {
+                "name": "电影",
+                "url": "https://www.bilibili.com/movie/"
+            },
+            {
+                "name": "纪录片",
+                "url": "https://www.bilibili.com/documentary"
+            },
+            {
+                "name": "关注",
+                "url": "https://t.bilibili.com/"
+            },
+            {
+                "name": "历史记录",
+                "url": "https://www.bilibili.com/account/history"
+            },
+            {
+                "name": "通知中心",
+                "url": "https://message.bilibili.com/#/reply"
+            }
+        ]
+	},
+    {"friendly-name":"cctv",
+    "name": "cctv",
+    "imageurl": "http://124.223.57.166/imgs/cctv.jpg",
+    "url": "https://tv.cctv.com/live/cctv13",
+    "context-menu-item": [
+        {
+            "name": "CCTV1 综合",
+            "url": "https://tv.cctv.com/live/cctv1"
+        },
+        {
+            "name": "CCTV2 财经",
+            "url": "https://tv.cctv.com/live/cctv2"
+        },
+        {
+            "name": "CCTV4 国际",
+            "url": "https://tv.cctv.com/live/cctv4"
+        },
+        {
+            "name": "CCTV5 体育",
+            "url": "https://tv.cctv.com/live/cctv5"
+        },
+        {
+            "name": "CCTV6 电影",
+            "url": "https://tv.cctv.com/live/cctv6"
+        },
+        {
+            "name": "CCTV9 记录",
+            "url": "https://tv.cctv.com/live/cctvjilu"
+        },
+        {
+            "name": "CCTV10 科教",
+            "url": "https://tv.cctv.com/live/cctv10"
+        },
+        {
+            "name": "CCTV12 法治",
+            "url": "https://tv.cctv.com/live/cctv12"
+        },
+        {
+            "name": "CCTV13 新闻",
+            "url": "https://tv.cctv.com/live/cctv13"
+        },
+        {
+            "name": "CCTV14 少儿 ",
+            "url": "https://tv.cctv.com/live/cctvchild"
+        }
+    ]
+}
 ]

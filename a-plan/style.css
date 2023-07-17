@@ -119,12 +119,11 @@ header h1 strong {
 }
 
 .icon {
-    --iconsize: 124px;
-    --marginsize: 48px;
+    --iconsize: 128px;
+    --marginsize: 28px;
     height: var(--iconsize);
     width: var(--iconsize);
-    margin-left: var(--marginsize);
-    margin-top: var(--marginsize);
+    margin: var(--marginsize) var(--marginsize);
     background-color: #20202031;
     display: inline-block;
     transition: 0.22s;
@@ -153,7 +152,7 @@ header h1 strong {
     top: 10px;
     z-index: 10000;
     width: 150px;
-    background: #ffffff8a;
+    background: #c4c4c48a;
     border-radius: 5px;
     transform-origin: top left;
     backdrop-filter: blur(20px);
@@ -168,7 +167,7 @@ header h1 strong {
 }
 
 .context-menu .item {
-    padding: 8px 10px;
+    padding: 6px 10px;
     font-size: 15px;
     color: rgb(3, 3, 3);
     border-left: 2px double rgba(5, 219, 247, 0);
@@ -189,7 +188,6 @@ header h1 strong {
 a {
     text-decoration: none;
 }
-
 
 .mobile {
     font-size: x-large;
