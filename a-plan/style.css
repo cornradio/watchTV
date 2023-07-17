@@ -60,33 +60,12 @@ body {
     width: 940px;
     height: 590px;
     background: #363535c6;
-    ;
+    font-size: 0;
     border-radius: 15px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
 }
 
-@media screen and (max-width: 425px) {
-    body {
-        background: #333334;
-    }
 
-    .app {
-        width: 90%;
-        height: auto;
-        margin-bottom: 50px;
-        top: 0px;
-        left: 0px;
-        transform: none;
-        padding-bottom: 30px;
-    }
-
-    .app div div {
-        object-fit: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: rgb(255, 255, 255);
-    }
-}
 
 header {
     padding: 30px;
@@ -120,7 +99,7 @@ header h1 strong {
 
 .icon {
     --iconsize: 128px;
-    --marginsize: 28px;
+    --marginsize: 30px;
     height: var(--iconsize);
     width: var(--iconsize);
     margin: var(--marginsize) var(--marginsize);
@@ -130,7 +109,6 @@ header h1 strong {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.178), 2px 2px 4px rgba(0, 0, 0, 0.308);
     border-radius: 30px;
     background-size: contain;
-
 }
 
 .icon:hover {
@@ -195,4 +173,37 @@ a {
     top: 10px;
     right: 10px;
     opacity: 80%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background: #333334;
+    }
+    .controlbox {
+        position: fixed;
+        bottom: 10px;
+        right: 10px !important;
+        left: auto !important;
+        top:auto !important;
+        /* 其他样式属性 */
+    }
+    .app {
+        background-color: transparent;
+        box-shadow: none;
+        width: 100%;
+        height: auto;
+        top: 190px;
+        left: 0px;
+        transform: none;
+        padding-bottom: 90px;
+    }
+
+    .icon {
+        --iconsize: 138px !important; 
+        --marginsize: 26px !important;
+        height: var(--iconsize);
+        width: var(--iconsize);
+        margin: var(--marginsize) !important;
+    }
 }
