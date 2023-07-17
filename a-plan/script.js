@@ -137,7 +137,6 @@ document.addEventListener('wheel', (event) => {
 function gourl(url,iconName){
     if (onmobile) {
         active_this(iconName);
-        console.log('onmobile' + onmobile+ 'active_this' + iconName )
     } 
     else{
         window.open(url);
@@ -161,56 +160,3 @@ function switch_onmoble() {
 function active_this(strname) {
     document.querySelector("#" + strname + "-menu").classList.add('active')
 }
-
-// 用于前往网站
-function go(str,iconName) {
-    if (onmobile) {
-        active_this(iconName);
-        console.log('onmobile' + onmobile+ 'active_this' + iconName )
-    } else {
-        switch (str) {
-            case "youtube":
-                window.open('https://www.youtube.com/');
-                break;
-            case "bilibili":
-                window.open('https://www.bilibili.com/');
-                break;
-            case "cctv":
-                window.open('https://tv.cctv.com/live/cctv13');
-                break;
-            case "xigua":
-                window.open('https://www.ixigua.com/');
-                break;
-            case "ytmusic":
-                window.open('https://music.youtube.com/');
-                break;
-            case "NF":
-                window.open('https://netflix.com');
-                break;
-            case "ddrk":
-                window.open('https://ddys.tv/');
-                break;
-            case "acfun":
-                window.open('https://www.acfun.cn/');
-                break;
-            case "ponytown":
-                window.open('https://pony.town/');
-                break;
-            case "douyin":
-                window.open('https://www.douyin.com/');
-                break;
-            case "iqiyi":
-                window.open('https://www.iqiyi.com/');
-                break;
-            case "courseora":
-                window.open('https://www.coursera.org/');
-                break;
-            case "wallheaven":
-                window.open('https://wallhaven.cc/toplist');
-                break;
-            default:
-                window.open('https://tv.cctv.com/live/' + str);
-                break;
-        }
-    }
-}   
