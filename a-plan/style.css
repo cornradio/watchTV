@@ -10,7 +10,7 @@ body {
 
 .controlbox {
     position: absolute;
-    top: 0;
+    bottom: 10px;
     left: 0;
     /* 其他样式属性 */
 }
@@ -99,10 +99,11 @@ header h1 strong {
 
 .icon {
     --iconsize: 128px;
-    --marginsize: 30px;
+    --marginsize: 48px;
     height: var(--iconsize);
     width: var(--iconsize);
-    margin: var(--marginsize) var(--marginsize);
+    margin-left: var(--marginsize) ;
+    margin-top: var(--marginsize);
     background-color: #20202031;
     display: inline-block;
     transition: 0.22s;
