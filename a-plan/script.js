@@ -136,9 +136,17 @@ document.addEventListener('wheel', (event) => {
 
 function gourl(url,iconName){
     if (onmobile) {
-        active_this(iconName);
+        active_this(iconName,url);
     } 
     else{
+        window.open(url);
+    }
+}
+// 用于显示 xxxmenu ，如果显示失败，进入url
+function active_this(iconName,url) {
+    try {
+        document.querySelector("#" + iconName + "-menu").classList.add('active');
+    } catch (error) {
         window.open(url);
     }
 }
@@ -156,7 +164,3 @@ function switch_onmoble() {
     console.log('onmobile' + onmobile)
 }
 
-// 用于开启 xxxmenu
-function active_this(strname) {
-    document.querySelector("#" + strname + "-menu").classList.add('active')
-}
