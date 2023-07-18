@@ -31,7 +31,13 @@ function loadJSON(fileName) {
                 onclick="gourl('${icon["url"]}','${icon["name"]}')"
                 style="background-image: url(https://image.baidu.com/search/down?url=${icon["imageurl"]});"></div>
             `;
-            //这里用了百度下载图片过来，因为我之前用的微博图床，但是微博图床有防盗链，用百度下载一下转换
+            // 这里用了百度下载图片过来，因为我之前用的微博图床，但是微博图床有防盗链，用百度下载一下转换
+            // 国内上传可以用这个 http://tool.mkblog.cn/tuchuang/
+            // 【百度图片】https://image.baidu.com/search/down?url=
+            // 【Akamai节点，没有使用限制】https://imageproxy.pimg.tw/resize?url=
+            // 【国内网宿节点，只能加载特定图床图片如imgur】https://search.pstatic.net/common/?src=
+            // 【CloudFlare节点】https://images.weserv.nl/?url=
+            // 未来可能要自建一个 https://chevereto.com/
             placeholder.innerHTML += out;
             // 创建每个icon的右键菜单
             let menuHolder = document.querySelector("#context-menu-holder");
