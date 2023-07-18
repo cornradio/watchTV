@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select 示例</title>
+
+</head>
+<body>
+    <h1>Select 示例</h1>
+    <label for="myselect">选择文件加载：</label>
+    <select id="myselect" >
+        <option value="1.json">1.json</option>
+        <option value="2.json">2.json</option>
+        <option value="3.json">3.json</option>
+    </select>
+</body>
+
+<script>
+    document.getElementById("myselect").setAttribute("onchange","load(this.value)");
+    function load(value){
+        alert(value);
+    }
+</script>
+</html>

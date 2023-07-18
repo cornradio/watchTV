@@ -3,58 +3,62 @@ var hover_icon_name = ""
 var onmobile = false
 pagemax = 1; // 最大页面数量
 
+loadJSON("icon_data.json")
 
-fetch("icon_data.json")
-.then(async function(response) {
-    return eval(`(${await response.text()})`); // 用eval解析json，可以兼容不太标准的json
-    // return response.json();
-})
-.then(function(icons) {
-    let totalPages = Math.ceil(icons.length / 10); // 计算总页数
-    pagemax = totalPages;
-    let placeholder = document.querySelector("#icon-holder");
-
-    // 创建页面占位符
-    for (let i = 1; i <= totalPages; i++) {
-        let out = `<div class="page-${i}"></div>`
-        placeholder.innerHTML += out;
-    }
-    for (let i = 0; i < icons.length; i++) {
-        let icon = icons[i];
-        let pageIndex = Math.floor(i / 10) + 1; // 计算当前图标所在的页码
-        placeholder = document.querySelector(`#icon-holder .page-${pageIndex}`);
-        let out = `
-            <div id="${icon["name"]}-icon" 
-            class="icon" 
-            onclick="gourl('${icon["url"]}','${icon["name"]}')"
-            style="background-image: url(https://image.baidu.com/search/down?url=${icon["imageurl"]});"></div>
-        `;
-        //这里用了百度下载图片过来，因为我之前用的微博图床，但是微博图床有防盗链，用百度下载一下转换
-        placeholder.innerHTML += out;
-        // 创建每个icon的右键菜单
-        let menuHolder = document.querySelector("#context-menu-holder");
-        out = `        
-        <div id="${icon["name"]}-menu" class="context-menu">
-        `
-        icon["context-menu-item"].forEach(item => {
-            out += `<div class="item" onclick="gourl('${item["url"]}')">${item["name"]}</div>`
-        });
-        out += "</div>";
-        menuHolder.innerHTML += out;
-    console.log("icon and menus loaded");
-
-    }
-    // 如果最后一页图标数量不足10个，补充空白图标
-    if (placeholder.children.length < 10) {
-        let emptyIconsCount = 10 - placeholder.children.length;
-
-        for (let k = 0; k < emptyIconsCount; k++) {
-            let out = `<div class="icon empty-icon"></div>`;
+function loadJSON(fileName) {
+    fetch( fileName)
+    .then(async function(response) {
+        return eval(`(${await response.text()})`); // 用eval解析json，可以兼容不太标准的json
+        // return response.json();
+    })
+    .then(function(icons) {
+        let totalPages = Math.ceil(icons.length / 10); // 计算总页数
+        pagemax = totalPages;
+        let placeholder = document.querySelector("#icon-holder");
+    
+        // 创建页面占位符
+        for (let i = 1; i <= totalPages; i++) {
+            let out = `<div class="page-${i}"></div>`
             placeholder.innerHTML += out;
         }
-    }
-    loadMenus(icons);
-});
+        for (let i = 0; i < icons.length; i++) {
+            let icon = icons[i];
+            let pageIndex = Math.floor(i / 10) + 1; // 计算当前图标所在的页码
+            placeholder = document.querySelector(`#icon-holder .page-${pageIndex}`);
+            let out = `
+                <div id="${icon["name"]}-icon" 
+                class="icon" 
+                onclick="gourl('${icon["url"]}','${icon["name"]}')"
+                style="background-image: url(https://image.baidu.com/search/down?url=${icon["imageurl"]});"></div>
+            `;
+            //这里用了百度下载图片过来，因为我之前用的微博图床，但是微博图床有防盗链，用百度下载一下转换
+            placeholder.innerHTML += out;
+            // 创建每个icon的右键菜单
+            let menuHolder = document.querySelector("#context-menu-holder");
+            out = `        
+            <div id="${icon["name"]}-menu" class="context-menu">
+            `
+            icon["context-menu-item"].forEach(item => {
+                out += `<div class="item" onclick="gourl('${item["url"]}')">${item["name"]}</div>`
+            });
+            out += "</div>";
+            menuHolder.innerHTML += out;
+        console.log("icon and menus loaded");
+    
+        }
+        // 如果最后一页图标数量不足10个，补充空白图标
+        if (placeholder.children.length < 10) {
+            let emptyIconsCount = 10 - placeholder.children.length;
+    
+            for (let k = 0; k < emptyIconsCount; k++) {
+                let out = `<div class="icon empty-icon"></div>`;
+                placeholder.innerHTML += out;
+            }
+        }
+        loadMenus(icons);
+    });
+}
+
 
 // 右键菜单功能
 function addContextMenuListener(item) {

@@ -7,6 +7,17 @@ body {
     font-size: 14px;
     font-family: "Roboto", sans-serif;
 }
+select{
+    color: #a5a5a5;
+    background: transparent;
+    border: none;
+    font-size: medium;
+}
+select:hover{
+    color: #eaeaea;
+    cursor: pointer;
+}
+
 
 .controlbox {
     position: absolute;
@@ -131,7 +142,7 @@ header h1 strong {
     top: 10px;
     z-index: 10000;
     width: 150px;
-    background: #c4c4c48a;
+    background: #ffffff8a;
     border-radius: 5px;
     transform-origin: top left;
     backdrop-filter: blur(20px);
@@ -154,7 +165,7 @@ header h1 strong {
 
 .context-menu .item:hover {
     border-left: 6px solid rgba(1, 9, 10, 0.993);
-    cursor: alias;
+    cursor: pointer;
     transition: 0.2s;
 
 }

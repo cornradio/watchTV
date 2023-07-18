@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie示例</title>
+    <script>
+        function addCookie() {
+            var name = document.getElementById("cookieName").value;
+            var value = document.getElementById("cookieValue").value;
+            var expires = new Date();
+            // expires.setDate(expires.getDate() + 1);// 设置过期时间为一天后
+            expires.setFullYear(expires.getFullYear() + 10); // 设置为10年后过期
+            document.cookie = name + "=" + value + ";expires=" + expires.toUTCString();
+            alert("已新增Cookie：" + name);
+        }
+
+        function logCookies() {
+            var cookies = document.cookie.split("; ");
+            var output = "共有" + countCookies() + "个 Cookie\n";
+            for (var i = 0; i < cookies.length; i++) {
+                output += cookies[i] + "\n";
+            }
+            alert(output);
+        }
+
+        function countCookies() {
+            var cookies = document.cookie.split("; ");
+            return cookies.length;
+        }
+
+        function getName() {
+            var name = document.getElementById("cookieName").value;
+            return name;
+        }
+        function deleteCookie(name) {
+            document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; ";
+        }
+
+        function deleteAllCookies() {
+            var cookies = document.cookie.split(";");
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                var eqPos = cookie.indexOf("=");
+                var name = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim();
+                deleteCookie(name);
+            }
+            alert("已删除全部Cookie");
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Cookie示例</h1>
+
+    <label for="cookieName">Cookie名：</label>
+    <input type="text" id="cookieName">
+    <br>
+    <label for="cookieValue">Cookie值：</label>
+    <input type="text" id="cookieValue">
+    <br><br>
+    <button onclick="addCookie()">新增Cookie</button>
+    <button onclick="logCookies()">显示所有Cookie</button>
+    <button onclick="deleteCookie(getName());alert('已删除Cookie：' + getName());">删除Cookie</button>
+    <button onclick="deleteAllCookies()">删除所有Cookie</button>
+
+    <div id="selectContainer"></div>
+</body>
+<script>
+    function createSelect() {
+        var cookies = document.cookie.split("; ");
+        var selectContainer = document.getElementById("selectContainer");
+
+        var selectElement = document.createElement("select");
+        selectElement.id = "select-json-from-cookie";
+
+        for (var i = 0; i < cookies.length; i++) {
+            var optionText = cookies[i].split("=")[0];
+            var optionValue = cookies[i].split("=")[1];
+
+            var optionElement = document.createElement("option");
+            optionElement.text = optionText;
+            optionElement.value = optionValue;
+
+            selectElement.appendChild(optionElement);
+        }
+
+        selectContainer.appendChild(selectElement);
+    }
+    createSelect();
+</script>
+
+</html>
