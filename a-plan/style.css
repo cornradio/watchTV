@@ -108,6 +108,13 @@ header h1 strong {
     left: 2px;
 }
 
+#selectContainer select{
+    position: fixed;
+    top: 1em;
+    left: 1em;
+    color: #ffffff1f;
+}
+
 .icon {
     --iconsize: 128px;
     --marginsize: 48px;

@@ -11,15 +11,11 @@
 </head>
 
 <body>
+    <div id="selectContainer"></div> 
+
     <div class="app">
         <header>
-            <h1> Name <strong>
-                <select>
-                    <option value="1">1.json</option>
-                    <option value="2">选项2</option>
-                    <option value="3">选项3</option>
-                  </select>
-            </strong></h1>
+            <h1> <span id="bigName">Name</span> <strong id="emojiName">📺</strong> </h1>
         </header>
         <a class="mobile" style="opacity: 0.3;" onclick="switch_onmoble()">💻</a>
         <div class="controlbox 控制翻页功能">
@@ -30,14 +26,6 @@
             <button onclick="pagedown()">⇲</button>
         </div>
         <div id="icon-holder">
-            <div class="page-1">
-            </div>
-            <div class="page-2">
-            </div>
-            <div class="page-3">
-            </div>
-            <div class="page-4">
-            </div>
         </div>
 
     </div>

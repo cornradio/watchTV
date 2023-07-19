@@ -2,7 +2,7 @@
     {
         "friendly-name": "ddrk",
         "name": "ddrk",
-        "imageurl": "https://tvax3.sinaimg.cn/large/006rgJELgy1hfzt7owqisj308d08dmyf.jpg",
+        "imageurl": "imgs/ddrk.jpg",
         "url": "https://ddys.art/",
         "context-menu-item": [
             {
@@ -18,7 +18,7 @@
     {
         "friendly-name": "youtube",
         "name": "youtube",
-        "imageurl": "http://124.223.57.166/imgs/7.jpg",
+        "imageurl": "imgs/yt.jpg",
         "url": "https://www.youtube.com/",
         "context-menu-item": [
             {
@@ -38,7 +38,7 @@
     {
         "friendly-name": "bilibili",
         "name": "bilibili",
-        "imageurl": "http://124.223.57.166/imgs/bili.jpg",
+        "imageurl": "imgs/bili.jpg",
         "url": "https://www.bilibili.com/",
         "context-menu-item": [
             {
@@ -66,7 +66,7 @@
     {
         "friendly-name": "cctv",
         "name": "cctv",
-        "imageurl": "http://124.223.57.166/imgs/cctv.jpg",
+        "imageurl": "imgs/cctv.jpg",
         "url": "https://tv.cctv.com/live/cctv13",
         "context-menu-item": [
             {

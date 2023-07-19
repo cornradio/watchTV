@@ -1,0 +1,18 @@
+[
+    {
+        "friendly-name": "ddrk",
+        "name": "ddrk",
+        "imageurl": "imgs/ddrk.jpg",
+        "url": "https://ddys.art/",
+        "context-menu-item": [
+            {
+                "name": "黑袍纠察队",
+                "url": "https://ddys.art/the-boys/"
+            },
+            {
+                "name": "rick&morty",
+                "url": "https://ddys.tv/rick-and-morty/"
+            }
+        ]
+    }
+]

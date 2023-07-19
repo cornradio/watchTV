@@ -2,11 +2,57 @@
 var hover_icon_name = ""
 var onmobile = false
 pagemax = 1; // 最大页面数量
+//执行创建select 列表 
+checkCookie()
+createSelect();
+var defaultvalue = document.querySelector("#selectContainer select").options[0].value;
+loadCookie(defaultvalue)
+//增加select 的 onchange trigger
+document.querySelector("#selectContainer select").setAttribute("onchange","load(this.value)");
+//cookie格式：xxx.json|Name|...
+function loadCookie(value){
+    values = value.split("|");
+    loadJSON(values[0])
+    document.querySelector("#bigName").innerHTML = values[1];
+    document.querySelector("#emojiName").innerHTML = values[2];
+}
+//如果没有cookie，则创建一个默认配置
+function checkCookie(){
+    if (document.cookie === ''){
+        addCookie('icon_data.json','icon_data.json|视频站|📺')
+    }
+}
+function addCookie(name,value) {
+    var expires = new Date();
+    // expires.setDate(expires.getDate() + 1);// 设置过期时间为一天后
+    expires.setFullYear(expires.getFullYear() + 10); // 设置为10年后过期
+    document.cookie = name + "=" + value + ";expires=" + expires.toUTCString();
+}
+//从cookie创建select选项列表
+function createSelect() {
+    var cookies = document.cookie.split("; ");
+    var selectContainer = document.getElementById("selectContainer");
+    var selectElement = document.createElement("select");
+    selectElement.id = "select-json-from-cookie";
+    for (var i = 0; i < cookies.length; i++) {
+        var optionText = cookies[i].split("=")[0];
+        var optionValue = cookies[i].split("=")[1];
+        var optionElement = document.createElement("option");
+        optionElement.text = optionText;
+        optionElement.value = optionValue;
+        selectElement.appendChild(optionElement);
+    }
+    var optionLast = document.createElement("option");
+    optionLast.text = '编辑cookie添加';
+    optionLast.value = '';
+    selectElement.appendChild(optionLast);
 
-loadJSON("icon_data.json")
+    selectContainer.appendChild(selectElement);
+}
+
 
 function loadJSON(fileName) {
-    fetch( fileName)
+    fetch(fileName)
     .then(async function(response) {
         return eval(`(${await response.text()})`); // 用eval解析json，可以兼容不太标准的json
         // return response.json();
@@ -15,6 +61,7 @@ function loadJSON(fileName) {
         let totalPages = Math.ceil(icons.length / 10); // 计算总页数
         pagemax = totalPages;
         let placeholder = document.querySelector("#icon-holder");
+        placeholder.innerHTML ='';//切换配置用，清理杂物
     
         // 创建页面占位符
         for (let i = 1; i <= totalPages; i++) {
@@ -29,7 +76,7 @@ function loadJSON(fileName) {
                 <div id="${icon["name"]}-icon" 
                 class="icon" 
                 onclick="gourl('${icon["url"]}','${icon["name"]}')"
-                style="background-image: url(https://image.baidu.com/search/down?url=${icon["imageurl"]});"></div>
+                style="background-image: url(${icon["imageurl"]});"></div>
             `;
             // 这里用了百度下载图片过来，因为我之前用的微博图床，但是微博图床有防盗链，用百度下载一下转换
             // 国内上传可以用这个 http://tool.mkblog.cn/tuchuang/
