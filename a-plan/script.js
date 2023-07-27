@@ -8,7 +8,7 @@ createSelect();
 var defaultvalue = document.querySelector("#selectContainer select").options[0].value;
 loadCookie(defaultvalue)
 //增加select 的 onchange trigger
-document.querySelector("#selectContainer select").setAttribute("onchange","load(this.value)");
+document.querySelector("#selectContainer select").setAttribute("onchange","loadCookie(this.value)");
 //cookie格式：xxx.json|Name|...
 function loadCookie(value){
     values = value.split("|");

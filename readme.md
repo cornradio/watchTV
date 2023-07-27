@@ -18,6 +18,7 @@ icon 需要自行上传到图床，我们相信你有使用 figma 等网站自�
 - [x] json文件加载功能
 - [x] json配置切换功能
 - [x] json配置存储功能（通过cookie）
+- [ ] 存储默认位置（而不是打开第一个cookie）
 - [ ] 从 cookie 中加载 [grabient](https://www.grabient.com/) 背景色的功能
 - [ ] 点击emoji切换网站
 - [ ] 自动同步emoji和网站图标、网站名称
