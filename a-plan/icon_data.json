@@ -11,7 +11,12 @@
             },
             {
                 "name": "rick&morty",
-                "url": "https://ddys.tv/rick-and-morty/"
+                "url": "https://ddys.art/rick-and-morty/"
+            }
+            ,
+            {
+                "name": "无职转生",
+                "url": "https://ddys.art/mushoku-tensei/"
             }
         ]
     },
@@ -108,6 +113,66 @@
             {
                 "name": "CCTV14 少儿 ",
                 "url": "https://tv.cctv.com/live/cctvchild"
+            }
+        ]
+    },
+    {
+        "friendly-name": "Grabient",
+        "name": "Grabient",
+        "imageurl": "imgs/grabient.png",
+        "url": "https://www.grabient.com/",
+        "context-menu-item": [
+        ]
+    },
+    {
+        "friendly-name": "figma",
+        "name": "figma",
+        "imageurl": "imgs/figma.png",
+        "url": "https://figma.com/",
+        "context-menu-item": [
+            {
+                "name": "设计图",
+                "url": "https://www.figma.com/file/new"
+            },
+            {
+                "name": "白板",
+                "url": "https://www.figma.com/file/new?editor_type=whiteboard"
+            },
+            {
+                "name": "社区",
+                "url": "https://www.figma.com/community"
+            }
+        ]
+    },
+    {
+        "friendly-name": "wallheaven",
+        "name": "wallheaven",
+        "imageurl": "imgs/wallheaven.png",
+        "url": "https://wallhaven.cc/toplist",
+        "context-menu-item": [
+            {
+                "name": "NSFW",
+                "url": "https://wallhaven.cc/search?categories=111&purity=011&sorting=hot&order=desc&ai_art_filter=0&page=2"
+            }
+        ]
+    },
+    {
+        "friendly-name": "emojiall",
+        "name": "emojiall",
+        "imageurl": "imgs/emojiall.png",
+        "url": "https://www.emojiall.com/zh-hans",
+        "context-menu-item": [
+            {
+                "name": "快速复制",
+                "url": "https://www.emojiall.com/zh-hans/copy"
+            },
+            {
+                "name": "小游戏",
+                "url": "https://www.emojiall.com/zh-hans/game-list"
+            },
+            {
+                "name": "组合梗",
+                "url": "https://www.emojiall.com/zh-hans/combine_list"
             }
         ]
     }

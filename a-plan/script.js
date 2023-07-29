@@ -9,17 +9,19 @@ var defaultvalue = document.querySelector("#selectContainer select").options[0].
 loadCookie(defaultvalue)
 //增加select 的 onchange trigger
 document.querySelector("#selectContainer select").setAttribute("onchange","loadCookie(this.value)");
-//cookie格式：xxx.json|Name|...
+//cookie格式：xxx.json|Name|emoji|grabient(去除尾部分号)...
 function loadCookie(value){
     values = value.split("|");
     loadJSON(values[0])
     document.querySelector("#bigName").innerHTML = values[1];
     document.querySelector("#emojiName").innerHTML = values[2];
+    console.log(values[3])
+    document.querySelector("body").style.background = values[3];
 }
 //如果没有cookie，则创建一个默认配置
 function checkCookie(){
     if (document.cookie === ''){
-        addCookie('icon_data.json','icon_data.json|视频站|📺')
+        addCookie('icon_data.json','icon_data.json|视频站|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
     }
 }
 function addCookie(name,value) {

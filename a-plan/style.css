@@ -26,7 +26,7 @@ select:hover{
     /* 其他样式属性 */
 }
 .controlbox button {
-    background-color: rgba(0, 0, 0, 0.163);
+    background-color: rgba(0, 0, 0, 0.1);
     color: rgb(218, 215, 215);
     border: none;
     padding: 5px;
@@ -70,7 +70,7 @@ select:hover{
     transform: translate(-50%, -50%);
     width: 940px;
     height: 590px;
-    background: #363535c6;
+    background: #00000033;
     font-size: 0;
     border-radius: 15px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
@@ -96,7 +96,8 @@ header h1 {
 }
 
 header h1 strong {
-    background: #4c524f;
+    background: #8787872e;
+    border: 1px solid #7a7a7a69;
     color: #fff;
     display: inline-block;
     border-radius: 30px;
@@ -106,6 +107,7 @@ header h1 strong {
     position: relative;
     top: -1px;
     left: 2px;
+    cursor: pointer;
 }
 
 #selectContainer select{
@@ -122,10 +124,10 @@ header h1 strong {
     width: var(--iconsize);
     margin-left: var(--marginsize) ;
     margin-top: var(--marginsize);
-    background-color: #20202031;
+    background-color: #8686861c;
     display: inline-block;
     transition: 0.22s;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.178), 2px 2px 4px rgba(0, 0, 0, 0.308);
+    box-shadow: 1px 2px 4px rgb(0 0 0 / 10%), 2px 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 30px;
     background-size: contain;
 }
