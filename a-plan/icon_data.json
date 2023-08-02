@@ -16,7 +16,7 @@
             ,
             {
                 "name": "无职转生",
-                "url": "https://ddys.art/mushoku-tensei/"
+                "url": "http://www.zkk78.com/dongmanplay/5289-1-1.html"
             }
             ,
             {
@@ -32,6 +32,10 @@
         "url": "https://www.youtube.com/",
         "context-menu-item": [
             {
+                "name": "yt-music",
+                "url": "https://music.youtube.com/"
+            },
+            {
                 "name": "历史记录",
                 "url": "https://www.youtube.com/feed/history"
             },
@@ -42,6 +46,34 @@
             {
                 "name": "订阅列表",
                 "url": "https://www.youtube.com/feed/subscriptions"
+            }
+        ]
+    },
+    {
+        "friendly-name": "douyin",
+        "name": "douyin",
+        "imageurl": "imgs/douyin.png",
+        "url": "https://www.douyin.com/",
+        "context-menu-item": [
+            {
+                "name": "up主后台",
+                "url": "https://creator.douyin.com/creator-micro/home"
+            },
+            {
+                "name": "赞过",
+                "url": "https://www.douyin.com/user/self?showTab=like"
+            },
+            {
+                "name": "电影电视剧",
+                "url": "https://www.douyin.com/vs"
+            },
+            {
+                "name": "信息流",
+                "url": "https://www.douyin.com/discover"
+            },
+            {
+                "name": "关注",
+                "url": "https://www.douyin.com/follow"
             }
         ]
     },
