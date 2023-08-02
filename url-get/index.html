@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>获取URL中的GET参数</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1>获取URL中的GET参数</h1>
+	<p>name参数的值是: <span id="name"></span></p>
+	<p>age参数的值是: <span id="age"></span></p>
+    <p>请尝试访问这个url：<a href="/url-get/index.html?name=John&age=30">/url-get/index.html?name=John&age=30</a></p>
+
+	<script>
+		// 使用 window.location.search 获取查询字符串部分
+		var queryString = window.location.search;
+
+		// 使用 URLSearchParams 对象解析查询参数
+		var urlParams = new URLSearchParams(queryString);
+
+		// 获取特定参数的值并显示在页面上
+		var name = urlParams.get('name');
+		var age = urlParams.get('age');
+		document.getElementById('name').textContent = name;
+		document.getElementById('age').textContent = age;
+	</script>
+</body>
+</html>
