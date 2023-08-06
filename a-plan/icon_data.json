@@ -84,6 +84,10 @@
         "url": "https://www.bilibili.com/",
         "context-menu-item": [
             {
+                "name": "稿件管理",
+                "url": "https://member.bilibili.com/platform/upload-manager/article"
+            },
+            {
                 "name": "电影",
                 "url": "https://www.bilibili.com/movie/"
             },
