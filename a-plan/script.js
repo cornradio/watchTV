@@ -22,7 +22,7 @@ function getUrlParamOrCookie() {
     else {return document.cookie.split("; ").find(row => row.startsWith("_defaultjson")).split("=")[1];}//如果url没有name参数，加载_defaultjson
 }
 var defaultvalue = getUrlParamOrCookie();
-loadCookie(defaultvalue)
+loadCookie(defaultvalue);
 // 增加select 的 onchange trigger
 document.querySelector("#selectContainer select").setAttribute("onchange", "loadCookie(this.value)");
 // cookie格式：xxx.json|Name|emoji|grabient(去除尾部分号)...
@@ -35,20 +35,31 @@ function loadCookie(value) { // 获取名为value 的 cookie 的内容
     loadJSON(values[0]); // 加载json
     document.querySelector("#bigName").innerHTML = values[1];
     // console.log("标题：" + values[1]);
-    document.querySelector("#emojiName").innerHTML = values[2];
+    let curEmoji = values[2];
+    let curLinkName = value;
+    loadEmoji(curEmoji, curLinkName);
     // console.log("emoji：" + values[2]);
     document.querySelector("body").style.background = values[3];
     // console.log("背景色：" + values[3]);
 }
-// 如果没有cookie，则创建一个默认配置
+function loadEmoji(curEmoji, curLinkName,){
+    //将网页的名称metadata改成 curLinkName
+    document.title = curLinkName;
+    //将网页图标改成emoji curEmoji
+    const favicon = document.querySelector('link[rel="icon"]');
+    favicon.href = `https://www.emojiall.com/en/header-svg/${curEmoji}.svg`;
+}
+
+// 默认创建如下cookies
 function checkCookie() {
     if (document.cookie === '') {
-        addCookie('icon_gpt.json', 'icon_gpt.json|GPTS|🤖|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
-        addCookie('icon_data.json', 'icon_data.json|视频站|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
-        addCookie('_defaultjson', 'icon_data.json')
+        addCookie('GPTS', 'icon_gpt.json|GPTS|🤖|linear-gradient(-200deg, #047272 0%, #1d1035 100%)')
+        addCookie('watchTV', 'icon_data.json|视频站|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
+        addCookie('_defaultjson', 'watchTV')
         console.log("🤖创建默认配置");
     }
 }
+//checkCookie 用，加cookie
 function addCookie(name, value) {
     var expires = new Date();
     // expires.setDate(expires.getDate() + 1);// 设置过期时间为一天后
@@ -56,6 +67,7 @@ function addCookie(name, value) {
     document.cookie = name + "=" + value + ";expires=" + expires.toUTCString();
 }
 // 从cookie创建select选项列表
+// 同时创建emoji选项 a link
 function createSelect() {
     var cookies = document.cookie.split("; ");
     var selectContainer = document.getElementById("selectContainer");
@@ -68,6 +80,9 @@ function createSelect() {
         var optionText = cookies[i].split("=")[0];
         var optionValue = cookies[i].split("=")[0];
         var optionElement = document.createElement("option");
+        let curEmoji = cookies[i].split("=")[1].split("|")[2];
+        let curLinkName = optionText;
+        document.querySelector("#emojiName").innerHTML += `<a href="?name=${curLinkName}">${curEmoji}</a> `;
         optionElement.text = optionText;
         optionElement.value = optionValue;
         selectElement.appendChild(optionElement);
@@ -79,6 +94,7 @@ function createSelect() {
     selectElement.appendChild(optionLast);
     selectContainer.appendChild(selectElement);
 }
+
 
 
 function loadJSON(fileName) {

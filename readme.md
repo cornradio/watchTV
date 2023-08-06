@@ -45,8 +45,8 @@ json文件位置|h1标题名称|emoji|背景色
 - [x] 存储默认位置（修改_defaultjson的内容来实现）
 - [x] 支持get url参数来加载json(访问http://127.0.0.1:5500/a-plan/?name=icon2_data.json即可加载icon2_data.json ，适合保存到书签)
 - [x] 从 cookie 中加载 [grabient](https://www.grabient.com/) 背景色的功能
-- [ ] 点击emoji切换网站
-- [ ] 自动同步emoji和网站图标、网站名称
+- [x] 点击emoji切换网站
+- [x] 自动同步emoji和网站图标、网站名称
 - [ ] 创作与分享json的mini社区（计划用github）
 
 ## 项目结构
