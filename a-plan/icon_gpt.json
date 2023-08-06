@@ -1,0 +1,66 @@
+[
+    {
+        "friendly-name": "gpt-list",
+        "name": "gpt-list",
+        "imageurl": "imgs/gpt-list.png",
+        "url": "https://github.com/xx025/carrot",
+        "context-menu-item": [
+            {
+                "name": "小导航",
+                "url": "https://cc.ai55.cc/"
+            },
+            {
+                "name": "AIchatOS",
+                "url": "https://chat.aichatos.top/#/chat"
+            },
+            {
+                "name": "bianjie",
+                "url": "https://c.binjie.fun/#/chat/"
+            },
+            {
+                "name": "berlin4h",
+                "url": "https://chat.berlin4h.top/"
+            }
+        ]
+    },
+    {
+        "friendly-name": "ails",
+        "name": "ails",
+        "imageurl": "imgs/ails.png",
+        "url": "https://ai.ls/",
+        "context-menu-item": [
+            {
+                "name": "客户端",
+                "url": "https://github.com/airyland/Pake/releases"
+            }
+        ]
+    },
+    {
+        "friendly-name": "poe",
+        "name": "poe",
+        "imageurl": "imgs/poe.png",
+        "url": "https://poe.com/",
+        "context-menu-item": [
+            {
+                "name": "角色 bots",
+                "url": "https://poe.com/explore_bots?category=Popular"
+            }
+        ]
+    },
+    {
+        "friendly-name": "freechat",
+        "name": "freechat",
+        "imageurl": "imgs/freechat.png",
+        "url": "https://h.free-chat.asia/",
+        "context-menu-item": [
+            {
+                "name": "主站",
+                "url": "https://ic.free-chat.asia/"
+            },
+            {
+                "name": "无尽chat",
+                "url": "https://endless-chat.netlify.app/"
+            }
+        ]
+    }
+]
