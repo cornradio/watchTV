@@ -43,8 +43,10 @@ function loadCookie(value) { // 获取名为value 的 cookie 的内容
 // 如果没有cookie，则创建一个默认配置
 function checkCookie() {
     if (document.cookie === '') {
+        addCookie('icon_gpt.json', 'icon_gpt.json|GPTS|🤖|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
         addCookie('icon_data.json', 'icon_data.json|视频站|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
         addCookie('_defaultjson', 'icon_data.json')
+        console.log("🤖创建默认配置");
     }
 }
 function addCookie(name, value) {
@@ -64,17 +66,17 @@ function createSelect() {
             continue; // 跳过存储默认配置用的cookie
         }
         var optionText = cookies[i].split("=")[0];
-        var optionValue = cookies[i].split("=")[1];
+        var optionValue = cookies[i].split("=")[0];
         var optionElement = document.createElement("option");
         optionElement.text = optionText;
         optionElement.value = optionValue;
         selectElement.appendChild(optionElement);
     }
     var optionLast = document.createElement("option");
+    // 添加一个编辑cookie的提示
     optionLast.text = '编辑cookie添加';
     optionLast.value = '';
     selectElement.appendChild(optionLast);
-
     selectContainer.appendChild(selectElement);
 }
 
