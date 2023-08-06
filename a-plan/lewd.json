@@ -1,0 +1,121 @@
+[
+    {
+        "friendly-name": "pornhub",
+        "name": "pornhub",
+        "imageurl": "imgs/pornhub.png",
+        "url": "https://pornhub.com/",
+        "context-menu-item": [
+            {
+                "name": "GoodSearch",
+                "url": "https://www.pornmd.com/"
+            }
+            ,
+            {
+                "name": "tube8",
+                "url": "https://www.tube8.com/"
+            }
+            ,
+            {
+                "name": "xnxx",
+                "url": "https://www.xnxx.com/"
+            }
+        ]
+    },
+    {
+        "friendly-name": "sexcom",
+        "name": "sexcom",
+        "imageurl": "imgs/sexcom.png",
+        "url": "https://www.sex.com/",
+        "context-menu-item": [
+            {
+                "name": "hentai gif",
+                "url": "https://www.sex.com/gifs/hentai/"
+            },
+            {
+                "name": "hentai vid",
+                "url": "https://www.sex.com/videos/hentai/"
+            },
+            {
+                "name": "Favs",
+                "url": "https://www.sex.com/user/kasusa/kasusa-fav/"
+            }
+        ]
+    },
+    {
+        "friendly-name": "xvideos",
+        "name": "xvideos",
+        "imageurl": "imgs/xvideos.png",
+        "url": "https://www.xvideos.com/",
+        "context-menu-item": [
+            {
+                "name": "genshin",
+                "url": "https://www.xvideos.com/?k=genshin"
+            },
+            {
+                "name": "overwatch",
+                "url": "https://www.xvideos.com/?k=overwatch"
+            }
+        ]
+    },
+    {
+        "friendly-name": "e-hentai",
+        "name": "e-hentai",
+        "imageurl": "imgs/e-hentai.png",
+        "url": "https://e-hentai.org/",
+        "context-menu-item": [
+            {
+                "name": "GB",
+                "url": "https://e-hentai.org/?f_search=genderbender&advsearch=1&f_srdd=4"
+            },
+            {
+                "name": "chinese",
+                "url": "https://e-hentai.org/?f_search=chinese&advsearch=1&f_srdd=4"
+            },
+            {
+                "name": "furty",
+                "url": "https://e-hentai.org/tag/female:furry"
+            },
+            {
+                "name": "e-hunter",
+                "url": "https://github.com/hanFengSan/eHunter"
+            }
+        ]
+    },
+    {
+        "friendly-name": "n-hentai",
+        "name": "n-hentai",
+        "imageurl": "imgs/n-hentai.png",
+        "url": "https://nhentai.to/",
+        "context-menu-item": [
+            {
+                "name": "GB",
+                "url": "https://nhentai.to/tag/gender-bender"
+            },
+            {
+                "name": "chinese",
+                "url": "https://nhentai.to/language/chinese"
+            }
+        ]
+    },
+    {
+        "friendly-name": "pica",
+        "name": "pica",
+        "imageurl": "imgs/pica.png",
+        "url": "https://manhuabika.com/",
+        "context-menu-item": [
+            {
+                "name": "catagroy",
+                "url": "https://manhuabika.com/pcat/"
+            }
+        ]
+    },
+    {
+        "friendly-name": "derpi",
+        "name": "derpi",
+        "imageurl": "imgs/derpi.png",
+        "url": "https://derpibooru.org/",
+        "context-menu-item": [
+            
+        ]
+    }
+]

@@ -47,7 +47,8 @@ function loadEmoji(curEmoji, curLinkName,){
     document.title = curLinkName;
     //将网页图标改成emoji curEmoji
     const favicon = document.querySelector('link[rel="icon"]');
-    favicon.href = `https://www.emojiall.com/en/header-svg/${curEmoji}.svg`;
+    // favicon.href = `https://www.emojiall.com/en/header-svg/${curEmoji}.svg`;
+    favicon.href = `data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>${curEmoji}</text></svg>`;
 }
 
 // 默认创建如下cookies
@@ -55,6 +56,7 @@ function checkCookie() {
     if (document.cookie === '') {
         addCookie('GPTS', 'icon_gpt.json|GPTS|🤖|linear-gradient(-200deg, #047272 0%, #1d1035 100%)')
         addCookie('watchTV', 'icon_data.json|视频站|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
+        addCookie('lewd', 'lewd.json|lewd|🥵|radial-gradient(ellipse farthest-corner at center top,#6410b3,#993a6e)')
         addCookie('_defaultjson', 'watchTV')
         console.log("🤖创建默认配置");
     }
