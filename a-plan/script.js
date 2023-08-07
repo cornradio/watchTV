@@ -6,6 +6,18 @@ pagemax = 1;
 // 执行创建select 列表
 checkCookie();
 createSelect();
+
+// 默认创建如下cookies
+function checkCookie() {
+    if (document.cookie === '') {
+        addCookie('watchTV', 'icon_data.json|视频站|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
+        addCookie('GPTS', 'icon_gpt.json|GPTS|🤖|linear-gradient(-200deg, #047272 0%, #1d1035 100%)')
+        addCookie('lewd', 'lewd.json|lewd|🥵|radial-gradient(ellipse farthest-corner at center top,#6410b3,#993a6e)')
+        addCookie('_defaultjson', 'watchTV')
+        console.log("🤖创建默认配置");
+    }
+}
+
 // var defaultvalue = document.querySelector("#selectContainer select").options[0].value;//获取默认配置（第一个cookie）
 // 获取_defaultjson cookie 中的 value
 // =使用get获取name的内容，如果又则把他的内容作为value返回。如果没有加载_defaultjson
@@ -24,7 +36,31 @@ function getUrlParamOrCookie() {
 var defaultvalue = getUrlParamOrCookie();
 loadCookie(defaultvalue);
 // 增加select 的 onchange trigger
-document.querySelector("#selectContainer select").setAttribute("onchange", "loadCookie(this.value)");
+document.querySelector("#selectContainer select").setAttribute("onchange", "redirectToURL(this.value)");
+// select onchange 使用
+function redirectToURL(value) {
+    if(value === 'clear'){
+        deleteAllCookies();
+        return;
+    }
+    var curLinkName = value;
+    window.location.href = `?name=${curLinkName}`;
+}
+
+function deleteAllCookies() {
+    var cookies = document.cookie.split(";");
+    for (var i = 0; i < cookies.length; i++) {
+        var cookie = cookies[i];
+        var eqPos = cookie.indexOf("=");
+        var name = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim();
+        deleteCookie(name);
+    }
+    alert("已删除全部Cookie,请刷新");
+}
+function deleteCookie(name) {
+    document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; ";
+}
+
 // cookie格式：xxx.json|Name|emoji|grabient(去除尾部分号)...
 function loadCookie(value) { // 获取名为value 的 cookie 的内容
     console.log("🤖加载配置：" + value)
@@ -51,16 +87,7 @@ function loadEmoji(curEmoji, curLinkName,){
     favicon.href = `data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>${curEmoji}</text></svg>`;
 }
 
-// 默认创建如下cookies
-function checkCookie() {
-    if (document.cookie === '') {
-        addCookie('GPTS', 'icon_gpt.json|GPTS|🤖|linear-gradient(-200deg, #047272 0%, #1d1035 100%)')
-        addCookie('watchTV', 'icon_data.json|视频站|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
-        addCookie('lewd', 'lewd.json|lewd|🥵|radial-gradient(ellipse farthest-corner at center top,#6410b3,#993a6e)')
-        addCookie('_defaultjson', 'watchTV')
-        console.log("🤖创建默认配置");
-    }
-}
+
 //checkCookie 用，加cookie
 function addCookie(name, value) {
     var expires = new Date();
@@ -75,6 +102,12 @@ function createSelect() {
     var selectContainer = document.getElementById("selectContainer");
     var selectElement = document.createElement("select");
     selectElement.id = "select-json-from-cookie";
+    var optionFirst = document.createElement("option");
+    // 添加一个编辑cookie的提示
+    optionFirst.text = 'Choose Json';
+    optionFirst.value = '';
+    selectElement.appendChild(optionFirst);
+    selectContainer.appendChild(selectElement);
     for (var i = 0; i < cookies.length; i++) {
         if (cookies[i].split("=")[0] == "_defaultjson") {
             continue; // 跳过存储默认配置用的cookie
@@ -83,16 +116,20 @@ function createSelect() {
         var optionValue = cookies[i].split("=")[0];
         var optionElement = document.createElement("option");
         let curEmoji = cookies[i].split("=")[1].split("|")[2];
+        // 如果是safari，emoji用不能正常显示，因为safari不允许在cookie中使用emoji
+        if (navigator.vendor === 'Apple Computer, Inc.') {
+            curEmoji = '😎';
+        }
         let curLinkName = optionText;
         document.querySelector("#emojiName").innerHTML += `<a href="?name=${curLinkName}">${curEmoji}</a> `;
         optionElement.text = optionText;
         optionElement.value = optionValue;
         selectElement.appendChild(optionElement);
     }
+    // 添加一个清楚所有cookie的
     var optionLast = document.createElement("option");
-    // 添加一个编辑cookie的提示
-    optionLast.text = '编辑cookie添加';
-    optionLast.value = '';
+    optionLast.text = '恢复默认cookie';
+    optionLast.value = 'clear';
     selectElement.appendChild(optionLast);
     selectContainer.appendChild(selectElement);
 }

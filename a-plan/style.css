@@ -199,7 +199,7 @@ a {
 
 @media screen and (max-width: 500px) {
     body {
-        background: #333334;
+        background: #333334 !important;
     }
     .controlbox {
         position: fixed;
