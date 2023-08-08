@@ -13,6 +13,7 @@ function checkCookie() {
         addCookie('watchTV', 'icon_data.json|watchTV|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
         addCookie('GPTS', 'icon_gpt.json|GPTS|🤖|linear-gradient(-200deg, #047272 0%, #1d1035 100%)')
         addCookie('lewd', 'lewd.json|lewd|🥵|radial-gradient(ellipse farthest-corner at center top,#6410b3,#993a6e)')
+        addCookie('forum', 'forum.json|forum|📢|')
         addCookie('_defaultjson', 'watchTV')
         console.log("🤖创建默认配置");
     }
