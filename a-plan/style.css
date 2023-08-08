@@ -8,16 +8,20 @@ body {
     font-family: "Roboto", sans-serif;
 }
 select{
-    color: #a5a5a5;
+    color: #ffffff6a;
     background: transparent;
     border: none;
     font-size: medium;
 }
-select:hover{
-    color: #eaeaea;
-    cursor: pointer;
-}
 
+#selectContainer select{
+    position: fixed;
+    top: 1em;
+    left: 1em;
+}
+#selectContainer:hover  select option{
+    background-color: #131313f5;
+}
 
 .controlbox {
     position: absolute;
@@ -110,12 +114,7 @@ header h1 strong {
     cursor: pointer;
 }
 
-#selectContainer select{
-    position: fixed;
-    top: 1em;
-    left: 1em;
-    color: #ffffff1f;
-}
+
 
 .icon {
     --iconsize: 128px;
@@ -199,7 +198,7 @@ a {
 
 @media screen and (max-width: 500px) {
     body {
-        background: #333334;
+        background: #333334 !important;
     }
     .controlbox {
         position: fixed;
@@ -214,7 +213,7 @@ a {
         box-shadow: none;
         width: 100%;
         height: auto;
-        top: 190px;
+        top: 20%;
         left: 0px;
         transform: none;
         padding-bottom: 90px;

@@ -1,0 +1,82 @@
+[
+    {
+        "friendly-name": "v2ex",
+        "name": "v2ex",
+        "imageurl": "imgs/v2ex.png",
+        "url": "https://www.v2ex.com/",
+        "context-menu-item": [
+            {
+                "name": "每日任务",
+                "url": "https://www.v2ex.com/mission/daily"
+            }
+        ]
+    }
+    ,
+    {
+        "friendly-name": "jandan",
+        "name": "jandan",
+        "imageurl": "imgs/jandan.png",
+        "url": "https://jandan.net/",
+        "context-menu-item": [
+        ]
+    }
+    ,
+    {
+        "friendly-name": "smzdm",
+        "name": "smzdm",
+        "imageurl": "imgs/smzdm.png",
+        "url": "https://www.smzdm.com/",
+        "context-menu-item": [
+            {
+                "name": "好价",
+                "url": "https://www.smzdm.com/jingxuan/"
+            }
+        ]
+    }
+    ,
+    {
+        "friendly-name": "NGA",
+        "name": "NGA",
+        "imageurl": "imgs/NGA.png",
+        "url": "https://bbs.nga.cn/",
+        "context-menu-item": [
+        ]
+    }
+    ,
+    {
+        "friendly-name": "appin",
+        "name": "appin",
+        "imageurl": "imgs/appin.png",
+        "url": "https://www.appinn.com/",
+        "context-menu-item": [
+        ]
+    }
+    ,
+    {
+        "friendly-name": "zhihu",
+        "name": "zhihu",
+        "imageurl": "imgs/zhihu.png",
+        "url": "https://www.zhihu.com/",
+        "context-menu-item": [
+            {
+                "name": "写文章",
+                "url": "https://zhuanlan.zhihu.com/write"
+            }
+        ]
+    }
+
+    ,
+    {
+        "friendly-name": "weibo",
+        "name": "weibo",
+        "imageurl": "imgs/weibo.png",
+        "url": "https://weibo.com/",
+        "context-menu-item": [
+            {
+                "name": "好价",
+                "url": "https://www.smzdm.com/jingxuan/"
+            }
+        ]
+    }
+
+]
