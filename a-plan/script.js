@@ -10,7 +10,7 @@ createSelect();
 // 默认创建如下cookies
 function checkCookie() {
     if (document.cookie === '') {
-        addCookie('watchTV', 'icon_data.json|视频站|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
+        addCookie('watchTV', 'icon_data.json|watchTV|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
         addCookie('GPTS', 'icon_gpt.json|GPTS|🤖|linear-gradient(-200deg, #047272 0%, #1d1035 100%)')
         addCookie('lewd', 'lewd.json|lewd|🥵|radial-gradient(ellipse farthest-corner at center top,#6410b3,#993a6e)')
         addCookie('_defaultjson', 'watchTV')
@@ -71,7 +71,14 @@ function loadCookie(value) { // 获取名为value 的 cookie 的内容
     loadJSON(values[0]); // 加载json
     document.querySelector("#bigName").innerHTML = values[1];
     // console.log("标题：" + values[1]);
-    let curEmoji = values[2];
+    let curEmoji = '';
+    if (values[2]!=undefined) {// 如果是safari，因为safari不允许在cookie中使用emoji,emoji 后面的所有内容会消失，所以用这个防止报错
+        curEmoji = values[2];
+    }
+    if(navigator.vendor === 'Apple Computer, Inc.'){//如果是AppleSafari设备，因为无法显示emoji，所以清空。
+        let emojitag = document.querySelector("#emojiName");
+        emojitag.style.display = 'none';
+    }
     let curLinkName = value;
     loadEmoji(curEmoji, curLinkName);
     // console.log("emoji：" + values[2]);
@@ -118,7 +125,7 @@ function createSelect() {
         let curEmoji = cookies[i].split("=")[1].split("|")[2];
         // 如果是safari，emoji用不能正常显示，因为safari不允许在cookie中使用emoji
         if (navigator.vendor === 'Apple Computer, Inc.') {
-            curEmoji = '😎';
+            curEmoji = '';
         }
         let curLinkName = optionText;
         document.querySelector("#emojiName").innerHTML += `<a href="?name=${curLinkName}">${curEmoji}</a> `;
