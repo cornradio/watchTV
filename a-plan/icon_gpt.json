@@ -10,19 +10,27 @@
                 "url": "https://cc.ai55.cc/"
             },
             {
-                "name": "AIchatOS",
-                "url": "https://chat.aichatos.top/#/chat"
-            },
-            {
                 "name": "bianjie",
                 "url": "https://c.binjie.fun/#/chat/"
-            },
+            }
+            ,
             {
-                "name": "berlin4h",
-                "url": "https://chat.berlin4h.top/"
+                "name": "AI天虎",
+                "url": "https://n8y5b.aitianhu.xyz/#/chat/1002"
+            }
+            ,
+            {
+                "name": "1.ai",
+                "url": "https://1.1ai.fun/"
+            }
+            ,
+            {
+                "name": "更多的GPT-3妙用",
+                "url": "https://gpt3demo.com/collection/popular"
             }
         ]
     },
+
     {
         "friendly-name": "ails",
         "name": "ails",
@@ -34,7 +42,8 @@
                 "url": "https://github.com/airyland/Pake/releases"
             }
         ]
-    },
+    }
+    ,
     {
         "friendly-name": "poe",
         "name": "poe",
@@ -56,10 +65,56 @@
             {
                 "name": "主站",
                 "url": "https://ic.free-chat.asia/"
-            },
+            }
+            ,
+            {
+                "name": "Prompt",
+                "url": "https://chatgpt1.nextweb.fun/#/new-chat"
+            }
+            ,
             {
                 "name": "无尽chat",
+                "url": "https://e1.free-chat.asia/"
+            }
+            ,
+            {
+                "name": "无尽chat（外网）",
                 "url": "https://endless-chat.netlify.app/"
+            }
+            ,
+            {
+                "name": "账号分享",
+                "url": "https://free-accounts.vercel.app/list"
+            }
+            ,
+            {
+                "name": "openai官方api",
+                "url": "https://platform.openai.com/docs/quickstart/build-your-application"
+            }
+        ]
+    }
+    ,
+
+
+    {
+        "friendly-name": "BAI",
+        "name": "BAI",
+        "imageurl": "imgs/BAI.png",
+        "url": "https://beta.theb.ai/home",
+        "context-menu-item": [
+            {
+                "name": "搜索引擎",
+                "url": "https://beta.theb.ai/search"
+            }
+            ,
+            {
+                "name": "绘图",
+                "url": "https://beta.theb.ai/image"
+            }
+            ,
+            {
+                "name": "绘图prompt",
+                "url": "https://prompthero.com/search?q=catgirl"
             }
         ]
     }
