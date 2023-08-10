@@ -160,8 +160,14 @@ function loadJSON(fileName) {
 
         // 创建页面占位符
         for (let i = 1; i <= totalPages; i++) {
-            let out = `<div class="page-${i}"></div>`
-            placeholder.innerHTML += out;
+            if(i===1){
+                let out = `<div class="page-${i}"></div>`
+                placeholder.innerHTML += out;
+                continue;
+            }else{
+                let out = `<div class="page-${i} hide"></div>`
+                placeholder.innerHTML += out;
+            }
         }
         for (let i = 0; i < icons.length; i++) {
             let icon = icons[i];
@@ -206,7 +212,6 @@ function loadJSON(fileName) {
             out += "</div>";
             menuHolder.innerHTML += out;
             console.log("icon and menus loaded");
-
         }
         // 如果最后一页图标数量不足10个，补充空白图标
         if (placeholder.children.length < 10) {
@@ -264,8 +269,6 @@ function setnum(x) {
     obj.innerHTML = x;
 }
 
-// 设置当前页面为第一页
-setnum(1);
 
 function pageup() {
     let obj = document.getElementById("pagenum");
