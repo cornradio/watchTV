@@ -18,6 +18,21 @@
         "imageurl": "imgs/jandan.png",
         "url": "https://jandan.net/",
         "context-menu-item": [
+            {
+                "name": "热榜",
+                "url": "https://jandan.net/top"
+            }
+            ,
+            {
+                "name": "无聊图",
+                "url": "https://jandan.net/pic"
+            }
+            ,
+            {
+                "name": "树洞",
+                "url": "https://jandan.net/treehole"
+            }
+
         ]
     }
     ,
@@ -49,6 +64,10 @@
         "imageurl": "imgs/appin.png",
         "url": "https://www.appinn.com/",
         "context-menu-item": [
+            {
+                "name": "小众论坛",
+                "url": "https://meta.appinn.net/"
+            }
         ]
     }
     ,
@@ -73,10 +92,27 @@
         "url": "https://weibo.com/",
         "context-menu-item": [
             {
+                "name": "微博热搜",
+                "url": "https://weibo.com/newlogin?tabtype=search&gid=&openLoginLayer=0&url="
+            }
+            ,
+            {
+                "name": "百度热搜",
+                "url": "https://top.baidu.com/board"
+            }
+        ]
+    }
+    ,
+    {
+        "friendly-name": "twitter",
+        "name": "twitter",
+        "imageurl": "imgs/twitter.png",
+        "url": "https://x.com/",
+        "context-menu-item": [
+            {
                 "name": "好价",
                 "url": "https://www.smzdm.com/jingxuan/"
             }
         ]
     }
-
 ]

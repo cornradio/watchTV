@@ -217,4 +217,30 @@
             }
         ]
     }
+    ,
+    {
+        "friendly-name": "iodraw",
+        "name": "iodraw",
+        "imageurl": "imgs/iodraw.png",
+        "url": "https://www.iodraw.com/",
+        "context-menu-item": [
+            {
+                "name": "拓扑图",
+                "url": "https://www.iodraw.com/diagram"
+            }
+        ]
+    }
+    ,
+    {
+        "friendly-name": "weread",
+        "name": "weread",
+        "imageurl": "imgs/weread.png",
+        "url": "https://weread.qq.com/",
+        "context-menu-item": [
+            {
+                "name": "可以导入自己的txt然后同步在电脑阅读！",
+                "url": ""
+            }
+        ]
+    }
 ]
