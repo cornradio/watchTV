@@ -60,7 +60,7 @@
         "friendly-name": "freechat",
         "name": "freechat",
         "imageurl": "imgs/freechat.png",
-        "url": "https://h.free-chat.asia/",
+        "url": "https://e1.free-chat.asia/",
         "context-menu-item": [
             {
                 "name": "主站",
@@ -73,12 +73,12 @@
             }
             ,
             {
-                "name": "无尽chat",
-                "url": "https://e1.free-chat.asia/"
+                "name": "旧版",
+                "url": "https://h.free-chat.asia/"
             }
             ,
             {
-                "name": "无尽chat（外网）",
+                "name": "endless chat（外网）",
                 "url": "https://endless-chat.netlify.app/"
             }
             ,
@@ -96,6 +96,19 @@
     ,
 
 
+    {
+        "friendly-name": "Anse",
+        "name": "Anse",
+        "imageurl": "imgs/Anse.png",
+        "url": "https://anse.free-chat.asia/",
+        "context-menu-item": [
+            {
+                "name": "搜索引擎",
+                "url": "https://beta.theb.ai/search"
+            }
+        ]
+    }
+    ,
     {
         "friendly-name": "BAI",
         "name": "BAI",
