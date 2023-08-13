@@ -245,6 +245,19 @@
     }
     ,
     {
+        "friendly-name": "攻防世界",
+        "name": "攻防世界",
+        "imageurl": "imgs/攻防世界.png",
+        "url": "https://adworld.xctf.org.cn/challenges/list",
+        "context-menu-item": [
+            {
+                "name": "可以导入自己的txt然后同步在电脑阅读！",
+                "url": ""
+            }
+        ]
+    }
+    ,
+    {
         "friendly-name": "chromewebstore",
         "name": "chromewebstore",
         "imageurl": "imgs/chromewebstore.png",
