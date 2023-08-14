@@ -238,9 +238,10 @@
         "url": "https://weread.qq.com/",
         "context-menu-item": [
             {
-                "name": "可以导入自己的txt然后同步在电脑阅读！",
-                "url": ""
+                "name": "QQ阅读",
+                "url": "https://book.qq.com/"
             }
+
         ]
     }
     ,
