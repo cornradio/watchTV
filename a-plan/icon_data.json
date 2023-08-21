@@ -259,6 +259,19 @@
     }
     ,
     {
+        "friendly-name": "freecodecamp",
+        "name": "freecodecamp",
+        "imageurl": "imgs/freecodecamp.png",
+        "url": "https://www.freecodecamp.org/learn/",
+        "context-menu-item": [
+            {
+                "name": "javascript",
+                "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures"
+            }
+        ]
+    }
+    ,
+    {
         "friendly-name": "chromewebstore",
         "name": "chromewebstore",
         "imageurl": "imgs/chromewebstore.png",
