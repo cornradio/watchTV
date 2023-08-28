@@ -1,0 +1,44 @@
+[
+{
+    "friendly-name": "攻防世界",
+    "name": "攻防世界",
+    "imageurl": "imgs/攻防世界.png",
+    "url": "https://adworld.xctf.org.cn/challenges/list",
+    "context-menu-item": [
+        {
+            "name": "可以导入自己的txt然后同步在电脑阅读！",
+            "url": ""
+        }
+    ]
+}
+,
+{
+    "friendly-name": "Grabient",
+    "name": "Grabient",
+    "imageurl": "imgs/grabient.png",
+    "url": "https://www.grabient.com/",
+    "context-menu-item": [
+    ]
+}
+,
+    {
+        "friendly-name": "emojiall",
+        "name": "emojiall",
+        "imageurl": "imgs/emojiall.png",
+        "url": "https://www.emojiall.com/zh-hans",
+        "context-menu-item": [
+            {
+                "name": "快速复制",
+                "url": "https://www.emojiall.com/zh-hans/copy"
+            },
+            {
+                "name": "小游戏",
+                "url": "https://www.emojiall.com/zh-hans/game-list"
+            },
+            {
+                "name": "组合梗",
+                "url": "https://www.emojiall.com/zh-hans/combine_list"
+            }
+        ]
+    }
+]
