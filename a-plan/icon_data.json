@@ -20,8 +20,8 @@
             }
             ,
             {
-                "name": "恶魔人",
-                "url": "http://www.zkk78.com/dongmanplay/1830-1-1.html"
+                "name": "星期三",
+                "url": "https://ddys.pro/wednesday/"
             }
         ]
     },
@@ -86,6 +86,10 @@
             {
                 "name": "稿件管理",
                 "url": "https://member.bilibili.com/platform/upload-manager/article"
+            },
+            {
+                "name": "搜索",
+                "url": "https://search.bilibili.com/all"
             },
             {
                 "name": "电影",
