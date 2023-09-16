@@ -3,15 +3,15 @@
         "friendly-name": "ddrk",
         "name": "ddrk",
         "imageurl": "imgs/ddrk.jpg",
-        "url": "https://ddys.art/",
+        "url": "https://ddys.pro/",
         "context-menu-item": [
             {
                 "name": "黑袍纠察队",
-                "url": "https://ddys.art/the-boys/"
+                "url": "https://ddys.pro/the-boys/"
             },
             {
                 "name": "rick&morty",
-                "url": "https://ddys.art/rick-and-morty/"
+                "url": "https://ddys.pro/rick-and-morty/"
             }
             ,
             {

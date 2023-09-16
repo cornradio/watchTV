@@ -229,17 +229,58 @@ function loadJSON(fileName) {
 
 // 右键菜单功能
 function addContextMenuListener(item) { // 选中时在鼠标位置显示
-    document.querySelector("#" + item + "-icon").oncontextmenu = function () {
+    let iconitem = document.querySelector("#" + item + "-icon")
+    
+    iconitem.oncontextmenu = function () {
         let contextElement = document.getElementById(item + "-menu");
         contextElement.style.top = (event.pageY - 10) + "px";
         contextElement.style.left = (event.pageX - 10) + "px";
+        removeActiveMenus();
         contextElement.classList.add("active");
         event.preventDefault();
     }
+
+    // 长按时显示菜单，用于手机
+    var isLongPress = false;
+    var longPressTimeout;
+
+    iconitem.addEventListener('mousedown', function () {
+        longPressTimeout = setTimeout(function () {
+            isLongPress = true;
+            console.log('长按按钮'+item+'，显示菜单');
+
+            let contextElement = document.getElementById(item + "-menu");
+            contextElement.style.top =  "10px";
+            contextElement.style.left = "10px";
+            removeActiveMenus();
+            contextElement.classList.add("active");
+            event.preventDefault();
+
+        }, 500); // 长按时间设定为500毫秒
+    });
+    iconitem.addEventListener('click', function(event) {
+        if (isLongPress) {
+            event.preventDefault();
+        }
+    });
+
+    iconitem.addEventListener('mouseup', function () {
+        clearTimeout(longPressTimeout);
+        if (!isLongPress) {
+            // 处理普通点击事件
+            event.preventDefault();
+            console.log('点击按钮');
+        }
+        isLongPress = false;
+        iconitem.classList.remove('active');
+    });
+
+
+
     // 点击外部清除
     window.addEventListener("click", function () {
         if (! onmobile) {
-            document.querySelector("#" + item + "-menu").classList.remove("active")
+            removeActiveMenus();
         }
     });
 }
@@ -248,6 +289,13 @@ function loadMenus(icons) {
     icons.forEach(icon => {
         let item = icon["name"];
         addContextMenuListener(item);
+    });
+}
+//清除多余的右键菜单
+function removeActiveMenus() {
+    var elements = document.querySelectorAll('[id$="-menu"]');
+    elements.forEach(function(element) {
+        element.classList.remove('active');
     });
 }
 

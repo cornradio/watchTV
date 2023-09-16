@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>longpress 示例</title>
+    <style>
+        .active {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="myButton" onclick="console.log('点击按钮');">长按我</button>
+
+    <script>
+        var button = document.getElementById('myButton');
+        var isLongPress = false;
+        var longPressTimeout;
+
+        button.addEventListener('mousedown', function () {
+            longPressTimeout = setTimeout(function () {
+                isLongPress = true;
+                button.classList.add('active');
+            }, 500); // 长按时间设定为500毫秒
+        });
+
+        button.addEventListener('mouseup', function () {
+            clearTimeout(longPressTimeout);
+            if (!isLongPress) {
+                // 处理普通点击事件
+            }
+            isLongPress = false;
+            button.classList.remove('active');
+        });
+
+        button.addEventListener('click', function(event) {
+        if (isLongPress) {
+            event.preventDefault();
+        }
+    });
+    </script>
+</body>
+
+</html>
