@@ -240,43 +240,6 @@ function addContextMenuListener(item) { // 选中时在鼠标位置显示
         event.preventDefault();
     }
 
-    // 长按时显示菜单，用于手机
-    var isLongPress = false;
-    var longPressTimeout;
-
-    iconitem.addEventListener('mousedown', function () {
-        longPressTimeout = setTimeout(function () {
-            isLongPress = true;
-            console.log('长按按钮'+item+'，显示菜单');
-
-            let contextElement = document.getElementById(item + "-menu");
-            contextElement.style.top =  "10px";
-            contextElement.style.left = "10px";
-            removeActiveMenus();
-            contextElement.classList.add("active");
-            event.preventDefault();
-
-        }, 500); // 长按时间设定为500毫秒
-    });
-    iconitem.addEventListener('click', function(event) {
-        if (isLongPress) {
-            event.preventDefault();
-        }
-    });
-
-    iconitem.addEventListener('mouseup', function () {
-        clearTimeout(longPressTimeout);
-        if (!isLongPress) {
-            // 处理普通点击事件
-            event.preventDefault();
-            console.log('点击按钮');
-        }
-        isLongPress = false;
-        iconitem.classList.remove('active');
-    });
-
-
-
     // 点击外部清除
     window.addEventListener("click", function () {
         if (! onmobile) {
@@ -360,6 +323,7 @@ document.addEventListener('wheel', (event) => {
 
 function gourl(url, iconName) {
     if (onmobile) {
+        removeActiveMenus();
         active_this(iconName, url);
     } else {
         window.open(url);
