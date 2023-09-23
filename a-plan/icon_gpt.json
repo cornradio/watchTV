@@ -131,4 +131,17 @@
             }
         ]
     }
+    ,
+    {
+        "friendly-name": "LobeHub",
+        "name": "LobeHub",
+        "imageurl": "imgs/LobeHub.png",
+        "url": "https://chat-preview.lobehub.com/chat#session=inbox",
+        "context-menu-item": [
+            {
+                "name": "my",
+                "url": "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"
+            }
+        ]
+    }
 ]

@@ -1,0 +1,10 @@
+[
+    {
+        "friendly-name": "sstlvpn",
+        "name": "sstlvpn",
+        "imageurl": "imgs/sstlvpn.png",
+        "url": "https://ssl.sscenter.sh.cn/prx/000/http/localhost/login/index.html",
+        "context-menu-item": [
+        ]
+    },
+]
