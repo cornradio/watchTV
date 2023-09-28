@@ -7,4 +7,94 @@
         "context-menu-item": [
         ]
     },
+    {
+        "friendly-name": "ywpt",
+        "name": "ywpt",
+        "imageurl": "imgs/ywpt.png",
+        "url": "http://192.168.250.54:7070/Modules/bm/LabDefault.aspx",
+        "context-menu-item": [
+            {
+                "name": "绩效查看",
+                "url": "http://192.168.250.54:7070/Modules/bm/Personal/ViewPointByProject.aspx"
+            },
+            {
+                "name": "设备预约",
+                "url": "http://192.168.250.54:7070/Modules/sm/DeviceManagement/DeviceBookList.aspx"
+            }
+        ]
+    },
+    {
+        "friendly-name": "dokuwiki",
+        "name": "dokuwiki",
+        "imageurl": "imgs/dokuwiki.png",
+        "url": "http://192.168.71.231:8000/dokuwiki/doku.php",
+        "context-menu-item": [
+        ]
+    },
+    {
+        "friendly-name": "alimail",
+        "name": "alimail",
+        "imageurl": "imgs/alimail.png",
+        "url": "https://mail.sscenter.sh.cn/",
+        "context-menu-item": [
+        ]
+    },
+
+    {
+        "friendly-name": "bangbang",
+        "name": "bangbang",
+        "imageurl": "imgs/bangbang.png",
+        "url": "http://192.168.76.249:8100/#/login",
+        "context-menu-item": [
+            {
+                "name": "operator/SStl@2021",
+                "url": "operator/SStl@2021"
+            }
+        ]
+    },
+
+    {
+        "friendly-name": "xray",
+        "name": "xray",
+        "imageurl": "imgs/xray.png",
+        "url": "https://192.168.1.151/login",
+        "context-menu-item": [
+            {
+                "name": "operator/SSC@sstl",
+                "url": "operator/SSC@sstl"
+            }
+        ]
+    },
+    {
+        "friendly-name": "waslearn",
+        "name": "waslearn",
+        "imageurl": "imgs/waslearn.png",
+        "url": "http://192.168.76.236:9000/#/",
+        "context-menu-item": [
+        ]
+    },
+    {
+        "friendly-name": "dengbaotools",
+        "name": "dengbaotools",
+        "imageurl": "imgs/dengbaotools.png",
+        "url": "http://124.223.57.166/dengbaoxxx/",
+        "context-menu-item": [
+        ]
+    }, 
+    {
+        "friendly-name": "cyberchef",
+        "name": "cyberchef",
+        "imageurl": "imgs/cyberchef.png",
+        "url": "https://gchq.github.io/CyberChef/",
+        "context-menu-item": [
+            {
+                "name": "github",
+                "url": "https://github.com/gchq/CyberChef"
+            },
+            {
+                "name": "webcheck",
+                "url": "https://web-check.xyz/"
+            },
+        ]
+    },
 ]
