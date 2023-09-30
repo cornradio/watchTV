@@ -117,13 +117,13 @@ header h1 strong {
 
 /* grid container */
 #icon-holder>div{
-    width: 85%;
+    width: 92%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 43px;
     display: grid;
     --iconsize: 128px;
-    --marginsize: 10px;
-    --marginsize2: 45px;
+    --marginsize: 5px;
+    --marginsize2: 53px;
     column-gap: var(--marginsize);
     row-gap: var(--marginsize2);
     justify-items: center;
