@@ -1,0 +1,282 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(ellipse farthest-corner at center top, #3b3b3b, #000000);
+    /*#26d6f5,#04506e*/
+    color: #8b9095;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+select{
+    color: #ffffff6a;
+    background: transparent;
+    border: none;
+    font-size: medium;
+}
+
+#selectContainer select{
+    position: fixed;
+    top: 1em;
+    left: 1em;
+}
+#selectContainer:hover  select option{
+    background-color: #131313f5;
+}
+
+.controlbox {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    /* 其他样式属性 */
+}
+.controlbox button {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(218, 215, 215);
+    border: none;
+    padding: 5px;
+    width: 30px;
+    /* border-radius: 5px; */
+}
+
+.controlbox button:hover {
+    border-radius: 10px;
+    background-color: rgba(3, 117, 135, 0.663);
+
+}
+
+.controlbox button:active {
+    background-color: rgba(131, 230, 246, 0.928);
+    color: rgb(131, 130, 130);
+}
+
+#pagenum {
+    background-color: transparent;
+
+    border: none;
+}
+
+.hide {
+    opacity: 0;
+    display: none !important;
+}
+
+.room {
+    color: black;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+header {
+    padding: 30px;
+    position: relative;
+    height: 70px;
+}
+
+header h1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #c0c6d0;
+}
+
+header h1 strong {
+    background: #8787872e;
+    border: 1px solid #7a7a7a69;
+    color: #fff;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 6px;
+    font-size: 83%;
+    line-height: 1;
+    position: relative;
+    top: -1px;
+    left: 2px;
+    cursor: pointer;
+}
+
+.app {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 950px;
+    height: 560px;
+    background: #00000033;
+    font-size: 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* grid container */
+#icon-holder>div{
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    --iconsize: 128px;
+    --marginsize: 10px;
+    --marginsize2: 45px;
+    column-gap: var(--marginsize);
+    row-gap: var(--marginsize2);
+    justify-items: center;
+	align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.icon{
+    --iconsize: 128px;
+    --marginsize: 48px;
+    height: var(--iconsize);
+    width: var(--iconsize);
+    background-color: #8686861c;
+    display: inline-block;
+    transition: 0.22s;
+    box-shadow: 1px 2px 4px rgb(0 0 0 / 10%), 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    background-size: contain;
+}
+
+.icon- {
+    --iconsize: 128px;
+    --marginsize: 48px;
+    height: var(--iconsize);
+    width: var(--iconsize);
+    margin-left: var(--marginsize) ;
+    margin-top: var(--marginsize);
+    background-color: #8686861c;
+    display: inline-block;
+    transition: 0.22s;
+    box-shadow: 1px 2px 4px rgb(0 0 0 / 10%), 2px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    background-size: contain;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    background-color: #f3f3f34b;
+    transition: 0.12s;
+
+}
+
+.icon:active {
+    transform: scale(1.1);
+    background-color: #f3f3f3;
+}
+
+
+.context-menu {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 10000;
+    width: 150px;
+    background: #ffffff8a;
+    border-radius: 5px;
+    transform-origin: top left;
+    backdrop-filter: blur(20px);
+    transform: scale(0);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.384);
+}
+
+.active {
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+
+}
+
+.context-menu .item {
+    padding: 6px 10px;
+    font-size: 15px;
+    color: rgb(3, 3, 3);
+    border-left: 2px double rgba(5, 219, 247, 0);
+}
+
+.context-menu .item:hover {
+    border-left: 6px solid rgba(1, 9, 10, 0.993);
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+.context-menu hr {
+    margin: 0px 0px;
+    border-color: rgba(7, 7, 7, 0.123);
+}
+
+a {
+    text-decoration: none;
+}
+
+.mobile {
+    font-size: x-large;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background: #222 !important;
+    }
+    header h1{
+        font-size: xx-large;
+        text-shadow: 0px 0px 30px #0e1104;
+    }
+
+    .controlbox {
+        position: fixed;
+        bottom: 10px;
+        right: 10px !important;
+        left: auto !important;
+        top:auto !important;
+        /* 其他样式属性 */
+    }
+    .controlbox button {
+        background-color: rgba(0, 0, 0, 0.1);
+        color: rgb(218, 215, 215);
+        border: none;
+        padding:20px 0;
+        width: 30px;
+        /* border-radius: 5px; */
+    }
+    .app {
+        background-color: transparent;
+        box-shadow: none;
+        width: 100%;
+        height: auto;
+        top: 20%;
+        left: 0px;
+        transform: none;
+        padding-bottom: 90px;
+    }
+    #icon-holder>div{
+        width: 70%;
+        min-width: 320px;
+        margin: auto;
+        margin-top: 50px;
+        display: grid;
+        --marginsize: 50px ;
+        row-gap: var(--marginsize);
+        justify-items: center;
+        align-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5, 80px);
+    }
+    .icon {
+        --iconsize: 70px !important; 
+        height: var(--iconsize);
+        width: var(--iconsize);
+        border-radius: 40%;
+    }
+}

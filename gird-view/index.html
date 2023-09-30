@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GridView Example</title>
+    <style>
+
+        body{
+            background-color: rgb(32, 32, 32);
+            color: white;
+        }
+        .grid-container {
+            background-color: rgb(0, 0, 0);
+            border: 5px solid rgba(255, 255, 255, 0.427);
+        }
+        /* grid父容器 写法1 强制行列宽度及数量*/
+        /* .grid-container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px 100px 100px 100px ;
+            grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        } */
+
+        /* grid父容器 写法2 强制行列宽度 自动数量*/
+        /* .grid-container {
+            display: grid;
+            grid-auto-rows: 100px;
+            grid-auto-columns: 100px;
+        } */
+        
+        /* grid父容器 写法3 几分之一法 fraction*/
+        /* 这里四个fr 就是变成每个1/4 */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 100px 100px 100px 100px 100px 100px;
+
+            /* justify-items: center;
+            align-items: center; */
+        }
+
+
+        .grid-item {
+            padding: 10px;
+            background-color: rgb(58, 1, 36);
+            border: 1px solid rgb(109, 109, 109);
+        }
+        /* 列[1-3)，行【1-2）的 gird1 ， 强制指定位置 */
+        /* .item1{
+            grid-column: 1 / 3;
+            grid-row: 1 / 2;
+        } */
+
+        /* 使用span定义块的大小，可以被其他的块挤走*/
+        /* .item2{
+            grid-column: span 2;
+            grid-row: span 1;
+        } */
+        
+        /* 使用area定义块的位置 row-start / column-start / row-end / column-end */
+        /* 强制指定位置 */
+        /* .item3{
+            grid-area: 1/5/ 1/7;
+        } */
+
+    </style>
+</head>
+
+<body>
+    <h2>Grid布局</h2>
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item item4">4</div>
+        <div class="grid-item item5">5</div>
+        <div class="grid-item item6">6</div>
+        <div class="grid-item item7">7</div>
+        <div class="grid-item item8">8</div>
+    </div>
+
+    <a href="https://www.youtube.com/watch?v=EiNiSFIPIQE" target="_blank" style="color: aquamarine;">youtube tutorial</a>
+</body>
+
+</html>
