@@ -1,4 +1,5 @@
 [
+
     {
         "friendly-name": "ddrk",
         "name": "ddrk",
@@ -208,22 +209,19 @@
         ]
     }
     ,
-
     {
-        "friendly-name": "weread",
-        "name": "weread",
-        "imageurl": "imgs/weread.png",
-        "url": "https://weread.qq.com/",
+        "friendly-name": "google",
+        "name": "google",
+        "imageurl": "imgs/google.png",
+        "url": "https://www.google.com/",
         "context-menu-item": [
             {
-                "name": "QQ阅读",
-                "url": "https://book.qq.com/"
-            }
-
+                "name": "google-hacking-database",
+                "url": "https://www.exploit-db.com/google-hacking-database"
+            },
         ]
-    }
+    },
 
-    ,
     {
         "friendly-name": "icloud",
         "name": "icloud",
@@ -249,6 +247,20 @@
                 "name": "查找iphone",
                 "url": "https://www.icloud.com.cn/find/"
             }
+        ]
+    }
+    ,    
+    {
+        "friendly-name": "weread",
+        "name": "weread",
+        "imageurl": "imgs/weread.png",
+        "url": "https://weread.qq.com/",
+        "context-menu-item": [
+            {
+                "name": "QQ阅读",
+                "url": "https://book.qq.com/"
+            }
+
         ]
     }
     ,
