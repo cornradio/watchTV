@@ -1,4 +1,6 @@
 [
+    
+
     {
         "friendly-name": "sstlvpn",
         "name": "sstlvpn",
@@ -82,6 +84,22 @@
         ]
     }, 
     {
+        "friendly-name": "webcheck",
+        "name": "webcheck",
+        "imageurl": "imgs/webcheck.png",
+        "url": "https://web-check.xyz/",
+        "context-menu-item": [
+        ]
+    },
+    {
+        "friendly-name": "fofa",
+        "name": "fofa",
+        "imageurl": "imgs/fofa.png",
+        "url": "https://fofa.info/",
+        "context-menu-item": [
+        ]
+    },
+    {
         "friendly-name": "cyberchef",
         "name": "cyberchef",
         "imageurl": "imgs/cyberchef.png",
@@ -94,7 +112,37 @@
             {
                 "name": "webcheck",
                 "url": "https://web-check.xyz/"
+            }
+        ]
+    },
+
+    {
+        "friendly-name": "cmd5",
+        "name": "cmd5",
+        "imageurl": "imgs/cmd5.png",
+        "url": "https://www.cmd5.com/",
+        "context-menu-item": [
+        ]
+    },
+    {
+        "friendly-name": "waybackmachine",
+        "name": "waybackmachine",
+        "imageurl": "imgs/waybackmachine.png",
+        "url": "https://archive.org/web/",
+        "context-menu-item": [
+        ]
+    },
+    {
+        "friendly-name": "google",
+        "name": "google",
+        "imageurl": "imgs/google.png",
+        "url": "https://www.google.com/",
+        "context-menu-item": [
+            {
+                "name": "google-hacking-database",
+                "url": "https://www.exploit-db.com/google-hacking-database"
             },
         ]
     },
+
 ]
