@@ -144,5 +144,13 @@
             },
         ]
     },
+    {
+        "friendly-name": "dnsdumper",
+        "name": "dnsdumper",
+        "imageurl": "imgs/dnsdumper.png",
+        "url": "https://dnsdumpster.com/",
+        "context-menu-item": [
+        ]
+    },
 
 ]
