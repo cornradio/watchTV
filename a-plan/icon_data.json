@@ -332,9 +332,9 @@
         "friendly-name": "tryhackme",
         "name": "tryhackme",
         "imageurl": "imgs/tryhackme.png",
-        "url": "https://www.iodraw.com/",
+        "url": "https://tryhackme.com/",
         "context-menu-item": [
-        ]
+        ] 
     }
 
 ]
