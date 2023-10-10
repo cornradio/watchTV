@@ -218,7 +218,7 @@
             {
                 "name": "google-hacking-database",
                 "url": "https://www.exploit-db.com/google-hacking-database"
-            },
+            }
         ]
     },
 
@@ -334,6 +334,20 @@
         "imageurl": "imgs/tryhackme.png",
         "url": "https://tryhackme.com/",
         "context-menu-item": [
+        ] 
+    }
+    ,
+
+    {
+        "friendly-name": "ponytown",
+        "name": "ponytown",
+        "imageurl": "imgs/ponytown.webp",
+        "url": "https://pony.town/",
+        "context-menu-item": [
+            {
+                "name": "derpi",
+                "url": "https://derpibooru.org/"
+            }
         ] 
     }
 
