@@ -82,12 +82,12 @@ function loadCookie(value) { // 获取名为value 的 cookie 的内容
         emojitag.style.display = 'none';
     }
     let curLinkName = value;
-    loadEmoji(curEmoji, curLinkName);
+    loadEmojiIcon(curEmoji, curLinkName);
     // console.log("emoji：" + values[2]);
     document.querySelector("body").style.background = values[3];
     // console.log("背景色：" + values[3]);
 }
-function loadEmoji(curEmoji, curLinkName,){
+function loadEmojiIcon(curEmoji, curLinkName,){
     //将网页的名称metadata改成 curLinkName
     document.title = curLinkName;
     //将网页图标改成emoji curEmoji
@@ -119,6 +119,9 @@ function createSelect() {
     selectContainer.appendChild(selectElement);
     for (var i = 0; i < cookies.length; i++) {
         if (cookies[i].split("=")[0] == "_defaultjson") {
+            continue; // 跳过存储默认配置用的cookie
+        }
+        if (cookies[i].split("=")[0].startsWith("_")) {
             continue; // 跳过存储默认配置用的cookie
         }
         var optionText = cookies[i].split("=")[0];
