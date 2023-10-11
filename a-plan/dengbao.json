@@ -152,5 +152,13 @@
         "context-menu-item": [
         ]
     },
-
+    {
+        "friendly-name": "tryhackme",
+        "name": "tryhackme",
+        "imageurl": "imgs/tryhackme.png",
+        "url": "https://tryhackme.com/",
+        "context-menu-item": [
+        ] 
+    }
+    ,
 ]
