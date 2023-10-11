@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Website</title>
         <style>
             html{
@@ -22,7 +24,7 @@
             油猴脚本下载地址：
             <a href="https://openuserjs.org/scripts/kasusa/night_bar ">openuserjs</a>
         </h1>
-        <!-- <style>
+        <style>
             #brightness-cover {
                 position: fixed;
                 top: 0;
@@ -37,24 +39,24 @@
             #brightness-controlbox{
                 position: fixed;
                 background-color: rgba(0, 0, 0, 0.5);
-                border-radius: 0 0  0 10px;
+                border-radius:10px 0 0  0 ;
                 padding: 5px;
-                top: 0px;
+                bottom: 0px;
                 right: 0px;
                 z-index: 1000;
                 opacity: .0;
-                transform: translateY(-90%);
+                transform: translateY(90%);
             }
             #brightness-controlbox:hover{
                 opacity: 1;
-                transform: translateY(0%);
+                transform: translateY(10%);
             }
-        </style> -->
-        <!-- <div id="brightness-cover">
+        </style>
+        <div id="brightness-cover">
         </div>
         <div id="brightness-controlbox" >
             <input type="range" min="0" max="65" value="0" class="slider" id="brightness-Range">
-        </div> -->
+        </div>
     </body>
 
     
@@ -66,39 +68,7 @@
 let a = document.body.appendChild(document.createElement("div"));
 a.innerHTML = 
 `
-<style>
-            #brightness-cover {
-                position: fixed;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0);
-                z-index: 999;
-                opacity: 0;
-                pointer-events:none;
-            }
-            #brightness-controlbox{
-                position: fixed;
-                background-color: rgba(0, 0, 0, 0.5);
-                border-radius: 0 0  0 10px;
-                padding: 5px;
-                top: 0px;
-                right: 0px;
-                z-index: 1000;
-                opacity: .0;
-                transform: translateY(-90%);
-            }
-            #brightness-controlbox:hover{
-                opacity: 1;
-                transform: translateY(0%);
-            }
-</style>
-<div id="brightness-cover">
-</div>
-<div id="brightness-controlbox" >
-    <input type="range" min="0" max="65" value="0" class="slider" id="brightness-Range">
-</div>
+
 `
 let slider = document.getElementById("brightness-Range");
 let output = document.getElementById("demo");
