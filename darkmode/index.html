@@ -61,6 +61,8 @@
 </html>
 
 <script>
+
+
 let a = document.body.appendChild(document.createElement("div"));
 a.innerHTML = 
 `
@@ -101,6 +103,18 @@ a.innerHTML =
 let slider = document.getElementById("brightness-Range");
 let output = document.getElementById("demo");
 slider.oninput = function() {
+    localStorage.setItem("brightness", this.value);
     document.querySelector("#brightness-cover").style = "opacity: " + this.value + "%" ;
+}
+console.log('🌙added brightness cover');
+
+// get the stored brightness
+try {
+    let oldBrightness =  localStorage.getItem("brightness");
+    slider.value = oldBrightness;
+    document.querySelector("#brightness-cover").style = "opacity: " + oldBrightness + "%" ;
+    console.log("🌙load stored brightness:" + oldBrightness )
+} catch (error) {
+    console.log("🌙stored brightness not found");
 }
 </script>
