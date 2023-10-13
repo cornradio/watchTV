@@ -6,6 +6,10 @@
         "url": "https://pornhub.com/",
         "context-menu-item": [
             {
+                "name": "The-List",
+                "url": "https://theporndude.com/"
+            },
+            {
                 "name": "GoodSearch",
                 "url": "https://www.pornmd.com/"
             }
@@ -115,7 +119,49 @@
         "imageurl": "imgs/derpi.png",
         "url": "https://derpibooru.org/",
         "context-menu-item": [
-            
+            {
+                "name": "rule34",
+                "url": "https://rule34.xxx/"
+            },
+            {
+                "name": "hentai-foundry",
+                "url": "https://www.hentai-foundry.com/?ref=porndude&enterAgree=1&size=0"
+            },
+            {
+                "name": "kemono-party",
+                "url": "https://kemono.party/"
+            },
+        ]
+    }
+    ,
+    {
+        "friendly-name": "civitai",
+        "name": "civitai",
+        "imageurl": "imgs/civitai.png",
+        "url": "https://civitai.com",
+        "context-menu-item": [
+            {
+                "name": "nsfw",
+                "url": "https://civitai.com/models?tag=nsfw"
+            },
+        ]
+    }
+    ,
+
+    {
+        "friendly-name": "wallheaven",
+        "name": "wallheaven",
+        "imageurl": "imgs/wallheaven.png",
+        "url": "https://wallhaven.cc/toplist",
+        "context-menu-item": [
+            {
+                "name": "NSFW",
+                "url": "https://wallhaven.cc/search?categories=111&purity=011&sorting=hot&order=desc&ai_art_filter=0&page=2"
+            },
+            {
+                "name": "NSFW-needlogin",
+                "url": "https://wallhaven.cc/search?categories=110&purity=001"
+            }
         ]
     }
 ]
