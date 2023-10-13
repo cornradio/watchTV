@@ -1,6 +1,7 @@
 body {
     height: 100vh;
     margin: 0;
+    background-size: cover !important;
     background: radial-gradient(ellipse farthest-corner at center top, #3b3b3b, #000000);
     /*#26d6f5,#04506e*/
     color: #8b9095;
