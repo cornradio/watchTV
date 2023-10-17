@@ -142,8 +142,37 @@
                 "name": "google-hacking-database",
                 "url": "https://www.exploit-db.com/google-hacking-database"
             },
+            {
+                "name": "site:xxx.com",
+                "url": "https://www.google.com/search?q=site:a.com"
+            },
+            {
+                "name": "inurl:admin",
+                "url": "https://www.google.com/search?q=inurl:admin"
+            },
+            {
+                "name": "filetype:pdf",
+                "url": "https://www.google.com/search?q=filetype:pdf"
+            },
+            {
+                "name": "intitle:admin",
+                "url": "https://www.google.com/search?q=intitle:admin"
+            },
         ]
     },
+    {
+        "friendly-name": "ipinfo",
+        "name": "ipinfo",
+        "imageurl": "imgs/ipinfo.png",
+        "url": "https://ipinfo.io/",
+        "context-menu-item": [
+            {
+                "name": "ip111.cn",
+                "url": "http://www.ip111.cn/"
+            }
+        ] 
+    }
+    ,
     {
         "friendly-name": "dnsdumper",
         "name": "dnsdumper",
@@ -161,4 +190,14 @@
         ] 
     }
     ,
+    {
+        "friendly-name": "speedtest",
+        "name": "speedtest",
+        "imageurl": "imgs/speedtest.png",
+        "url": "https://www.speedtest.net/",
+        "context-menu-item": [
+        ] 
+    }
+    ,
+
 ]
