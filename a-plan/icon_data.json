@@ -115,50 +115,18 @@
         ]
     },
     {
-        "friendly-name": "cctv",
-        "name": "cctv",
-        "imageurl": "imgs/cctv.jpg",
-        "url": "https://tv.cctv.com/live/cctv13",
+        "friendly-name": "alist",
+        "name": "alist",
+        "imageurl": "imgs/alist.png",
+        "url": "http://192.168.31.231:5244/",
         "context-menu-item": [
             {
-                "name": "CCTV1 综合",
-                "url": "https://tv.cctv.com/live/cctv1"
+                "name": "frp alist",
+                "url": "http://124.223.57.166:52444/w"
             },
             {
-                "name": "CCTV2 财经",
-                "url": "https://tv.cctv.com/live/cctv2"
-            },
-            {
-                "name": "CCTV4 国际",
-                "url": "https://tv.cctv.com/live/cctv4"
-            },
-            {
-                "name": "CCTV5 体育",
-                "url": "https://tv.cctv.com/live/cctv5"
-            },
-            {
-                "name": "CCTV6 电影",
-                "url": "https://tv.cctv.com/live/cctv6"
-            },
-            {
-                "name": "CCTV9 记录",
-                "url": "https://tv.cctv.com/live/cctvjilu"
-            },
-            {
-                "name": "CCTV10 科教",
-                "url": "https://tv.cctv.com/live/cctv10"
-            },
-            {
-                "name": "CCTV12 法治",
-                "url": "https://tv.cctv.com/live/cctv12"
-            },
-            {
-                "name": "CCTV13 新闻",
-                "url": "https://tv.cctv.com/live/cctv13"
-            },
-            {
-                "name": "CCTV14 少儿 ",
-                "url": "https://tv.cctv.com/live/cctvchild"
+                "name": "doc",
+                "url": "https://alist.nn.ci/zh/guide/"
             }
         ]
     },
@@ -258,6 +226,60 @@
             {
                 "name": "查找iphone",
                 "url": "https://www.icloud.com.cn/find/"
+            }
+            ,
+            {
+                "name": "onedrive",
+                "url": "https://onedrive.live.com/"
+            }
+        ]
+    }
+    ,
+    {
+        "friendly-name": "cctv",
+        "name": "cctv",
+        "imageurl": "imgs/cctv.jpg",
+        "url": "https://tv.cctv.com/live/cctv13",
+        "context-menu-item": [
+            {
+                "name": "CCTV1 综合",
+                "url": "https://tv.cctv.com/live/cctv1"
+            },
+            {
+                "name": "CCTV2 财经",
+                "url": "https://tv.cctv.com/live/cctv2"
+            },
+            {
+                "name": "CCTV4 国际",
+                "url": "https://tv.cctv.com/live/cctv4"
+            },
+            {
+                "name": "CCTV5 体育",
+                "url": "https://tv.cctv.com/live/cctv5"
+            },
+            {
+                "name": "CCTV6 电影",
+                "url": "https://tv.cctv.com/live/cctv6"
+            },
+            {
+                "name": "CCTV9 记录",
+                "url": "https://tv.cctv.com/live/cctvjilu"
+            },
+            {
+                "name": "CCTV10 科教",
+                "url": "https://tv.cctv.com/live/cctv10"
+            },
+            {
+                "name": "CCTV12 法治",
+                "url": "https://tv.cctv.com/live/cctv12"
+            },
+            {
+                "name": "CCTV13 新闻",
+                "url": "https://tv.cctv.com/live/cctv13"
+            },
+            {
+                "name": "CCTV14 少儿 ",
+                "url": "https://tv.cctv.com/live/cctvchild"
             }
         ]
     }
