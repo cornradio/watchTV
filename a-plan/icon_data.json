@@ -357,6 +357,10 @@
             {
                 "name": "拓扑图",
                 "url": "https://www.iodraw.com/diagram"
+            },
+            {
+                "name": "processOn",
+                "url": "https://www.processon.com/"
             }
         ]
     }
@@ -371,6 +375,31 @@
                 "name": "derpi",
                 "url": "https://derpibooru.org/"
             }
+        ] 
+    }
+    ,
+    {
+        "friendly-name": "Maps",
+        "name": "Maps",
+        "imageurl": "imgs/Maps.png",
+        "url": "https://www.google.com/maps/@31.2304,121.4738,11z?entry=ttu",
+        "context-menu-item": [
+            {
+                "name": "高德地图",
+                "url": "https://ditu.amap.com/"
+            },
+            {
+                "name": "百度地图",
+                "url": "https://map.baidu.com/"
+            },
+            {
+                "name": "谷歌地图",
+                "url": "https://www.google.com/maps/"
+            },
+            {
+                "name": "谷歌地球",
+                "url": "https://www.google.com/maps/"
+            },
         ] 
     }
 
