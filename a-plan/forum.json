@@ -103,6 +103,7 @@
         ]
     }
     ,
+
     {
         "friendly-name": "twitter",
         "name": "twitter",
@@ -113,6 +114,31 @@
                 "name": "好价",
                 "url": "https://www.smzdm.com/jingxuan/"
             }
+        ]
+    }
+    ,    {
+        "friendly-name": "xiaohongshu",
+        "name": "xiaohongshu",
+        "imageurl": "imgs/xiaohongshu.png",
+        "url": "https://www.xiaohongshu.com/",
+        "context-menu-item": [
+        ]
+    }
+    
+    ,    {
+        "friendly-name": "hellogithub",
+        "name": "hellogithub",
+        "imageurl": "imgs/hellogithub.png",
+        "url": "https://www.hellogithub.com/",
+        "context-menu-item": [
+        ]
+    }
+    ,    {
+        "friendly-name": "sspai",
+        "name": "sspai",
+        "imageurl": "imgs/sspai.png",
+        "url": "https://www.sspai.com/",
+        "context-menu-item": [
         ]
     }
 ]
