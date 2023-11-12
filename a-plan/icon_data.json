@@ -382,22 +382,22 @@
         "friendly-name": "Maps",
         "name": "Maps",
         "imageurl": "imgs/Maps.png",
-        "url": "https://www.google.com/maps/@31.2304,121.4738,11z?entry=ttu",
+        "url": "https://ditu.amap.com/",
         "context-menu-item": [
             {
-                "name": "高德地图",
+                "name": "高德",
                 "url": "https://ditu.amap.com/"
             },
             {
-                "name": "百度地图",
+                "name": "百度",
                 "url": "https://map.baidu.com/"
             },
             {
-                "name": "谷歌地图",
+                "name": "Google地图",
                 "url": "https://www.google.com/maps/"
             },
             {
-                "name": "谷歌地球",
+                "name": "Google地球",
                 "url": "https://www.google.com/maps/"
             },
         ] 
