@@ -144,4 +144,17 @@
             }
         ]
     }
+    ,
+    {
+        "friendly-name": "you",
+        "name": "you",
+        "imageurl": "imgs/you.webp",
+        "url": "https://you.com/",
+        "context-menu-item": [
+            {
+                "name": "my",
+                "url": "sk-"
+            }
+        ]
+    }
 ]
