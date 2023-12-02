@@ -16,16 +16,17 @@
             }
             ,
             {
-                "name": "无职转生",
-                "url": "http://www.zkk78.com/dongmanplay/5289-1-1.html"
-            }
-            ,
-            {
                 "name": "星期三",
                 "url": "https://ddys.pro/wednesday/"
             }
+            ,
+            {
+                "name": "紫可可动漫",
+                "url": "http://www.zkk78.com/"
+            }
         ]
     },
+
     {
         "friendly-name": "youtube",
         "name": "youtube",
@@ -415,5 +416,19 @@
             }
         ] 
     }
+    ,
+    {
+        "friendly-name": "zikeke",
+        "name": "zikeke",
+        "imageurl": "imgs/zikeke.png",
+        "url": "http://www.zkk78.com/",
+        "context-menu-item": [
+            {
+                "name": "无职转生",
+                "url": "http://www.zkk78.com/dongmanplay/5289-1-1.html"
+            }
+            ,
+        ]
+    },
 
 ]
