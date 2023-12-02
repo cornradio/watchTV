@@ -399,7 +399,20 @@
             {
                 "name": "Google地球",
                 "url": "https://www.google.com/maps/"
-            },
+            }
+        ] 
+    }
+    ,
+    {
+        "friendly-name": "Code",
+        "name": "Code",
+        "imageurl": "imgs/Code.png",
+        "url": "https://vscode.dev/",
+        "context-menu-item": [
+            {
+                "name": "下载code",
+                "url": "https://code.visualstudio.com/"
+            }
         ] 
     }
 
