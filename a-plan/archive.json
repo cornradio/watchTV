@@ -41,4 +41,58 @@
             }
         ]
     }
+
+    ,
+    {
+        "friendly-name": "LobeHub",
+        "name": "LobeHub",
+        "imageurl": "imgs/LobeHub.png",
+        "url": "https://chat-preview.lobehub.com/chat#session=inbox",
+        "context-menu-item": [
+            {
+                "name": "my",
+                "url": "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"
+            }
+        ]
+    },
+    
+
+    {
+        "friendly-name": "freechat",
+        "name": "freechat",
+        "imageurl": "imgs/freechat.png",
+        "url": "https://e1.free-chat.asia/",
+        "context-menu-item": [
+            {
+                "name": "主站",
+                "url": "https://ic.free-chat.asia/"
+            }
+            ,
+            {
+                "name": "Prompt",
+                "url": "https://chatgpt1.nextweb.fun/#/new-chat"
+            }
+            ,
+            {
+                "name": "旧版",
+                "url": "https://h.free-chat.asia/"
+            }
+            ,
+            {
+                "name": "endless chat（外网）",
+                "url": "https://endless-chat.netlify.app/"
+            }
+            ,
+            {
+                "name": "账号分享",
+                "url": "https://free-accounts.vercel.app/list"
+            }
+            ,
+            {
+                "name": "openai官方api",
+                "url": "https://platform.openai.com/docs/quickstart/build-your-application"
+            }
+        ]
+    }
+    ,
 ]

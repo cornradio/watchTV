@@ -11,8 +11,8 @@ createSelect();
 function checkCookie() {
     if (document.cookie === '') {
         addCookie('watchTV', 'icon_data.json|watchTV|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
-        addCookie('GPTS', 'icon_gpt.json|GPTS|🤖|linear-gradient(-200deg, #047272 0%, #1d1035 100%)')
-        addCookie('lewd', 'lewd.json|lewd|🔥|radial-gradient(at center top, rgb(255 123 137), rgb(55 0 0))')
+        addCookie('GPTS', 'icon_gpt.json|GPTS|🤖|linear-gradient(52deg, rgb(186 88 222) 0%, rgb(32 58 117) 100%)')
+        addCookie('lewd', 'lewd.json|lewd|🔥|radial-gradient(at center top, rgb(97 149 63), rgb(0 0 0))')
         addCookie('forum', 'forum.json|forum|📢|')
         addCookie('dengbao', 'dengbao.json|dengbao|🛡️|radial-gradient(ellipse farthest-corner at center top, #176980, #353333)')
         addCookie('_defaultjson', 'watchTV')
