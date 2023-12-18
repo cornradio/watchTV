@@ -122,6 +122,10 @@
         "imageurl": "imgs/cmd5.png",
         "url": "https://www.cmd5.com/",
         "context-menu-item": [
+            {
+                "name": "crackstation",
+                "url": "https://crackstation.net/"
+            },
         ]
     },
     {
@@ -195,6 +199,15 @@
         "name": "speedtest",
         "imageurl": "imgs/speedtest.png",
         "url": "https://www.speedtest.net/",
+        "context-menu-item": [
+        ] 
+    }
+    ,
+    {
+        "friendly-name": "devtoys",
+        "name": "devtoys",
+        "imageurl": "imgs/devtoys.png",
+        "url": "https://apps.microsoft.com/detail/9PGCV4V3BK4W?hl=zh-cn&gl=US",
         "context-menu-item": [
         ] 
     }

@@ -113,18 +113,5 @@
             }
         ]
     }
-    ,
-    {
-        "friendly-name": "openkey",
-        "name": "openkey",
-        "imageurl": "imgs/openkey1.png",
-        "url": "https://chat1201.openkey.cloud/",
-        "context-menu-item": [
-            {
-                "name": "水龙头（每天领key）",
-                "url": "https://faucet.openkey.cloud/s"
-            }
-        ]
-    }
 
 ]
