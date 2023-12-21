@@ -202,7 +202,16 @@
             }
         ]
     },
-
+    {
+        "friendly-name": "webclip",
+        "name": "webclip",
+        "imageurl": "imgs/webclip.png",
+        "url": "http://124.223.57.166/webclipboard/",
+        "context-menu-item": [
+            {
+            }
+        ]
+    },
     {
         "friendly-name": "icloud",
         "name": "icloud",
@@ -427,5 +436,6 @@
             }
         ]
     },
+
 
 ]
