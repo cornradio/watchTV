@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="toast.css">
+</head>
+<style>
+    body{
+        background-color: #000000;
+    }
+
+    #toastContainer {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 9999;
+        transition: all 0.3s ease-in-out;
+    }
+    .toast {
+        background-color: #f1f1f1;
+        border: 1px solid #afafaf;
+        color: #000000;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        padding: 10px 20px;
+        border-radius: 100px;
+        margin-bottom: 10px;
+        opacity: 0;
+        animation: float-in 0.3s ease-in-out;
+        /* transition: 0.3s ease-in-out; */
+    }
+    .toast.dark-mode{
+        background-color: #000;
+        border: 1px solid #4d4b4b;
+        color: #d8d8d8;
+    }
+    .toast.show {
+        opacity: 0.8;
+    }
+    .toast.hide {
+        animation: slide-out 0.5s ease-in-out;
+    }
+    @keyframes float-in {
+        0% {
+            transform: translateY(50px);
+        }
+        100% {
+            transform: translateY(0);
+        }
+    }
+    @keyframes slide-out {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-50px);
+            opacity: 0;
+        }
+    }
+</style>
+
+<body>
+    <button onclick="showToast('这是一个 toast 测试',true)">显示Toast</button>
+    <div id="toastContainer"></div>
+    <script src="toast.js"></script>
+</body>
+<script>
+    function showToast(textContent, darkMode) {
+        // 创建Toast元素
+        var toast = document.createElement('div');
+        toast.classList.add('toast');
+        toast.textContent = textContent;
+
+        // 将Toast添加到容器中
+        var container = document.getElementById('toastContainer');
+        container.appendChild(toast);
+
+        // 设置深色模式
+        if (darkMode) {
+            toast.classList.toggle('dark-mode');
+        }
+
+        // 显示Toast
+        setTimeout(function () {
+            toast.classList.add('show');
+        }, 30);
+
+        // 隐藏Toast
+        setTimeout(function () {
+            toast.classList.add('hide');
+            setTimeout(function () {
+                container.removeChild(toast);
+            }, 300);
+        }, 1000);
+    }
+</script>
+
+</html>
