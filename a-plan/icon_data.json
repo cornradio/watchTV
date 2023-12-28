@@ -189,17 +189,19 @@
         "url": "https://www.google.com/",
         "context-menu-item": [
             {
+                "name": "百度",
+                "url": "https://www.baidu.com/"
+            }
+            ,
+            {
                 "name": "google-hacking-database",
                 "url": "https://www.exploit-db.com/google-hacking-database"
             },
             {
-                "name": "google-hacking用法（知乎）",
+                "name": "google-hacking ",
                 "url": "https://zhuanlan.zhihu.com/p/400365865"
             },
-            {
-                "name": "百度",
-                "url": "https://www.baidu.com/"
-            }
+
         ]
     },
     {
@@ -209,7 +211,19 @@
         "url": "http://124.223.57.166/webclipboard/",
         "context-menu-item": [
             {
-            }
+                "name": "getnote.top",
+                "url": "https://getnote.top/"
+            },
+            {
+                "name": "netcut.cn",
+                "url": "https://netcut.cn/"
+            },
+            {
+                "name": "localsend",
+                "url": "https://localsend.org/"
+            },
+
+
         ]
     },
     {
@@ -218,6 +232,21 @@
         "imageurl": "imgs/icloud.png",
         "url": "https://www.icloud.com.cn/",
         "context-menu-item": [
+            {
+                "name": "坚果云",
+                "url": "https://www.jianguoyun.com/d/home#/"
+            }
+            ,
+            {
+                "name": "Onedrive",
+                "url": "https://onedrive.live.com/"
+            }
+            ,
+            {
+                "name": "百度网盘",
+                "url": "https://yun.baidu.com/disk/main"
+            }
+            ,
             {
                 "name": "备忘录",
                 "url": "https://www.icloud.com.cn/notes/"
@@ -315,6 +344,11 @@
         "url": "https://chrome.google.com/webstore/category/extensions",
         "context-menu-item": [
             {
+                "name": "crx搜搜",
+                "url": "https://www.crxsoso.com/b"
+            }
+            ,
+            {
                 "name": "wheel-smooth",
                 "url": "https://chrome.google.com/webstore/detail/chromium-wheel-smooth-scr/khpcanbeojalbkpgpmjpdkjnkfcgfkhb"
             }
@@ -358,23 +392,7 @@
     }
     ,
 
-    {
-        "friendly-name": "iodraw",
-        "name": "iodraw",
-        "imageurl": "imgs/iodraw.png",
-        "url": "https://www.iodraw.com/",
-        "context-menu-item": [
-            {
-                "name": "拓扑图",
-                "url": "https://www.iodraw.com/diagram"
-            },
-            {
-                "name": "processOn",
-                "url": "https://www.processon.com/"
-            }
-        ]
-    }
-    ,
+
     {
         "friendly-name": "ponytown",
         "name": "ponytown",
@@ -413,6 +431,73 @@
         ] 
     }
     ,
+
+    {
+        "friendly-name": "medium",
+        "name": "medium",
+        "imageurl": "imgs/medium.png",
+        "url": "http://medium.com/",
+        "context-menu-item": [
+            {
+                "name": "medium",
+                "url": "http://medium.com/"
+            }
+            ,
+            {
+                "name": "dev.to",
+                "url": "https://dev.to/"
+            }
+            ,
+            {
+                "name": "css-tricks",
+                "url": "https://css-tricks.com/"
+            }
+            ,
+            {
+                "name": "dribbble",
+                "url": "https://dribbble.com/"
+            }
+            ,
+        ]
+    },
+    {
+        "friendly-name": "tryhackme",
+        "name": "tryhackme",
+        "imageurl": "imgs/tryhackme.png",
+        "url": "https://tryhackme.com/",
+        "context-menu-item": [
+        ] 
+    }
+    ,
+    {
+        "friendly-name": "Tampermonkey",
+        "name": "Tampermonkey",
+        "imageurl": "imgs/Tampermonkey.png",
+        "url": "https://tryhackme.com/",
+        "context-menu-item": [
+            {
+                "name": "greasyfork",
+                "url": "https://greasyfork.org/zh-CN"
+            }
+            ,
+            {
+                "name": "sleazyfork",
+                "url": "https://sleazyfork.org/zh-CN"
+            }
+            ,
+            {
+                "name": "openuserjs",
+                "url": "https://openuserjs.org/"
+            }
+            ,
+            {
+                "name": "油小猴",
+                "url": "https://www.youxiaohou.com/"
+            }
+            ,
+        ] 
+    }
+    ,
     {
         "friendly-name": "Code",
         "name": "Code",
@@ -427,15 +512,20 @@
     }
     ,
     {
-        "friendly-name": "medium",
-        "name": "medium",
-        "imageurl": "imgs/medium.png",
-        "url": "http://medium.com/",
+        "friendly-name": "iodraw",
+        "name": "iodraw",
+        "imageurl": "imgs/iodraw.png",
+        "url": "https://www.iodraw.com/",
         "context-menu-item": [
             {
+                "name": "拓扑图",
+                "url": "https://www.iodraw.com/diagram"
+            },
+            {
+                "name": "processOn",
+                "url": "https://www.processon.com/"
             }
         ]
-    },
-
-
+    }
+    ,
 ]
