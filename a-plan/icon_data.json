@@ -473,7 +473,7 @@
         "friendly-name": "Tampermonkey",
         "name": "Tampermonkey",
         "imageurl": "imgs/Tampermonkey.png",
-        "url": "https://tryhackme.com/",
+        "url": "https://www.tampermonkey.net/",
         "context-menu-item": [
             {
                 "name": "greasyfork",
