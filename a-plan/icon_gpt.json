@@ -6,13 +6,13 @@
         "url": "https://github.com/xx025/carrot",
         "context-menu-item": [
             {
-                "name": "小导航",
-                "url": "https://cc.ai55.cc/"
+                "name": "AI天虎",
+                "url": "https://alo30k.aitianhu1.top/#/chat/1002"
             }
             ,
             {
-                "name": "AI天虎",
-                "url": "https://gujugz.aitianhu.com/#/chat/1002"
+                "name": "AIfree",
+                "url": "https://zb.aifree.site/"
             }
             ,
             {
@@ -21,14 +21,13 @@
             }
             ,
             {
-                "name": "更多的GPT-3妙用",
-                "url": "https://gpt3demo.com/collection/popular"
+                "name": "xyhelper",
+                "url": "https://chat.xyhelper.com.cn/#/chat"
             }
+            
+
         ]
     },
-
-
-
 
     {
         "friendly-name": "Anse",
@@ -65,19 +64,7 @@
             }
         ]
     },
-    {
-        "friendly-name": "you",
-        "name": "you",
-        "imageurl": "imgs/you.webp",
-        "url": "https://you.com/",
-        "context-menu-item": [
-            {
-                "name": "my",
-                "url": "sk-"
-            }
-        ]
-    }
-    ,
+
     {
         "friendly-name": "BAI",
         "name": "BAI",
@@ -101,15 +88,20 @@
         ]
     }
     ,
+
     {
-        "friendly-name": "ails",
-        "name": "ails",
-        "imageurl": "imgs/ails.png",
-        "url": "https://ai.ls/",
+        "friendly-name": "aivesa",
+        "name": "aivesa",
+        "imageurl": "imgs/aivesa.png",
+        "url": "https://aivesa.cn/",
         "context-menu-item": [
             {
-                "name": "客户端",
-                "url": "https://github.com/airyland/Pake/releases"
+                "name": "提示词",
+                "url": "https://www.askprompts.com/"
+            },
+            {
+                "name": "ai导航",
+                "url": "https://www.naviai.cn/"
             }
         ]
     }
