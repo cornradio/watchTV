@@ -170,25 +170,11 @@
         "friendly-name": "极速云",
         "name": "极速云",
         "imageurl": "imgs/极速云3.png",
-        "url": "https://www.极速.net/",
+        "url": "https://beibeicloud.shop/#/dashboard",
         "context-menu-item": [
             {
-                "name": "套餐",
-                "url": "https://www.xn--osv171g.net/#/plan"
-            },
-            {
-                "name": "流量统计",
-                "url": "https://www.xn--osv171g.net/#/traffic"
-            }
-            ,
-            {
-                "name": "推广链接",
-                "url": "https://www.xn--osv171g.net/#/register?code=KLll8Fx5"
-            }
-            ,
-            {
-                "name": "防走丢",
-                "url": "https://xn--kbtz0ztjtvlp.com/"
+                "name": "极速云-慢",
+                "url": "https://www.极速.net/"
             }
         ]
     }
