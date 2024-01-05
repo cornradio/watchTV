@@ -432,34 +432,7 @@
     }
     ,
 
-    {
-        "friendly-name": "medium",
-        "name": "medium",
-        "imageurl": "imgs/medium.png",
-        "url": "http://medium.com/",
-        "context-menu-item": [
-            {
-                "name": "medium",
-                "url": "http://medium.com/"
-            }
-            ,
-            {
-                "name": "dev.to",
-                "url": "https://dev.to/"
-            }
-            ,
-            {
-                "name": "css-tricks",
-                "url": "https://css-tricks.com/"
-            }
-            ,
-            {
-                "name": "dribbble",
-                "url": "https://dribbble.com/"
-            }
-            ,
-        ]
-    },
+
     {
         "friendly-name": "tryhackme",
         "name": "tryhackme",
