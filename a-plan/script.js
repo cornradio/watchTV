@@ -49,6 +49,7 @@ function redirectToURL(value) {
     window.location.href = `?name=${curLinkName}`;
 }
 
+//恢复默认cookie
 function deleteAllCookies() {
     var cookies = document.cookie.split(";");
     for (var i = 0; i < cookies.length; i++) {
@@ -57,7 +58,8 @@ function deleteAllCookies() {
         var name = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim();
         deleteCookie(name);
     }
-    alert("已删除全部Cookie,请刷新");
+    location.reload();
+    // alert("已删除全部Cookie,请刷新");
 }
 function deleteCookie(name) {
     document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; ";
@@ -307,10 +309,10 @@ function pagedown() {
 // https://www.freecodecamp.org/news/javascript-keycode-list-keypress-event-key-codes/
 document.addEventListener("keydown", (event) => {
     key = event.key;
-    if (key == "w" || key == "ArrowUp") {
+    if (key == "w" || key == "ArrowUp" || key == "k") {
         pageup();
     }
-    if (key == "s" || key == "ArrowDown") {
+    if (key == "s" || key == "ArrowDown"|| key == "j") {
         pagedown();
     }
 })
