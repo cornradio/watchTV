@@ -132,26 +132,6 @@
         ]
     },
     {
-        "friendly-name": "figma",
-        "name": "figma",
-        "imageurl": "imgs/figma.png",
-        "url": "https://figma.com/",
-        "context-menu-item": [
-            {
-                "name": "设计图",
-                "url": "https://www.figma.com/file/new"
-            },
-            {
-                "name": "白板",
-                "url": "https://www.figma.com/file/new?editor_type=whiteboard"
-            },
-            {
-                "name": "社区",
-                "url": "https://www.figma.com/community"
-            }
-        ]
-    },
-    {
         "friendly-name": "freecodecamp",
         "name": "freecodecamp",
         "imageurl": "imgs/freecodecamp.png",
@@ -165,23 +145,7 @@
     }
     ,
 
-    {
-        "friendly-name": "wallheaven",
-        "name": "wallheaven",
-        "imageurl": "imgs/wallheaven.png",
-        "url": "https://wallhaven.cc/toplist",
-        "context-menu-item": [
-            {
-                "name": "NSFW",
-                "url": "https://wallhaven.cc/search?categories=111&purity=011&sorting=hot&order=desc&ai_art_filter=0&page=2"
-            },
-            {
-                "name": "NSFW-needlogin",
-                "url": "https://wallhaven.cc/search?categories=110&purity=001&topRange=1M&sorting=toplist&order=desc&ai_art_filter=1&page=3"
-            }
-        ]
-    }
-    ,
+
     {
         "friendly-name": "google",
         "name": "google",
@@ -204,76 +168,7 @@
 
         ]
     },
-    {
-        "friendly-name": "webclip",
-        "name": "webclip",
-        "imageurl": "imgs/webclip.png",
-        "url": "http://124.223.57.166/webclipboard/",
-        "context-menu-item": [
-            {
-                "name": "getnote.top",
-                "url": "https://getnote.top/"
-            },
-            {
-                "name": "netcut.cn",
-                "url": "https://netcut.cn/"
-            },
-            {
-                "name": "localsend",
-                "url": "https://localsend.org/"
-            },
 
-
-        ]
-    },
-    {
-        "friendly-name": "icloud",
-        "name": "icloud",
-        "imageurl": "imgs/icloud.png",
-        "url": "https://www.icloud.com.cn/",
-        "context-menu-item": [
-            {
-                "name": "坚果云",
-                "url": "https://www.jianguoyun.com/d/home#/"
-            }
-            ,
-            {
-                "name": "Onedrive",
-                "url": "https://onedrive.live.com/"
-            }
-            ,
-            {
-                "name": "百度网盘",
-                "url": "https://yun.baidu.com/disk/main"
-            }
-            ,
-            {
-                "name": "备忘录",
-                "url": "https://www.icloud.com.cn/notes/"
-            }
-            ,
-            {
-                "name": "云盘",
-                "url": "https://www.icloud.com.cn/iclouddrive/"
-            }
-            ,
-            {
-                "name": "照片",
-                "url": "https://www.icloud.com.cn/photos/"
-            }
-            ,
-            {
-                "name": "查找iphone",
-                "url": "https://www.icloud.com.cn/find/"
-            }
-            ,
-            {
-                "name": "onedrive",
-                "url": "https://onedrive.live.com/"
-            }
-        ]
-    }
-    ,
     {
         "friendly-name": "cctv",
         "name": "cctv",
@@ -337,101 +232,6 @@
         ]
     }
     ,
-    {
-        "friendly-name": "chromewebstore",
-        "name": "chromewebstore",
-        "imageurl": "imgs/chromewebstore.png",
-        "url": "https://chrome.google.com/webstore/category/extensions",
-        "context-menu-item": [
-            {
-                "name": "crx搜搜",
-                "url": "https://www.crxsoso.com/b"
-            }
-            ,
-            {
-                "name": "wheel-smooth",
-                "url": "https://chrome.google.com/webstore/detail/chromium-wheel-smooth-scr/khpcanbeojalbkpgpmjpdkjnkfcgfkhb"
-            }
-            ,
-            {
-                "name": "Video Speed",
-                "url": "https://chrome.google.com/webstore/detail/video-speed-controller-vi/gaiceihehajjahakcglkhmdbbdclbnlf/related"
-            }
-            ,
-            {
-                "name": "Cookie-Editor",
-                "url": "https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm"
-            }
-            ,
-            {
-                "name": "Stylus",
-                "url": "https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne"
-            }
-            ,
-            {
-                "name": "Autofill",
-                "url": "https://chrome.google.com/webstore/detail/autofill/nlmmgnhgdeffjkdckmikfpnddkbbfkkk"
-            }
-            ,
-            {
-                "name": "wappalyzer",
-                "url": "https://chrome.google.com/webstore/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg"
-            }
-            ,
-            {
-                "name": "火山翻译",
-                "url": "https://chrome.google.com/webstore/detail/%E7%81%AB%E5%B1%B1%E7%BF%BB%E8%AF%91-%E5%88%92%E8%AF%8D%E5%92%8C%E7%BD%91%E9%A1%B5%E7%BF%BB%E8%AF%91/klgfhbiooeogdfodpopgppeadghjjemk"
-            }
-            ,
-            {
-                "name": "SponsorBlock",
-                "url": "https://chrome.google.com/webstore/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone"
-            }
-            
-        ]
-    }
-    ,
-
-
-    {
-        "friendly-name": "ponytown",
-        "name": "ponytown",
-        "imageurl": "imgs/ponytown.webp",
-        "url": "https://pony.town/",
-        "context-menu-item": [
-            {
-                "name": "derpi",
-                "url": "https://derpibooru.org/"
-            }
-        ] 
-    }
-    ,
-    {
-        "friendly-name": "Maps",
-        "name": "Maps",
-        "imageurl": "imgs/Maps.png",
-        "url": "https://ditu.amap.com/",
-        "context-menu-item": [
-            {
-                "name": "高德",
-                "url": "https://ditu.amap.com/"
-            },
-            {
-                "name": "百度",
-                "url": "https://map.baidu.com/"
-            },
-            {
-                "name": "Google地图",
-                "url": "https://www.google.com/maps/"
-            },
-            {
-                "name": "Google地球",
-                "url": "https://www.google.com/maps/"
-            }
-        ] 
-    }
-    ,
-
 
     {
         "friendly-name": "tryhackme",
@@ -442,63 +242,6 @@
         ] 
     }
     ,
-    {
-        "friendly-name": "Tampermonkey",
-        "name": "Tampermonkey",
-        "imageurl": "imgs/Tampermonkey.png",
-        "url": "https://www.tampermonkey.net/",
-        "context-menu-item": [
-            {
-                "name": "greasyfork",
-                "url": "https://greasyfork.org/zh-CN"
-            }
-            ,
-            {
-                "name": "sleazyfork",
-                "url": "https://sleazyfork.org/zh-CN"
-            }
-            ,
-            {
-                "name": "openuserjs",
-                "url": "https://openuserjs.org/"
-            }
-            ,
-            {
-                "name": "油小猴",
-                "url": "https://www.youxiaohou.com/"
-            }
-            ,
-        ] 
-    }
-    ,
-    {
-        "friendly-name": "Code",
-        "name": "Code",
-        "imageurl": "imgs/code.png",
-        "url": "https://vscode.dev/",
-        "context-menu-item": [
-            {
-                "name": "下载code",
-                "url": "https://code.visualstudio.com/"
-            }
-        ] 
-    }
-    ,
-    {
-        "friendly-name": "iodraw",
-        "name": "iodraw",
-        "imageurl": "imgs/iodraw.png",
-        "url": "https://www.iodraw.com/",
-        "context-menu-item": [
-            {
-                "name": "拓扑图",
-                "url": "https://www.iodraw.com/diagram"
-            },
-            {
-                "name": "processOn",
-                "url": "https://www.processon.com/"
-            }
-        ]
-    }
-    ,
+ 
+
 ]

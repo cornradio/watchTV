@@ -194,15 +194,7 @@
         ] 
     }
     ,
-    {
-        "friendly-name": "speedtest",
-        "name": "speedtest",
-        "imageurl": "imgs/speedtest.png",
-        "url": "https://www.speedtest.net/",
-        "context-menu-item": [
-        ] 
-    }
-    ,
+
     {
         "friendly-name": "devtoys",
         "name": "devtoys",

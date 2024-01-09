@@ -1,0 +1,17 @@
+[
+    {
+        "friendly-name": "ponytown",
+        "name": "ponytown",
+        "imageurl": "imgs/ponytown.webp",
+        "url": "https://pony.town/",
+        "context-menu-item": [
+            {
+                "name": "derpi",
+                "url": "https://derpibooru.org/"
+            }
+        ] 
+    }
+    ,
+
+
+]

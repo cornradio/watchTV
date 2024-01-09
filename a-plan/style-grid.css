@@ -88,20 +88,6 @@ header h1 {
     color: #c0c6d0;
 }
 
-header h1 strong {
-    background: #8787872e;
-    border: 1px solid #7a7a7a69;
-    color: #fff;
-    display: inline-block;
-    border-radius: 30px;
-    padding: 6px;
-    font-size: 83%;
-    line-height: 1;
-    position: relative;
-    top: -1px;
-    left: 2px;
-    cursor: pointer;
-}
 
 .app {
     position: relative;
@@ -281,3 +267,33 @@ a {
         border-radius: 40%;
     }
 }
+#bigName{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+}
+#emojiName a:hover{
+    font-size: xx-large;
+    color: #fff;
+}
+#emojiName a{
+    color: hsla(0, 0%, 100%, 0.3);
+    transition: .2s;
+}
+#emojiName{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* #emojiName {
+    background: #8787872e;
+    border: 1px solid #7a7a7a69;
+    color: #fff;
+    border-radius: 30px;
+    padding: 6px;
+    font-size: 83%;
+    line-height: 1;
+    position: relative;
+    top: -1px;
+    left: 2px;
+    cursor: pointer;
+} */
