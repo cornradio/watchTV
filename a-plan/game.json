@@ -12,6 +12,32 @@
         ] 
     }
     ,
+    {
+        "friendly-name": "poki",
+        "name": "poki",
+        "imageurl": "imgs/poki.png",
+        "url": "https://poki.com/zh",
+        "context-menu-item": [
 
-
+        ] 
+    }
+    ,
+    {
+        "friendly-name": "edclub",
+        "name": "edclub",
+        "imageurl": "imgs/edclub.png",
+        "url": "https://www.edclub.com/sportal/",
+        "context-menu-item": [
+        ] 
+    }
+    ,
+    {
+        "friendly-name": "tetrio",
+        "name": "tetrio",
+        "imageurl": "imgs/tetrio.png",
+        "url": "https://tetr.io/",
+        "context-menu-item": [
+        ] 
+    }
+    ,
 ]

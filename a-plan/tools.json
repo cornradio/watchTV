@@ -37,6 +37,15 @@
     }
     ,
     {
+        "friendly-name": "github",
+        "name": "github",
+        "imageurl": "imgs/github.png",
+        "url": "https://github.com",
+        "context-menu-item": [
+        ] 
+    }
+    ,
+    {
         "friendly-name": "webclip",
         "name": "webclip",
         "imageurl": "imgs/webclip.png",
@@ -212,19 +221,7 @@
         ] 
     }
     ,
-    {
-        "friendly-name": "Code",
-        "name": "Code",
-        "imageurl": "imgs/code.png",
-        "url": "https://vscode.dev/",
-        "context-menu-item": [
-            {
-                "name": "下载code",
-                "url": "https://code.visualstudio.com/"
-            }
-        ] 
-    }
-    ,
+
     {
         "friendly-name": "iodraw",
         "name": "iodraw",
@@ -248,6 +245,20 @@
         "imageurl": "imgs/speedtest.png",
         "url": "https://www.speedtest.net/",
         "context-menu-item": [
+        ] 
+    }
+    ,
+
+    {
+        "friendly-name": "Code",
+        "name": "Code",
+        "imageurl": "imgs/code.png",
+        "url": "https://vscode.dev/",
+        "context-menu-item": [
+            {
+                "name": "下载code",
+                "url": "https://code.visualstudio.com/"
+            }
         ] 
     }
     ,
