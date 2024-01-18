@@ -122,11 +122,11 @@
         "url": "http://192.168.31.231:5244/",
         "context-menu-item": [
             {
-                "name": "frp alist",
-                "url": "http://124.223.57.166:52444"
+                "name": "vpn alist",
+                "url": "http://10.0.8.5:5244"
             },
             {
-                "name": "doc",
+                "name": "官方doc",
                 "url": "https://alist.nn.ci/zh/guide/"
             }
         ]
@@ -242,6 +242,5 @@
         ] 
     }
     ,
- 
 
 ]
