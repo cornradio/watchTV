@@ -13,6 +13,19 @@
     }
     ,
     {
+        "friendly-name": "kook",
+        "name": "kook",
+        "imageurl": "imgs/kook.png",
+        "url": "https://www.kookapp.cn/app/",
+        "context-menu-item": [
+            {
+                "name": "MISS",
+                "url": "https://kook.top/SxeFxp"
+            }
+        ] 
+    }
+    ,
+    {
         "friendly-name": "poki",
         "name": "poki",
         "imageurl": "imgs/poki.png",
