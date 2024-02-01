@@ -36,15 +36,6 @@
     }
     ,
     {
-        "friendly-name": "edclub",
-        "name": "edclub",
-        "imageurl": "imgs/edclub.png",
-        "url": "https://www.edclub.com/sportal/",
-        "context-menu-item": [
-        ] 
-    }
-    ,
-    {
         "friendly-name": "tetrio",
         "name": "tetrio",
         "imageurl": "imgs/tetrio.png",

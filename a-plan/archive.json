@@ -95,4 +95,27 @@
         ]
     }
     ,
+    {
+        "friendly-name": "weread",
+        "name": "weread",
+        "imageurl": "imgs/weread.png",
+        "url": "https://weread.qq.com/",
+        "context-menu-item": [
+            {
+                "name": "QQ阅读",
+                "url": "https://book.qq.com/"
+            }
+
+        ]
+    }
+    ,
+    {
+        "friendly-name": "edclub",
+        "name": "edclub",
+        "imageurl": "imgs/edclub.png",
+        "url": "https://www.edclub.com/sportal/",
+        "context-menu-item": [
+        ] 
+    }
+    ,
 ]

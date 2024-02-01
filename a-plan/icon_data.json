@@ -26,6 +26,18 @@
             }
         ]
     },
+    {
+        "friendly-name": "iqiyi",
+        "name": "iqiyi",
+        "imageurl": "imgs/iqiyi.png",
+        "url": "https://www.iqiyi.com/",
+        "context-menu-item": [
+            {
+                "name": "历史记录",
+                "url": "https://www.iqiyi.com/u/record"
+            }
+        ]
+    },
 
     {
         "friendly-name": "youtube",
@@ -131,20 +143,6 @@
             }
         ]
     },
-    {
-        "friendly-name": "freecodecamp",
-        "name": "freecodecamp",
-        "imageurl": "imgs/freecodecamp.png",
-        "url": "https://www.freecodecamp.org/learn/",
-        "context-menu-item": [
-            {
-                "name": "javascript",
-                "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures"
-            }
-        ]
-    }
-    ,
-
 
     {
         "friendly-name": "google",
@@ -218,20 +216,6 @@
         ]
     }
     ,    
-    {
-        "friendly-name": "weread",
-        "name": "weread",
-        "imageurl": "imgs/weread.png",
-        "url": "https://weread.qq.com/",
-        "context-menu-item": [
-            {
-                "name": "QQ阅读",
-                "url": "https://book.qq.com/"
-            }
-
-        ]
-    }
-    ,
 
     {
         "friendly-name": "tryhackme",
