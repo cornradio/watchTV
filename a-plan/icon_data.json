@@ -70,6 +70,10 @@
         "url": "https://www.douyin.com/",
         "context-menu-item": [
             {
+                "name": "tiktok",
+                "url": "https://www.tiktok.com/"
+            },
+            {
                 "name": "up主后台",
                 "url": "https://creator.douyin.com/creator-micro/home"
             },
