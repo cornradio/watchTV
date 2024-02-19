@@ -3,8 +3,13 @@
         "friendly-name": "gpt-list",
         "name": "gpt-list",
         "imageurl": "imgs/gpt-list.png",
-        "url": "https://github.com/xx025/carrot",
+        "url": "https://chat.openai.com/",
         "context-menu-item": [
+            {
+                "name": "AI-推荐列表",
+                "url": "https://github.com/xx025/carrot"
+            }
+            ,
             {
                 "name": "AI天虎",
                 "url": "https://alo30k.aitianhu1.top/#/chat/1002"
@@ -21,8 +26,13 @@
             }
             ,
             {
-                "name": "xyhelper",
-                "url": "https://chat.xyhelper.com.cn/#/chat"
+                "name": "ichat助手",
+                "url": "https://chat.letdata.net/ichat/ny6p2ayqbi4"
+            }
+            ,
+            {
+                "name": "这些不用翻墙",
+                "url": "#å"
             }
             
 
@@ -33,16 +43,11 @@
         "friendly-name": "Anse",
         "name": "Anse",
         "imageurl": "imgs/Anse2.png",
-        "url": "https://anse.free-chat.asia/",
+        "url": "https://nav.xjai.top/",
         "context-menu-item": [
             {
-                "name": "旧版",
-                "url": "https://h.free-chat.asia/"
-            }
-            ,
-            {
-                "name": "旧版-国外",
-                "url": "https://endless-chat.vercel.app/"
+                "name": "Anse",
+                "url": "https://chatforai.store/"
             }
             ,
             {
@@ -103,6 +108,17 @@
                 "name": "ai导航",
                 "url": "https://www.naviai.cn/"
             }
+        ]
+    }
+    ,
+
+    {
+        "friendly-name": "tongyi",
+        "name": "tongyi",
+        "imageurl": "imgs/tongyi.png",
+        "url": "https://tongyi.aliyun.com/qianwen/",
+        "context-menu-item": [
+
         ]
     }
 

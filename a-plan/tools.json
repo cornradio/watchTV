@@ -262,6 +262,27 @@
         ] 
     }
     ,
+
+    {
+        "friendly-name": "photopea",
+        "name": "photopea",
+        "imageurl": "imgs/photopea.png",
+        "url": "https://www.photopea.com/",
+        "context-menu-item": [
+        ] 
+    }
+    ,
+
+    {
+        "friendly-name": "squoosh",
+        "name": "squoosh",
+        "imageurl": "imgs/squoosh.png",
+        "url": "https://squoosh.app/",
+        "context-menu-item": [
+        ]
+    }
+    ,
+
     {
         "friendly-name": "freecodecamp",
         "name": "freecodecamp",
