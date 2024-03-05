@@ -195,6 +195,16 @@
     }
     ,
 
+
+    {
+        "friendly-name": "hackthebox",
+        "name": "hackthebox",
+        "imageurl": "imgs/hackthebox.png",
+        "url": "https://app.hackthebox.com/home",
+        "context-menu-item": [
+        ] 
+    }
+    ,
     {
         "friendly-name": "devtoys",
         "name": "devtoys",
