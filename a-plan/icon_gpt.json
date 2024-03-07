@@ -121,5 +121,23 @@
 
         ]
     }
+    ,
+    {
+        "friendly-name": "phind",
+        "name": "phind",
+        "imageurl": "imgs/phind.png",
+        "url": "https://www.phind.com/agent?home=true",
+        "context-menu-item": [
+            {
+                "name": "search",
+                "url": "https://www.phind.com/search?home=true"
+            },
+            {
+                "name": "chat",
+                "url": "https://www.phind.com/agent?home=true"
+            }
+
+        ]
+    }
 
 ]
