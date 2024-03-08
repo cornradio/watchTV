@@ -240,6 +240,29 @@
     }
     ,
     {
+        "friendly-name": "yuquebiaoge",
+        "name": "yuquebiaoge",
+        "imageurl": "imgs/yuquebiaoge.png",
+        "url": "https://www.yuque.com/pingguoajie/wk48mo/cm1helqrdpnt61yg?singleDoc#PR4g",
+        "context-menu-item": [
+            {
+                "name": "安卓软件",
+                "url": "https://www.yuque.com/pingguoajie/wk48mo/yovoicgbcgdql060#Sk7K"
+            }
+            ,
+            {
+                "name": "浏览器插件",
+                "url": "https://www.yuque.com/pingguoajie/wk48mo/llpobcw93n3kf5uw"
+            }
+            ,
+            {
+                "name": "windows软件",
+                "url": "https://www.yuque.com/pingguoajie/wk48mo/cm1helqrdpnt61yg#PR4g"
+            }
+        ] 
+    }
+    ,
+    {
         "friendly-name": "speedtest",
         "name": "speedtest",
         "imageurl": "imgs/speedtest.png",
