@@ -222,11 +222,37 @@
     ,    
 
     {
-        "friendly-name": "tryhackme",
-        "name": "tryhackme",
-        "imageurl": "imgs/tryhackme.png",
-        "url": "https://tryhackme.com/",
+        "friendly-name": "soundcloud",
+        "name": "soundcloud",
+        "imageurl": "imgs/soundcloud.png",
+        "url": "https://soundcloud.com/discover",
         "context-menu-item": [
+        ] 
+    }
+    ,
+    {
+        "friendly-name": "yinghua",
+        "name": "yinghua",
+        "imageurl": "imgs/yinghua.png",
+        "url": "https://www.295dm.com/",
+        "context-menu-item": [
+            {
+                "name": "欧美动漫",
+                "url": "https://www.295dm.com/type/omeidongman.html"
+            }
+        ] 
+    }
+    ,
+    {
+        "friendly-name": "agetv",
+        "name": "agetv",
+        "imageurl": "imgs/agetv.jpg",
+        "url": "https://www.agedm.org/",
+        "context-menu-item": [
+            {
+                "name": "备用地址",
+                "url": "age.tv"
+            }
         ] 
     }
     ,
