@@ -41,6 +41,7 @@ function getUrlParamOrCookie() {
 var defaultvalue = getUrlParamOrCookie();
 loadCookie(defaultvalue);
 // 增加select 的 onchange trigger
+document.querySelector("#selectContainer select").value = defaultvalue;
 document.querySelector("#selectContainer select").setAttribute("onchange", "redirectToURL(this.value)");
 // select onchange 使用
 function redirectToURL(value) {
@@ -308,15 +309,38 @@ function pagedown() {
 
     setnum(num);
 }
-// 翻页按键监听
+// 上下、ws = 翻页
+// 键盘左右 = select的选项+-1
+// enter = 打开select的选项
+
 // https://www.freecodecamp.org/news/javascript-keycode-list-keypress-event-key-codes/
 document.addEventListener("keydown", (event) => {
     key = event.key;
+    
     if (key == "w" || key == "ArrowUp" || key == "k") {
         pageup();
     }
     if (key == "s" || key == "ArrowDown"|| key == "j") {
         pagedown();
+    }
+    if (key == "ArrowLeft" || key == "a") {
+        let select = document.querySelector("#selectContainer select")
+        let index = select.selectedIndex;
+        if (index > 0) {
+            select.selectedIndex = index - 1;
+        }
+    }
+    if (key == "ArrowRight" || key == "d") {
+        let select = document.querySelector("#selectContainer select")
+        let index = select.selectedIndex;
+        if (index < select.options.length - 1) {
+            select.selectedIndex = index + 1;
+        }
+    }
+    //if enter hit
+    if (key == "Enter") {
+        let select = document.querySelector("#selectContainer select")
+        redirectToURL(select.value);
     }
 })
 // 翻页滚轮监听（很好玩
@@ -359,3 +383,4 @@ function switch_onmoble() {
     }
     console.log('onmobile' + onmobile)
 }
+
