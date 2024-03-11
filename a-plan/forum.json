@@ -102,6 +102,11 @@
             }
             ,
             {
+                "name": "codepen",
+                "url": "https://codepen.io/"
+            }
+            ,
+            {
                 "name": "css-tricks",
                 "url": "https://css-tricks.com/"
             }
@@ -144,6 +149,15 @@
             }
         ]
     }
+    ,    {
+        "friendly-name": "reddit",
+        "name": "reddit",
+        "imageurl": "imgs/reddit.png",
+        "url": "https://www.reddit.com/",
+        "context-menu-item": [
+        ]
+    }
+    
     ,    {
         "friendly-name": "xiaohongshu",
         "name": "xiaohongshu",
