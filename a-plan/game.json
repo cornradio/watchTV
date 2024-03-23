@@ -44,4 +44,15 @@
         ] 
     }
     ,
+    {
+        "friendly-name": "discord",
+        "name": "discord",
+        "imageurl": "imgs/discord.png",
+        "url": "https://discord.com/channels/@me",
+        "context-menu-item": [
+            {
+            }
+        ]
+    }
+    ,
 ]
