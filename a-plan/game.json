@@ -55,4 +55,15 @@
         ]
     }
     ,
+    {
+        "friendly-name": "medaltv",
+        "name": "medaltv",
+        "imageurl": "imgs/medaltv.png",
+        "url": "https://medal.tv/zh-Hans",
+        "context-menu-item": [
+            {
+            }
+        ]
+    }
+    ,
 ]
