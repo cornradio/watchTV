@@ -139,5 +139,23 @@
 
         ]
     }
+    ,
+    {
+        "friendly-name": "metaso",
+        "name": "metaso",
+        "imageurl": "imgs/metaso.png",
+        "url": "https://metaso.cn/",
+        "context-menu-item": [
+            {
+                "name": "search",
+                "url": "https://www.phind.com/search?home=true"
+            },
+            {
+                "name": "chat",
+                "url": "https://www.phind.com/agent?home=true"
+            }
+
+        ]
+    }
 
 ]
