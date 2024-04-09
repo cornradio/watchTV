@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LocalStorage Demo</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  pre{
+    font-family: 'consolas', Courier, monospace;
+    border: 3px solid #ddd;
+    padding: 2em;
+  }
+</style>
+</head>
+<body>
+
+<h1>LocalStorage Demo</h1>
+
+<button id="addBtn">Add to LocalStorage</button>
+<button id="deleteBtn">Delete from LocalStorage</button>
+<button id="showBtn">Show or Reload LocalStorage</button>
+<pre>
+setkey:
+localStorage.setItem(itemName, itemValue);
+
+getkey:
+localStorage.getItem(itemName);
+
+removekey:
+localStorage.removeItem(itemName);
+</pre>
+
+<div id="output"></div>
+
+<script>
+  // 添加到LocalStorage
+  document.getElementById('addBtn').addEventListener('click', function() {
+    var itemName = prompt('Enter item name:');
+    if (itemName) {
+      var itemValue = prompt('Enter item value:');
+      if (itemValue) {
+        localStorage.setItem(itemName, itemValue);// 这句是重点
+        alert('Data added to LocalStorage!');
+      }
+    }
+  });
+
+  // 从LocalStorage删除
+  document.getElementById('deleteBtn').addEventListener('click', function() {
+    var itemName = prompt('Enter item name to delete:');
+    if (itemName && localStorage.getItem(itemName)) {
+      localStorage.removeItem(itemName);// 这句是重点
+      alert('Data removed from LocalStorage!');
+    } else {
+      alert('Item not found in LocalStorage!');
+    }
+  });
+
+  // 展示LocalStorage中的数据
+  document.getElementById('showBtn').addEventListener('click', function() {
+    let keys = Object.keys(localStorage);
+    let output = [];
+    keys.forEach(key => {
+        output.push({k:key, v:localStorage.getItem(key)})
+    });
+    console.log(output);
+    // --- also show table in the browser
+    var outputDiv = document.getElementById('output');
+    if (keys.length > 0) {
+      var table = '<table><tr><th>Item Name</th><th>Item Value</th></tr>';
+      keys.forEach(function(key) {
+        table += '<tr><td>' + key + '</td><td>' + localStorage.getItem(key) + '</td></tr>';
+      });
+      table += '</table>';
+      outputDiv.innerHTML = table;
+    } else {
+      outputDiv.innerHTML = 'No data found in LocalStorage.';
+    }
+  });
+</script>
+
+</body>
+</html>
