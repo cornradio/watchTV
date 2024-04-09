@@ -1,6 +1,6 @@
 // 默认创建如下localStorage item
 function checkLS() {
-    if (localStorage.length === 0) {
+    if (localStorage.length === 0 || localStorage.getItem('tv_archive') === null){
         localStorage.setItem('tv_archive', 'archive.json|archive|🗄️|')
         localStorage.setItem('tv_dengbao', 'dengbao.json|dengbao|🛡️|radial-gradient(ellipse farthest-corner at center top, #176980, #353333)')
         localStorage.setItem('tv_forum', 'forum.json|forum|📢|')
@@ -30,7 +30,11 @@ function getUrlParamOrLS() {
 // select onchange 使用
 function redirectToURL(value) {
     if (value === 'clear') {
-        localStorage.clear();
+        Object.keys(localStorage).forEach( (key) => {
+            if (key.startsWith("tv_")) {
+                localStorage.removeItem(key);
+            }
+        });
         return;
     }
     var curLinkName = value;
