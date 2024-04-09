@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Cookies and Local Storage</title>
+</head>
+
+<body>
+
+    <h1>Delete Cookies and Local Storage</h1>
+
+    <button onclick="deleteCookiesAndLocalStorage()">Delete Cookies and Local Storage</button>
+
+    <div id="deletedInfo"></div>
+
+    <script>
+        function deleteCookiesAndLocalStorage() {
+            var deletedInfo = document.getElementById("deletedInfo");
+            var deletedCookies = document.cookie.split(";").map(function (cookie) {
+                return "<tr><td>" + cookie.trim().split("=")[0] + "</td></tr>";
+            }).join("");
+
+            var deletedLocalStorage = Object.keys(localStorage).map(function (key) {
+                return "<tr><td>" + key + "</td></tr>";
+            }).join("");
+
+            deletedInfo.innerHTML = "<p>Deleted Cookies:</p><table>" + deletedCookies + "</table><p>Deleted Local Storage:</p><table>" + deletedLocalStorage + "</table>";
+
+            // 删除所有 cookie
+            var cookies = document.cookie.split("; ");
+            for (var i = 0; i < cookies.length; i++) {
+                var cookie = cookies[i];
+                var eqPos = cookie.indexOf("=");
+                var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+                document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+            }
+
+            // 清空 local storage
+            localStorage.clear();
+
+            // 显示已删除的内容
+        }
+    </script>
+
+</body>
+
+</html>
