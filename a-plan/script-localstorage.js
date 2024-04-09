@@ -1,14 +1,14 @@
 // 默认创建如下localStorage item
 function checkLS() {
     if (localStorage.length === 0) {
-        localStorage.setItem('archive', 'archive.json|archive|🗄️|')
-        localStorage.setItem('dengbao', 'dengbao.json|dengbao|🛡️|radial-gradient(ellipse farthest-corner at center top, #176980, #353333)')
-        localStorage.setItem('forum', 'forum.json|forum|📢|')
-        localStorage.setItem('game', 'game.json|game|🕹️|')
-        localStorage.setItem('gpts', 'icon_gpt.json|GPTS|🤖|linear-gradient(52deg, rgb(186 88 222) 0%, rgb(32 58 117) 100%)')
-        localStorage.setItem('lewd', 'lewd.json|lewd|🔥|radial-gradient(at center top, rgb(97 149 63), rgb(0 0 0))')
-        localStorage.setItem('tools', 'tools.json|tools|🔧|')
-        localStorage.setItem('watchTV', 'icon_data.json|watchTV|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
+        localStorage.setItem('tv_archive', 'archive.json|archive|🗄️|')
+        localStorage.setItem('tv_dengbao', 'dengbao.json|dengbao|🛡️|radial-gradient(ellipse farthest-corner at center top, #176980, #353333)')
+        localStorage.setItem('tv_forum', 'forum.json|forum|📢|')
+        localStorage.setItem('tv_game', 'game.json|game|🕹️|')
+        localStorage.setItem('tv_gpts', 'icon_gpt.json|GPTS|🤖|linear-gradient(52deg, rgb(186 88 222) 0%, rgb(32 58 117) 100%)')
+        localStorage.setItem('tv_lewd', 'lewd.json|lewd|🔥|radial-gradient(at center top, rgb(97 149 63), rgb(0 0 0))')
+        localStorage.setItem('tv_tools', 'tools.json|tools|🔧|')
+        localStorage.setItem('tv_watchTV', 'icon_data.json|watchTV|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
         localStorage.setItem('_defaultjson', 'watchTV')
         console.log("🤖创建默认配置");
     }
@@ -40,7 +40,7 @@ function redirectToURL(value) {
 // LS格式：xxx.json|Name|emoji|grabient(去除尾部分号)...
 function loadLS(value) {
     console.log("🤖加载配置：" + value)
-    var ls = localStorage.getItem(value);
+    var ls = localStorage.getItem("tv_" + value);
     let values = ls.split("|");
     console.log("文件名：" + values[0]);
     loadJSON(values[0]); // 加载json
@@ -78,9 +78,10 @@ function createSelect() {
     for (var i = 0; i < keys.length; i++) {
         key = keys[i];
         value = localStorage.getItem(key);
-        if (key == "_defaultjson"||key.startsWith("_")) {
+        if (!key.startsWith("tv_") ) {
             continue;
         }
+        key = key.replace("tv_", "");
         var optionText = key;
         var optionValue = key;
         var optionElement = document.createElement("option");
