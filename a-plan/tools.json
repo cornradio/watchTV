@@ -42,6 +42,10 @@
         "imageurl": "imgs/github.png",
         "url": "https://github.com",
         "context-menu-item": [
+            {
+                "name": "HelloGitHub 第一期",
+                "url": "https://hellogithub.com/periodical/volume/1"
+            },
         ] 
     }
     ,
