@@ -322,4 +322,39 @@
             }
         ]
     }
+    ,
+
+    {
+        "friendly-name": "telegram",
+        "name": "telegram",
+        "imageurl": "imgs/telegram.png",
+        "url": "https://web.telegram.org/a/",
+        "context-menu-item": [
+            {
+            }
+        ]
+    }
+    ,
+
+    {
+        "friendly-name": "notion",
+        "name": "notion",
+        "imageurl": "imgs/notion.png",
+        "url": "https://www.notion.so/",
+        "context-menu-item": [
+            {
+            }
+        ]
+    }
+    ,
+    {
+        "friendly-name": "ipchecking",
+        "name": "ipchecking",
+        "imageurl": "imgs/ipchecking.png",
+        "url": "https://ipcheck.ing/#/",
+        "context-menu-item": [
+            {
+            }
+        ]
+    }
 ]
