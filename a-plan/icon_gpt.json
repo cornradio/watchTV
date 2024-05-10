@@ -123,6 +123,24 @@
     }
     ,
     {
+        "friendly-name": "metaso",
+        "name": "metaso",
+        "imageurl": "imgs/metaso.png",
+        "url": "https://metaso.cn/",
+        "context-menu-item": [
+            {
+                "name": "search",
+                "url": "https://www.phind.com/search?home=true"
+            },
+            {
+                "name": "chat",
+                "url": "https://www.phind.com/agent?home=true"
+            }
+
+        ]
+    }
+    ,
+    {
         "friendly-name": "phind",
         "name": "phind",
         "imageurl": "imgs/phind.png",
@@ -141,21 +159,15 @@
     }
     ,
     {
-        "friendly-name": "metaso",
-        "name": "metaso",
-        "imageurl": "imgs/metaso.png",
-        "url": "https://metaso.cn/",
+        "friendly-name": "Kimi",
+        "name": "Kimi",
+        "imageurl": "imgs/Kimi.jpg",
+        "url": "https://kimi.moonshot.cn/",
         "context-menu-item": [
-            {
-                "name": "search",
-                "url": "https://www.phind.com/search?home=true"
-            },
-            {
-                "name": "chat",
-                "url": "https://www.phind.com/agent?home=true"
-            }
 
         ]
     }
+
+
 
 ]
