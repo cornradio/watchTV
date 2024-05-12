@@ -1,5 +1,17 @@
 [
     {
+        "friendly-name": "ipchecking",
+        "name": "ipchecking",
+        "imageurl": "imgs/ipchecking.png",
+        "url": "https://ipcheck.ing/#/",
+        "context-menu-item": [
+            {
+            }
+        ]
+    }
+    ,
+
+    {
         "friendly-name": "figma",
         "name": "figma",
         "imageurl": "imgs/figma.png",
@@ -346,15 +358,5 @@
             }
         ]
     }
-    ,
-    {
-        "friendly-name": "ipchecking",
-        "name": "ipchecking",
-        "imageurl": "imgs/ipchecking.png",
-        "url": "https://ipcheck.ing/#/",
-        "context-menu-item": [
-            {
-            }
-        ]
-    }
+
 ]

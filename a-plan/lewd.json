@@ -46,6 +46,27 @@
         ]
     },
     {
+        "friendly-name": "beeg",
+        "name": "beeg",
+        "imageurl": "imgs/beeg.png",
+        "url": "https://beeg.com/",
+        "context-menu-item": [
+
+        ]
+    }
+    ,
+
+    {
+        "friendly-name": "thelist",
+        "name": "thelist",
+        "imageurl": "imgs/thelist.jpg",
+        "url": "https://theporndude.com/",
+        "context-menu-item": [
+
+        ]
+    }
+    ,
+    {
         "friendly-name": "xvideos",
         "name": "xvideos",
         "imageurl": "imgs/xvideos.png",
@@ -148,23 +169,7 @@
     }
     ,
 
-    {
-        "friendly-name": "wallheaven",
-        "name": "wallheaven",
-        "imageurl": "imgs/wallheaven.png",
-        "url": "https://wallhaven.cc/toplist",
-        "context-menu-item": [
-            {
-                "name": "NSFW",
-                "url": "https://wallhaven.cc/search?categories=111&purity=011&sorting=hot&order=desc&ai_art_filter=0&page=2"
-            },
-            {
-                "name": "NSFW-needlogin",
-                "url": "https://wallhaven.cc/search?categories=110&purity=001"
-            }
-        ]
-    }
-    ,
+
 
     {
         "friendly-name": "极速云",
