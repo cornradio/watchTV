@@ -118,4 +118,21 @@
         ] 
     }
     ,
+    
+    {
+        "friendly-name": "aivesa",
+        "name": "aivesa",
+        "imageurl": "imgs/aivesa.png",
+        "url": "https://aivesa.cn/",
+        "context-menu-item": [
+            {
+                "name": "提示词",
+                "url": "https://www.askprompts.com/"
+            },
+            {
+                "name": "ai导航",
+                "url": "https://www.naviai.cn/"
+            }
+        ]
+    }
 ]

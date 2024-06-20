@@ -94,23 +94,6 @@
     }
     ,
 
-    {
-        "friendly-name": "aivesa",
-        "name": "aivesa",
-        "imageurl": "imgs/aivesa.png",
-        "url": "https://aivesa.cn/",
-        "context-menu-item": [
-            {
-                "name": "提示词",
-                "url": "https://www.askprompts.com/"
-            },
-            {
-                "name": "ai导航",
-                "url": "https://www.naviai.cn/"
-            }
-        ]
-    }
-    ,
 
     {
         "friendly-name": "tongyi",
@@ -163,6 +146,17 @@
         "name": "Kimi",
         "imageurl": "imgs/kimi2.jpg",
         "url": "https://kimi.moonshot.cn/",
+        "context-menu-item": [
+
+        ]
+    }
+    ,
+
+    {
+        "friendly-name": "doubao",
+        "name": "doubao",
+        "imageurl": "imgs/doubao.png",
+        "url": "https://www.doubao.com/chat/",
         "context-menu-item": [
 
         ]
