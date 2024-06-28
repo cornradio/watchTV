@@ -1,0 +1,85 @@
+[
+
+    {
+        "friendly-name": "google",
+        "name": "google",
+        "imageurl": "imgs/google.png",
+        "url": "https://www.google.com/",
+        "context-menu-item": [
+            {
+                "name": "百度",
+                "url": "https://www.baidu.com/"
+            }
+            ,
+            {
+                "name": "google-hacking-database",
+                "url": "https://www.exploit-db.com/google-hacking-database"
+            },
+            {
+                "name": "google-hacking ",
+                "url": "https://zhuanlan.zhihu.com/p/400365865"
+            },
+
+        ]
+    },
+
+    {
+        "friendly-name": "baidu",
+        "name": "baidu",
+        "imageurl": "imgs/baidu.png",
+        "url": "https://www.baidu.com/",
+        "context-menu-item": [
+
+        ]
+    },
+    {
+        "friendly-name": "bing",
+        "name": "bing",
+        "imageurl": "imgs/bing.png",
+        "url": "https://www.bing.com/?cc=us",
+        "context-menu-item": [
+
+        ]
+    },
+    {
+        "friendly-name": "toutiao",
+        "name": "toutiao",
+        "imageurl": "imgs/toutiao.png",
+        "url": "https://www.toutiao.com/",
+        "context-menu-item": [
+
+        ]
+    },
+    {
+        "friendly-name": "weixin",
+        "name": "weixin",
+        "imageurl": "imgs/weixin.png",
+        "url": "https://weixin.sogou.com/",
+        "context-menu-item": [
+
+        ]
+    },
+    {
+        "friendly-name": "github",
+        "name": "github",
+        "imageurl": "imgs/github.png",
+        "url": "https://github.com/search?q=",
+        "context-menu-item": [
+
+        ]
+    }    
+    ,
+
+    {
+        "friendly-name": "doubao",
+        "name": "doubao",
+        "imageurl": "imgs/doubao.png",
+        "url": "https://www.doubao.com/chat/",
+        "context-menu-item": [
+
+        ]
+    }
+
+
+
+]
