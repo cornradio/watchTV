@@ -161,6 +161,17 @@
 
         ]
     }
+    ,
+
+    {
+        "friendly-name": "aistudio",
+        "name": "aistudio",
+        "imageurl": "imgs/aistudio.png",
+        "url": "https://aistudio.google.com/app/prompts/new_chat",
+        "context-menu-item": [
+
+        ]
+    }
 
 
 
