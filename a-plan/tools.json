@@ -239,6 +239,31 @@
     ,
 
     {
+        "friendly-name": "freemind",
+        "name": "freemind",
+        "imageurl": "imgs/freemind.png",
+        "url": "https://freemind.fit/",
+        "context-menu-item": [
+            
+            {
+                "name": "森林",
+                "url": "https://freemind.fit/?theme=waterfall&sounds=stream-water%2C1%3Bforest%2C1"
+            }
+            ,
+            {
+                "name": "火堆",
+                "url": "https://freemind.fit/?theme=waterfall&sounds=fire%2C1"
+            }
+            ,
+            {
+                "name": "海边夜晚",
+                "url": "https://freemind.fit/?theme=waterfall&sounds=waves%2C0.773%3Bnight%2C0.208"
+            }
+        ]
+    }
+    ,
+
+    {
         "friendly-name": "iodraw",
         "name": "iodraw",
         "imageurl": "imgs/iodraw.png",
