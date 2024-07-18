@@ -135,7 +135,7 @@
         "friendly-name": "alist",
         "name": "alist",
         "imageurl": "imgs/alist.png",
-        "url": "http://v61.kill9pid.top:5244/",
+        "url": "http://v6.cornradio.org:5244/",
         "context-menu-item": [
             {
                 "name": "local alist",
@@ -210,12 +210,9 @@
         "friendly-name": "yinghua",
         "name": "yinghua",
         "imageurl": "imgs/yinghua.png",
-        "url": "https://www.295dm.com/",
+        "url": "https://yhdm.one/",
         "context-menu-item": [
-            {
-                "name": "欧美动漫",
-                "url": "https://www.295dm.com/type/omeidongman.html"
-            }
+
         ] 
     }
     ,
