@@ -148,6 +148,23 @@
         ]
     },
     {
+        "friendly-name": "music163",
+        "name": "music163",
+        "imageurl": "imgs/music.png",
+        "url": "https://music.163.com/",
+        "context-menu-item": [
+            {
+                "name": "推荐",
+                "url": "https://music.163.com/#/discover/recommend/taste"
+            },
+            {
+                "name": "我喜欢的",
+                "url": "https://music.163.com/#/playlist?id=94820299"
+            }
+        ] 
+    }
+    ,
+    {
         "friendly-name": "cctv",
         "name": "cctv",
         "imageurl": "imgs/cctv.jpg",
@@ -197,15 +214,6 @@
     }
     ,    
 
-    {
-        "friendly-name": "soundcloud",
-        "name": "soundcloud",
-        "imageurl": "imgs/soundcloud.png",
-        "url": "https://soundcloud.com/discover",
-        "context-menu-item": [
-        ] 
-    }
-    ,
     {
         "friendly-name": "yinghua",
         "name": "yinghua",
