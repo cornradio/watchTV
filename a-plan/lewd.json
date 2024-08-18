@@ -135,6 +135,18 @@
         ]
     },
     {
+        "friendly-name": "ninecat",
+        "name": "ninecat",
+        "imageurl": "imgs/ninecat.svg",
+        "url": "https://web.nicecat.cc/",
+        "context-menu-item": [
+            {
+                "name": "catagroy",
+                "url": "https://manhuabika.com/pcat/"
+            }
+        ]
+    },
+    {
         "friendly-name": "derpi",
         "name": "derpi",
         "imageurl": "imgs/derpi.png",
