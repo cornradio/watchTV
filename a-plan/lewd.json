@@ -45,22 +45,33 @@
             }
         ]
     },
-    {
-        "friendly-name": "beeg",
-        "name": "beeg",
-        "imageurl": "imgs/beeg.png",
-        "url": "https://beeg.com/",
-        "context-menu-item": [
 
-        ]
-    }
-    ,
 
     {
         "friendly-name": "thelist",
         "name": "thelist",
         "imageurl": "imgs/thelist.jpg",
         "url": "https://theporndude.com/",
+        "context-menu-item": [
+
+        ]
+    }
+    ,
+    {
+        "friendly-name": "anpic",
+        "name": "anpic",
+        "imageurl": "imgs/anpic.avif",
+        "url": "https://anime-pictures.net/posts?lang=en",
+        "context-menu-item": [
+
+        ]
+    }
+    ,
+    {
+        "friendly-name": "imhentai",
+        "name": "imhentai",
+        "imageurl": "imgs/imhentai.png",
+        "url": "https://imhentai.xxx",
         "context-menu-item": [
 
         ]
@@ -205,4 +216,15 @@
             }
         ]
     }
+    ,
+    {
+        "friendly-name": "beeg",
+        "name": "beeg",
+        "imageurl": "imgs/beeg.png",
+        "url": "https://beeg.com/",
+        "context-menu-item": [
+
+        ]
+    }
+    ,
 ]
