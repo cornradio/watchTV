@@ -40,6 +40,25 @@ function redirectToURL(value) {
         });
         return;
     }
+        // 2024-11-11 09:59:43 Monday
+    if (value === 'addLS') {
+        var newLSstr = prompt("请输入新配置地址字符串：\n <json_url>|<display_name>|<emoji_logo🕹️>|<gradient_color>", "tools.json|tools|🔧|");
+        if (newLSstr === null) {
+            return;
+        }
+        var newLSlist = newLSstr.split("|");
+        if (newLSlist.length !== 4) {
+            alert("配置格式错误，请检查");
+            return;
+        }
+        else {
+            localStorage.setItem("tv_" + newLSlist[1], newLSstr);
+            console.log("🤖创建新配置：" + newLSstr);
+        }
+        window.location.href = `?name=${newLSlist[1]}`;  
+        return;
+    }
+    // end 2024-11-11 09:59:43 Monday
     var curLinkName = value;
     window.location.href = `?name=${curLinkName}`;
 }
@@ -99,6 +118,13 @@ function createSelect() {
         optionElement.value = optionValue;
         selectElement.appendChild(optionElement);
     }
+        //2024-11-11 09:59:43 Monday
+    var optionLast2 = document.createElement("option");
+    optionLast2.text = '➕ 增加配置';
+    optionLast2.value = 'addLS';
+    selectElement.appendChild(optionLast2);
+    selectContainer.appendChild(selectElement);
+    // end 2024-11-11 09:59:43 Monday
     // 添加一个清楚所有LS的按钮
     var optionLast = document.createElement("option");
     optionLast.text = '🗑️ 恢复默认 LS';
