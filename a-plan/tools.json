@@ -309,6 +309,15 @@
         "imageurl": "imgs/speedtest.png",
         "url": "https://www.speedtest.net/",
         "context-menu-item": [
+            {
+                "name": "cf speedtest",
+                "url": "https://speed.cloudflare.com/"
+            }
+            ,
+            {
+                "name": "fast.com",
+                "url": "https://fast.com/"
+            }
         ] 
     }
     ,
