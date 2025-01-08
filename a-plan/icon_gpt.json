@@ -40,19 +40,14 @@
     },
 
     {
-        "friendly-name": "Anse",
-        "name": "Anse",
-        "imageurl": "imgs/Anse2.png",
-        "url": "https://nav.xjai.top/",
+        "friendly-name": "copilot",
+        "name": "copilot",
+        "imageurl": "imgs/copilot.svg",
+        "url": "https://copilot.microsoft.com/",
         "context-menu-item": [
             {
-                "name": "Anse",
-                "url": "https://chatforai.store/"
-            }
-            ,
-            {
-                "name": "主站",
-                "url": "https://ic.free-chat.asia/"
+                "name": "ai导航",
+                "url": "https://nav.xjai.top/"
             }
         ]
     }
