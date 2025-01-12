@@ -137,7 +137,9 @@
         "friendly-name": "fiqfuq",
         "name": "fiqfuq",
         "imageurl": "https://i.imgur.com/ofqrrdA.png",
-        "url": "https://fiqfuq.com/"
+        "url": "https://fiqfuq.com/",
+        "context-menu-item": [
+        ]
     },
     {
         "friendly-name": "pica",
