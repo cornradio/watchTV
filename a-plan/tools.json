@@ -6,19 +6,17 @@
         "url": "https://ipcheck.ing/#/",
         "context-menu-item": [
             {
-                {
-                    "name": "Gamepadtester",
-                    "url": "https://hardwaretester.com/gamepad"
-                },
-                {
-                    "name": "Keyboard",
-                    "url": "https://www.ratatype.com/keyboard-test/"
-                },
-                {
-                    "name": "speedtest*cn",
-                    "url": "https://www.speedtest.cn/"
-                },
-            }
+                "name": "Gamepadtester",
+                "url": "https://hardwaretester.com/gamepad"
+            },
+            {
+                "name": "Keyboard",
+                "url": "https://www.ratatype.com/keyboard-test/"
+            },
+            {
+                "name": "speedtest*cn",
+                "url": "https://www.speedtest.cn/"
+            },
         ]
     }
     ,
