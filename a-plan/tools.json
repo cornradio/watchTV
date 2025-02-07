@@ -75,8 +75,12 @@
         "friendly-name": "webclip",
         "name": "webclip",
         "imageurl": "imgs/webclip.png",
-        "url": "http://124.223.57.166/webclipboard/",
+        "url": "http://139.196.171.60:88/",
         "context-menu-item": [
+            {
+                "name": "lanclip",
+                "url": "http://139.196.171.60:5000/"
+            },
             {
                 "name": "getnote.top",
                 "url": "https://getnote.top/"
