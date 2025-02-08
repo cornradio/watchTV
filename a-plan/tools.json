@@ -68,6 +68,10 @@
                 "name": "HelloGitHub 第一期",
                 "url": "https://hellogithub.com/periodical/volume/1"
             },
+            {
+                "name": "tools.json",
+                "url": "https://github.com/cornradio/watchTV/edit/main/a-plan/tools.json"
+            },
         ] 
     }
     ,
