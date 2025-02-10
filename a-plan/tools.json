@@ -65,8 +65,12 @@
         "url": "https://github.com",
         "context-menu-item": [
             {
-                "name": "HelloGitHub 第一期",
+                "name": "HelloGitHub",
                 "url": "https://hellogithub.com/periodical/volume/1"
+            },
+            {
+                "name": "blog post",
+                "url": "https://github.com/cornradio/hugo-stacktheme/tree/master/content/post"
             },
             {
                 "name": "tools.json",
