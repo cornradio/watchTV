@@ -261,6 +261,11 @@
                 "url": "https://greasyfork.org/zh-CN/scripts/526070"
             }
             ,
+            {
+                "name": "随意筛选",
+                "url": "https://github.com/hzhbest/FilterAnything/blob/main/%E9%9A%8F%E6%84%8F%E7%AD%9B%E9%80%89FilterAnything.user.js"
+            }
+            ,
         ] 
     }
     ,
