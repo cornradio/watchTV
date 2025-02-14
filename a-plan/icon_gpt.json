@@ -122,7 +122,7 @@
         "friendly-name": "phind",
         "name": "phind",
         "imageurl": "imgs/phind.png",
-        "url": "https://www.phind.com/agent?home=true",
+        "url": "https://www.phind.com",
         "context-menu-item": [
             {
                 "name": "search",
@@ -167,7 +167,34 @@
 
         ]
     }
-
+    ,
+    {
+        "friendly-name": "duckai",
+        "name": "duckai",
+        "imageurl": "imgs/duckai.png",
+        "url": "https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat&duckai=1",
+        "context-menu-item": [
+        ]
+    }
+    ,
+    {
+        "friendly-name": "aiworkspace",
+        "name": "aiworkspace",
+        "imageurl": "imgs/aiworkspace.png",
+        "url": "https://aiaw.app/workspaces",
+        "context-menu-item": [
+        ]
+    }
+    ,
+    {
+        "friendly-name": "githubcopilot",
+        "name": "githubcopilot",
+        "imageurl": "imgs/githubcopilot.png",
+        "url": "https://github.com/copilot/",
+        "context-menu-item": [
+        ]
+    }
+    ,
 
 
 ]
