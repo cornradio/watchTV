@@ -76,6 +76,10 @@
                 "name": "tools.json",
                 "url": "https://github.com/cornradio/watchTV/edit/main/a-plan/tools.json"
             },
+            {
+                "name": "tools.images",
+                "url": "https://github.com/cornradio/watchTV/upload/main/a-plan/imgs"
+            },
         ] 
     }
     ,
