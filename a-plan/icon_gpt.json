@@ -52,43 +52,6 @@
         ]
     }
     ,
-    {
-        "friendly-name": "poe",
-        "name": "poe",
-        "imageurl": "imgs/poe.png",
-        "url": "https://poe.com/",
-        "context-menu-item": [
-            {
-                "name": "角色 bots",
-                "url": "https://poe.com/explore_bots?category=Popular"
-            }
-        ]
-    },
-
-    {
-        "friendly-name": "BAI",
-        "name": "BAI",
-        "imageurl": "imgs/BAI.png",
-        "url": "https://beta.theb.ai/home",
-        "context-menu-item": [
-            {
-                "name": "搜索引擎",
-                "url": "https://beta.theb.ai/search"
-            }
-            ,
-            {
-                "name": "绘图",
-                "url": "https://beta.theb.ai/image"
-            }
-            ,
-            {
-                "name": "绘图prompt",
-                "url": "https://prompthero.com/search?q=catgirl"
-            }
-        ]
-    }
-    ,
-
 
     {
         "friendly-name": "tongyi",
@@ -161,10 +124,13 @@
     {
         "friendly-name": "aistudio",
         "name": "aistudio",
-        "imageurl": "imgs/aistudio.png",
-        "url": "https://aistudio.google.com/app/prompts/new_chat",
+        "imageurl": "imgs/gemini.png",
+        "url": "https://gemini.google.com/app/f98781f998f46950?hl=zh",
         "context-menu-item": [
-
+            {
+                "name": "ai studio",
+                "url": "https://aistudio.google.com/prompts/new_chat"
+            },
         ]
     }
     ,
@@ -173,6 +139,15 @@
         "name": "duckai",
         "imageurl": "imgs/duckai.png",
         "url": "https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat&duckai=1",
+        "context-menu-item": [
+        ]
+    }
+    ,
+    {
+        "friendly-name": "perplexity",
+        "name": "perplexity",
+        "imageurl": "imgs/perplexity.webp",
+        "url": "https://www.perplexity.ai/",
         "context-menu-item": [
         ]
     }
@@ -195,6 +170,40 @@
         ]
     }
     ,
-
+    {
+        "friendly-name": "BAI",
+        "name": "BAI",
+        "imageurl": "imgs/BAI.png",
+        "url": "https://beta.theb.ai/home",
+        "context-menu-item": [
+            {
+                "name": "搜索引擎",
+                "url": "https://beta.theb.ai/search"
+            }
+            ,
+            {
+                "name": "绘图",
+                "url": "https://beta.theb.ai/image"
+            }
+            ,
+            {
+                "name": "绘图prompt",
+                "url": "https://prompthero.com/search?q=catgirl"
+            }
+        ]
+    }
+    ,
+        {
+        "friendly-name": "poe",
+        "name": "poe",
+        "imageurl": "imgs/poe.png",
+        "url": "https://poe.com/",
+        "context-menu-item": [
+            {
+                "name": "角色 bots",
+                "url": "https://poe.com/explore_bots?category=Popular"
+            }
+        ]
+    },
 
 ]
