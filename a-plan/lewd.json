@@ -131,6 +131,11 @@
                 "name": "chinese",
                 "url": "https://nhentai.to/language/chinese"
             }
+            ,
+            {
+                "name": "hitomi.la",
+                "url": "https://hitomi.la/index-chinese.html"
+            }
         ]
     },
     {
