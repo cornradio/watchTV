@@ -136,7 +136,6 @@
         ]
     }
     ,
-
     {
         "friendly-name": "twitter",
         "name": "twitter",
@@ -149,15 +148,7 @@
             }
         ]
     }
-    ,    {
-        "friendly-name": "reddit",
-        "name": "reddit",
-        "imageurl": "imgs/reddit.png",
-        "url": "https://www.reddit.com/",
-        "context-menu-item": [
-        ]
-    }
-    
+
     ,    {
         "friendly-name": "xiaohongshu",
         "name": "xiaohongshu",
@@ -183,4 +174,13 @@
         "context-menu-item": [
         ]
     }
+        ,    {
+        "friendly-name": "reddit",
+        "name": "reddit",
+        "imageurl": "imgs/reddit.png",
+        "url": "https://www.reddit.com/",
+        "context-menu-item": [
+        ]
+    }
+    
 ]
