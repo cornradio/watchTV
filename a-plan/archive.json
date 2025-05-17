@@ -21,6 +21,16 @@
     ]
 }
 ,
+{
+    "friendly-name": "yinghua",
+    "name": "yinghua",
+    "imageurl": "imgs/yinghua.png",
+    "url": "https://yhdm.one/",
+    "context-menu-item": [
+
+    ] 
+}
+,
     {
         "friendly-name": "emojiall",
         "name": "emojiall",
