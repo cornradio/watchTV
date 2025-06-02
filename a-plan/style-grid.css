@@ -212,6 +212,25 @@ a {
     cursor: pointer;
 }
 
+@media screen and (max-width: 950px) {
+    .app {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 720px;
+        height: 760px;
+        background: #00000033;
+        font-size: 0;
+        border-radius: 15px;
+        box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    }
+    #icon-holder>div{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 120px);
+    }
+}
+
 @media screen and (max-width: 500px) {
     body {
         background: #222 !important;
