@@ -320,7 +320,7 @@
         "friendly-name": "yuquebiaoge",
         "name": "yuquebiaoge",
         "imageurl": "imgs/yuquebiaoge.png",
-        "url": "https://alidocs.dingtalk.com/i/spaces/dBgX4KeZW5La2z8e/overview",
+        "url": "https://www.yuque.com/pingguoajie/wk48mo/cm1helqrdpnt61yg?singleDoc#PR4g",
         "context-menu-item": [
             {
                 "name": "我的自研软件商店",
@@ -328,8 +328,8 @@
             }
             ,
             {
-                "name": "old-yuque",
-                "url": "https://www.yuque.com/pingguoajie/wk48mo/cm1helqrdpnt61yg?singleDoc#PR4g"
+                "name": "Noco DB",
+                "url": "http://139.196.171.60:8989/"
             }
         ] 
     }
