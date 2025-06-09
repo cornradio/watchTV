@@ -362,6 +362,10 @@
             {
                 "name": "下载code",
                 "url": "https://code.visualstudio.com/"
+            },
+            {
+                "name": "VScode online",
+                "url": "https://vscode.dev/"
             }
         ] 
     }
