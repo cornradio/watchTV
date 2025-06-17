@@ -17,6 +17,10 @@
                 "name": "speedtest*cn",
                 "url": "https://www.speedtest.cn/"
             },
+            {
+                "name": "ping0",
+                "url": "https://ping0.cc/"
+            },
         ]
     }
     ,
