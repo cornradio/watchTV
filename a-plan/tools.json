@@ -21,6 +21,14 @@
                 "name": "ping0",
                 "url": "https://ping0.cc/"
             },
+            {
+                "name": "IP 多平台查询",
+                "url": "http://139.196.171.60/tool/IP.html"
+            },
+            {
+                "name": "CVE 多平台查询",
+                "url": "http://139.196.171.60/tool/CVE.html"
+            },
         ]
     }
     ,
