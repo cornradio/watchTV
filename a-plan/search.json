@@ -47,7 +47,10 @@
         "imageurl": "imgs/toutiao2.png",
         "url": "https://www.toutiao.com/",
         "context-menu-item": [
-
+            {
+                "name": "news now",
+                "url": "https://newsnow.busiyi.world/"
+            }
         ]
     },
     {
