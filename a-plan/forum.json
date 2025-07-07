@@ -67,6 +67,10 @@
             {
                 "name": "小众论坛",
                 "url": "https://meta.appinn.net/"
+            },
+            {
+                "name": "小众论坛-图床插件",
+                "url": "https://greasyfork.org/zh-CN/scripts/529910-appinn-forum-upload-enhancer"
             }
         ]
     }
