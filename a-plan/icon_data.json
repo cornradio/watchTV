@@ -217,15 +217,12 @@
 
 
     {
-        "friendly-name": "agetv",
-        "name": "agetv",
-        "imageurl": "imgs/agetv.jpg",
-        "url": "https://www.agefans.la/",
+        "friendly-name": "msnweather",
+        "name": "msnweather",
+        "imageurl": "imgs/msnweather.png",
+        "url": "https://www.msn.cn/zh-cn/weather/maps",
         "context-menu-item": [
-            {
-                "name": "备用地址",
-                "url": "age.tv"
-            }
+
         ] 
     }
     ,
