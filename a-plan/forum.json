@@ -84,6 +84,14 @@
             {
                 "name": "写文章",
                 "url": "https://zhuanlan.zhihu.com/write"
+            },
+            {
+                "name": "知乎黑色模式",
+                "url": "https://www.zhihu.com/?theme=dark"
+            },
+            {
+                "name": "知乎白色模式",
+                "url": "https://www.zhihu.com/?theme=light"
             }
         ]
     }
