@@ -1,8 +1,92 @@
-测试页面： http://139.196.171.60/watchTV/a-plan/
+## 项目简介
+一个基于纯前端的「启动页」：
+- 每页 10 个图标
+- 支持分页（上下/WS翻页）
+- 每个图标支持右键菜单
+- 支持移动端模式
+- 项目主要目录为 `a-plan/`
+
+## 在线预览
+- 测试页面：`http://139.196.171.60/watchTV/a-plan/`
+
+## 程序目录结构
+- /a-plan 目录是程序本体
+- index.html 是主页
+- xxx.json 是数据文件，包括图标、右键菜单的信息
+- /a-plan/imgs 是图标文件夹，但是你也可以用在线图床
+
+## 部署建议
+- 这是纯静态站点，可部署到任意静态托管（Nginx、GitHub Pages、Vercel 等）。
+
+## 快速开始
+1. 克隆或下载本仓库。
+2. 进入项目根目录后启动本地静态服务器：
+   - Windows：双击 `localhttpserver.bat`（基于 Python 内置 `http.server`，默认端口 8900）
+   - macOS/Linux：运行 `./localhttpserver.sh`
+3. 浏览器打开：`http://localhost:8900/a-plan/`
+
+## 使用说明
+- 左上角下拉框用于「切换」配置。
+- 右上角「💻/📱」切换移动端模式（在手机上无法右键时使用）。
+- 点击图标打开站点；右键图标打开对应的快捷菜单。
+
+### 键鼠快捷操作
+- 翻页：`W / ↑ ` 上一页；`S / ↓ ` 下一页；滚轮上下也可翻页。
+- 切换配置（不跳转）：`← / A` 上一个；`→ / D` 下一个，`Enter` 确定。
 
 
-add a config one the top left :
-# json url and settings 
+
+## 配置管理（localStorage）
+应用使用 `localStorage` 保存配置，每条配置对应一个键名：`tv_<配置名>`，值为一行字符串：
+
+```text
+<json_url>|<display_name>|<emoji>|<gradient>
+```
+
+示例：
+
+```text
 http://xxx/icon_data.json|test1|💍|linear-gradient(-20deg, #047272 0%, #1d1035 100%)
-# or this
+```
+
+也可以不设置背景渐变：
+
+```text
 http://xxx/icon_data.json|test1|💍|
+```
+
+打开页面后会自动创建一组默认配置，并设置 `_defaultjson=watchTV` 作为默认加载项。你可以：
+- 在左上角下拉框选择「➕ 增加配置」，按提示粘贴上述字符串快速添加；
+- 选择「🗑️ 恢复默认 LS」清除以 `tv_` 开头的所有自定义配置并恢复默认；
+- 通过链接参数直接指定配置：`/a-plan/?name=<配置名>`（便于分享/书签）。
+
+背景渐变可参考 `https://www.grabient.com/`，建议选暗色方案以获得更好的对比度。
+
+## JSON 数据格式
+配置的 `json_url` 指向一个返回数组的 JSON 文件。数组元素代表一个图标项，字段如下：
+- `name`：标识名（用于 DOM id 和右键菜单关联，必须唯一）
+- `imageurl`：图标图片地址（相对或绝对路径均可）
+- `url`：左键点击打开的链接
+- `context-menu-item`：右键菜单数组（可选），每项包含：`name`、`url`
+- `friendly-name`：可选，展示友好名（当前页面逻辑未直接使用）
+
+最小示例：
+
+```json
+[
+  {
+    "name": "youtube",
+    "imageurl": "imgs/yt.jpg",
+    "url": "https://www.youtube.com/",
+    "context-menu-item": [
+      { "name": "history", "url": "https://www.youtube.com/feed/history" }
+    ]
+  }
+]
+```
+
+注意：每页固定显示 10 个图标；不足 10 个，会自动补空位占位，保证布局整齐。
+
+
+
+
