@@ -7,7 +7,9 @@
 - 项目主要目录为 `a-plan/`
 
 ## 在线预览
-- 测试页面：`http://139.196.171.60/watchTV/a-plan/`
+- 测试页面：https://tva.cornradio.org/
+<img width="2853" height="1461" alt="image" src="https://github.com/user-attachments/assets/2186536c-0e04-4e30-9bcd-1a73b5d8930e" />
+
 
 ## 程序目录结构
 - /a-plan 目录是程序本体
