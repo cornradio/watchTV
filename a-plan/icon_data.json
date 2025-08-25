@@ -220,9 +220,20 @@
         "friendly-name": "msnweather",
         "name": "msnweather",
         "imageurl": "imgs/msnweather.png",
-        "url": "https://www.msn.cn/zh-cn/weather/maps",
+        "url": "https://www.msn.cn/zh-cn/weather/forecast/",
         "context-menu-item": [
-
+            {
+                "name": "降水地图",
+                "url": "https://www.msn.cn/zh-cn/weather/maps?type=precipitation"
+            },
+            {
+                "name": "气温地图",
+                "url": "https://www.msn.cn/zh-cn/weather/maps?type=temperature"
+            },
+            {
+                "name": "云图",
+                "url": "https://www.msn.cn/zh-cn/weather/maps/cloud"
+            },
         ] 
     }
     ,
