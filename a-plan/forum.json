@@ -50,6 +50,19 @@
     }
     ,
     {
+        "friendly-name": "telegram",
+        "name": "telegram",
+        "imageurl": "imgs/telegram.png",
+        "url": "https://web.telegram.org/a/",
+        "context-menu-item": [
+            {
+                "name":"download",
+                "url":"https://telegram.org/apps"
+            }
+        ]
+    }
+    ,
+    {
         "friendly-name": "NGA",
         "name": "NGA",
         "imageurl": "imgs/NGA.png",

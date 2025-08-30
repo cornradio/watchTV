@@ -51,7 +51,18 @@
             }
         ]
     }
+    ,
 
+    {
+        "friendly-name": "drawio",
+        "name": "drawio",
+        "imageurl": "imgs/drawio.png",
+        "url": "https://app.diagrams.net/",
+        "context-menu-item": [
+            {
+            }
+        ]
+    }
     ,
     {
         "friendly-name": "LobeHub",

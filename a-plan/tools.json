@@ -6,10 +6,6 @@
         "url": "https://ipcheck.ing/#/",
         "context-menu-item": [
             {
-                "name": "Gamepadtester",
-                "url": "https://hardwaretester.com/gamepad"
-            },
-            {
                 "name": "Keyboard",
                 "url": "https://www.ratatype.com/keyboard-test/"
             },
@@ -69,7 +65,21 @@
             }
         ]
     }
+    
     ,
+
+    {
+        "friendly-name": "notion",
+        "name": "notion",
+        "imageurl": "imgs/notion.png",
+        "url": "https://www.notion.so/",
+        "context-menu-item": [
+            {
+            }
+        ]
+    }
+    ,
+    
     {
         "friendly-name": "github",
         "name": "github",
@@ -250,6 +260,24 @@
             }
         ] 
     }
+        ,
+
+    {
+        "friendly-name": "Code",
+        "name": "Code",
+        "imageurl": "imgs/code.png",
+        "url": "https://vscode.dev/",
+        "context-menu-item": [
+            {
+                "name": "下载code",
+                "url": "https://code.visualstudio.com/"
+            },
+            {
+                "name": "VScode online",
+                "url": "https://vscode.dev/"
+            }
+        ] 
+    }
     ,   {
         "friendly-name": "Tampermonkey",
         "name": "Tampermonkey",
@@ -272,20 +300,14 @@
             }
             ,
             {
-                "name": "油小猴",
-                "url": "https://www.youxiaohou.com/"
-            }
-            ,
-            {
                 "name": "GoodNote",
                 "url": "https://greasyfork.org/zh-CN/scripts/526070"
             }
             ,
             {
-                "name": "随意筛选",
-                "url": "https://github.com/hzhbest/FilterAnything/blob/main/%E9%9A%8F%E6%84%8F%E7%AD%9B%E9%80%89FilterAnything.user.js"
+                "name": "煎蛋用户名搜索",
+                "url": "https://greasyfork.org/zh-CN/scripts/523770"
             }
-            ,
         ] 
     }
     ,
@@ -319,11 +341,11 @@
         "friendly-name": "iodraw",
         "name": "iodraw",
         "imageurl": "imgs/iodraw.png",
-        "url": "https://www.iodraw.com/",
+        "url": "https://app.diagrams.net/",
         "context-menu-item": [
             {
-                "name": "拓扑图",
-                "url": "https://www.iodraw.com/diagram"
+                "name": "iodraw",
+                "url": "https://www.iodraw.com/"
             },
             {
                 "name": "processOn",
@@ -367,24 +389,7 @@
             }
         ] 
     }
-    ,
 
-    {
-        "friendly-name": "Code",
-        "name": "Code",
-        "imageurl": "imgs/code.png",
-        "url": "https://vscode.dev/",
-        "context-menu-item": [
-            {
-                "name": "下载code",
-                "url": "https://code.visualstudio.com/"
-            },
-            {
-                "name": "VScode online",
-                "url": "https://vscode.dev/"
-            }
-        ] 
-    }
     ,
 
     {
@@ -419,43 +424,21 @@
             }
         ]
     }
+
     ,
 
     {
-        "friendly-name": "telegram",
-        "name": "telegram",
-        "imageurl": "imgs/telegram.png",
-        "url": "https://web.telegram.org/a/",
+        "friendly-name": "gamepadtester",
+        "name": "gamepadtester",
+        "imageurl": "imgs/gamepadtester.png",
+        "url": "https://hardwaretester.com/gamepad",
         "context-menu-item": [
             {
-                "name":"download",
-                "url":"https://telegram.org/apps"
+                "name": "9slab",
+                "url": "https://9slab.com/gamepad/home"
             }
         ]
     }
-    ,
 
-    {
-        "friendly-name": "notion",
-        "name": "notion",
-        "imageurl": "imgs/notion.png",
-        "url": "https://www.notion.so/",
-        "context-menu-item": [
-            {
-            }
-        ]
-    }
-    ,
-
-    {
-        "friendly-name": "drawio",
-        "name": "drawio",
-        "imageurl": "imgs/drawio.png",
-        "url": "https://app.diagrams.net/",
-        "context-menu-item": [
-            {
-            }
-        ]
-    }
 
 ]
