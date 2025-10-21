@@ -1,5 +1,11 @@
 [
     {
+        "friendly-name": "linuxdo",
+        "name": "linuxdo",
+        "imageurl": "imgs/linuxdo.png",
+        "url": "https://linux.do/",
+        "context-menu-item": []
+    },{
         "friendly-name": "v2ex",
         "name": "v2ex",
         "imageurl": "imgs/v2ex.png",
@@ -10,8 +16,7 @@
                 "url": "https://www.v2ex.com/mission/daily"
             }
         ]
-    }
-    ,
+    },
     {
         "friendly-name": "jandan",
         "name": "jandan",
@@ -21,21 +26,17 @@
             {
                 "name": "热榜",
                 "url": "https://jandan.net/top"
-            }
-            ,
+            },
             {
                 "name": "无聊图",
                 "url": "https://jandan.net/pic"
-            }
-            ,
+            },
             {
                 "name": "树洞",
                 "url": "https://jandan.net/treehole"
             }
-
         ]
-    }
-    ,
+    },
     {
         "friendly-name": "smzdm",
         "name": "smzdm",
@@ -47,8 +48,7 @@
                 "url": "https://www.smzdm.com/jingxuan/"
             }
         ]
-    }
-    ,
+    },
     {
         "friendly-name": "telegram",
         "name": "telegram",
@@ -56,38 +56,67 @@
         "url": "https://web.telegram.org/a/",
         "context-menu-item": [
             {
-                "name":"download",
-                "url":"https://telegram.org/apps"
+                "name": "download",
+                "url": "https://telegram.org/apps"
             }
         ]
-    }
-    ,
-    {
-        "friendly-name": "NGA",
-        "name": "NGA",
-        "imageurl": "imgs/NGA.png",
-        "url": "https://bbs.nga.cn/",
-        "context-menu-item": [
-        ]
-    }
-    ,
+    },
     {
         "friendly-name": "appin",
         "name": "appin",
         "imageurl": "imgs/appin.png",
-        "url": "https://www.appinn.com/",
+        "url": "https://meta.appinn.net/",
         "context-menu-item": [
             {
-                "name": "小众论坛",
-                "url": "https://meta.appinn.net/"
+                "name": "小众软件",
+                "url": "https://www.appinn.com/"
             },
             {
                 "name": "小众论坛-图床插件",
                 "url": "https://greasyfork.org/zh-CN/scripts/529910-appinn-forum-upload-enhancer"
             }
         ]
-    }
-    ,
+    },
+    {
+        "friendly-name": "twitter",
+        "name": "twitter",
+        "imageurl": "imgs/twitter.png",
+        "url": "https://x.com/",
+        "context-menu-item": [
+            {
+                "name": "好价",
+                "url": "https://www.smzdm.com/jingxuan/"
+            }
+        ]
+    },
+    {
+        "friendly-name": "xiaohongshu",
+        "name": "xiaohongshu",
+        "imageurl": "imgs/xiaohongshu.png",
+        "url": "https://www.xiaohongshu.com/",
+        "context-menu-item": []
+    },
+    {
+        "friendly-name": "hellogithub",
+        "name": "hellogithub",
+        "imageurl": "imgs/hellogithub.png",
+        "url": "https://www.hellogithub.com/",
+        "context-menu-item": []
+    },
+    {
+        "friendly-name": "sspai",
+        "name": "sspai",
+        "imageurl": "imgs/sspai.png",
+        "url": "https://www.sspai.com/",
+        "context-menu-item": []
+    },
+    {
+        "friendly-name": "reddit",
+        "name": "reddit",
+        "imageurl": "imgs/reddit.png",
+        "url": "https://www.reddit.com/",
+        "context-menu-item": []
+    },
     {
         "friendly-name": "zhihu",
         "name": "zhihu",
@@ -107,43 +136,8 @@
                 "url": "https://www.zhihu.com/?theme=light"
             }
         ]
-    }
-    ,
-
-    {
-        "friendly-name": "medium",
-        "name": "medium",
-        "imageurl": "imgs/medium.png",
-        "url": "http://medium.com/",
-        "context-menu-item": [
-            {
-                "name": "medium",
-                "url": "http://medium.com/"
-            }
-            ,
-            {
-                "name": "dev.to",
-                "url": "https://dev.to/"
-            }
-            ,
-            {
-                "name": "codepen",
-                "url": "https://codepen.io/"
-            }
-            ,
-            {
-                "name": "css-tricks",
-                "url": "https://css-tricks.com/"
-            }
-            ,
-            {
-                "name": "dribbble",
-                "url": "https://dribbble.com/"
-            }
-            ,
-        ]
     },
-    {
+        {
         "friendly-name": "weibo",
         "name": "weibo",
         "imageurl": "imgs/weibo.png",
@@ -152,60 +146,47 @@
             {
                 "name": "微博热搜",
                 "url": "https://weibo.com/newlogin?tabtype=search&gid=&openLoginLayer=0&url="
-            }
-            ,
+            },
             {
                 "name": "百度热搜",
                 "url": "https://top.baidu.com/board"
             }
         ]
-    }
-    ,
+    },
     {
-        "friendly-name": "twitter",
-        "name": "twitter",
-        "imageurl": "imgs/twitter.png",
-        "url": "https://x.com/",
+        "friendly-name": "NGA",
+        "name": "NGA",
+        "imageurl": "imgs/NGA.png",
+        "url": "https://bbs.nga.cn/",
+        "context-menu-item": []
+    
+    },
+        {
+        "friendly-name": "dev.to",
+        "name": "dev.to",
+        "imageurl": "imgs/dev.to.png",
+        "url": "https://dev.to/",
         "context-menu-item": [
             {
-                "name": "好价",
-                "url": "https://www.smzdm.com/jingxuan/"
-            }
+                "name": "medium",
+                "url": "http://medium.com/"
+            },
+            {
+                "name": "dev.to",
+                "url": "https://dev.to/"
+            },
+            {
+                "name": "codepen",
+                "url": "https://codepen.io/"
+            },
+            {
+                "name": "css-tricks",
+                "url": "https://css-tricks.com/"
+            },
+            {
+                "name": "dribbble",
+                "url": "https://dribbble.com/"
+            },
         ]
     }
-
-    ,    {
-        "friendly-name": "xiaohongshu",
-        "name": "xiaohongshu",
-        "imageurl": "imgs/xiaohongshu.png",
-        "url": "https://www.xiaohongshu.com/",
-        "context-menu-item": [
-        ]
-    }
-    
-    ,    {
-        "friendly-name": "hellogithub",
-        "name": "hellogithub",
-        "imageurl": "imgs/hellogithub.png",
-        "url": "https://www.hellogithub.com/",
-        "context-menu-item": [
-        ]
-    }
-    ,    {
-        "friendly-name": "sspai",
-        "name": "sspai",
-        "imageurl": "imgs/sspai.png",
-        "url": "https://www.sspai.com/",
-        "context-menu-item": [
-        ]
-    }
-        ,    {
-        "friendly-name": "reddit",
-        "name": "reddit",
-        "imageurl": "imgs/reddit.png",
-        "url": "https://www.reddit.com/",
-        "context-menu-item": [
-        ]
-    }
-    
 ]
