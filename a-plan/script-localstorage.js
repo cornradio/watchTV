@@ -4,7 +4,7 @@
 function checkLS() {
     if (localStorage.length === 0 || localStorage.getItem('tv_archive') === null){
         localStorage.setItem('tv_archive', 'archive.json|archive|🗄️|')
-        localStorage.setItem('tv_dengbao', 'dengbao.json|dengbao|🛡️|radial-gradient(ellipse farthest-corner at center top, #176980, #353333)')
+        localStorage.setItem('tv_dengbao', 'dengbao.json|security|🛡️|radial-gradient(ellipse farthest-corner at center top, #176980, #353333)')
         localStorage.setItem('tv_forum', 'forum.json|forum|📢|')
         localStorage.setItem('tv_game', 'game.json|game|🕹️|')
         localStorage.setItem('tv_gpts', 'icon_gpt.json|GPTS|🤖|linear-gradient(52deg, rgb(186 88 222) 0%, rgb(32 58 117) 100%)')

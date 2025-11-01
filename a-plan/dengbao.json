@@ -1,39 +1,5 @@
 [
     
-
-    {
-        "friendly-name": "sstlvpn",
-        "name": "sstlvpn",
-        "imageurl": "imgs/sstlvpn.png",
-        "url": "https://ssl.sscenter.sh.cn/prx/000/http/localhost/login/index.html",
-        "context-menu-item": [
-        ]
-    },
-    {
-        "friendly-name": "ywpt",
-        "name": "ywpt",
-        "imageurl": "imgs/ywpt.png",
-        "url": "http://192.168.250.54:7070/Modules/bm/LabDefault.aspx",
-        "context-menu-item": [
-            {
-                "name": "绩效查看",
-                "url": "http://192.168.250.54:7070/Modules/bm/Personal/ViewPointByProject.aspx"
-            },
-            {
-                "name": "设备预约",
-                "url": "http://192.168.250.54:7070/Modules/sm/DeviceManagement/DeviceBookList.aspx"
-            }
-        ]
-    }
-    ,
-    {
-        "friendly-name": "dengbaotools",
-        "name": "dengbaotools",
-        "imageurl": "imgs/dengbaotools.png",
-        "url": "http://124.223.57.166/dengbaoxxx/",
-        "context-menu-item": [
-        ]
-    }, 
     {
         "friendly-name": "webcheck",
         "name": "webcheck",
@@ -164,6 +130,5 @@
         "context-menu-item": [
         ] 
     }
-    ,
 
 ]
