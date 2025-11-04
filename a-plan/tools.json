@@ -308,6 +308,11 @@
                 "name": "煎蛋用户名搜索",
                 "url": "https://greasyfork.org/zh-CN/scripts/523770"
             }
+            ,
+            {
+                "name": "小众论坛图床",
+                "url": "https://greasyfork.org/zh-CN/scripts/529910-appinn-forum-upload-enhancer"
+            }
         ] 
     }
     ,
