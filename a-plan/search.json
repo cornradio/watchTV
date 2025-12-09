@@ -41,27 +41,7 @@
 
         ]
     },
-    {
-        "friendly-name": "toutiao",
-        "name": "toutiao",
-        "imageurl": "imgs/toutiao2.png",
-        "url": "https://www.toutiao.com/",
-        "context-menu-item": [
-            {
-                "name": "news now",
-                "url": "https://newsnow.busiyi.world/"
-            }
-        ]
-    },
-    {
-        "friendly-name": "weixin",
-        "name": "weixin",
-        "imageurl": "imgs/weixin.png",
-        "url": "https://weixin.sogou.com/",
-        "context-menu-item": [
 
-        ]
-    },
     {
         "friendly-name": "github",
         "name": "github",
@@ -82,7 +62,16 @@
 
         ]
     }
+    ,
 
+    {
+        "friendly-name": "qwen",
+        "name": "qwen",
+        "imageurl": "imgs/qwen.png",
+        "url": "https://chat.qwen.ai/",
+        "context-menu-item": [
 
+        ]
+    }
 
 ]

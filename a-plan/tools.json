@@ -19,11 +19,11 @@
             },
             {
                 "name": "IP 多平台查询",
-                "url": "http://139.196.171.60/tool/IP.html"
+                "url": "http://8.153.164.13/tool/IP.html"
             },
             {
                 "name": "CVE 多平台查询",
-                "url": "http://139.196.171.60/tool/CVE.html"
+                "url": "http://8.153.164.13/tool/CVE.html"
             },
         ]
     }
@@ -109,11 +109,11 @@
         "friendly-name": "webclip",
         "name": "webclip",
         "imageurl": "imgs/webclip.png",
-        "url": "http://139.196.171.60:88/",
+        "url": "http://8.153.164.13:88/",
         "context-menu-item": [
             {
                 "name": "lanclip",
-                "url": "http://139.196.171.60:5000/"
+                "url": "http://8.153.164.13:5000/"
             },
             {
                 "name": "getnote.top",
@@ -372,7 +372,7 @@
             ,
             {
                 "name": "Noco DB",
-                "url": "http://139.196.171.60:8989/"
+                "url": "http://8.153.164.13:8989/"
             }
         ] 
     }
