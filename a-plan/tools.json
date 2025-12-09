@@ -313,6 +313,11 @@
                 "name": "小众论坛图床",
                 "url": "https://greasyfork.org/zh-CN/scripts/529910-appinn-forum-upload-enhancer"
             }
+            ,
+            {
+                "name": "ehunter",
+                "url": "https://github.com/hanFengSan/eHunter"
+            }
         ] 
     }
     ,
