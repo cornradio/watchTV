@@ -9,7 +9,7 @@ function checkLS() {
         localStorage.setItem('tv_game', 'game.json|game|🕹️|')
         localStorage.setItem('tv_gpts', 'icon_gpt.json|GPTS|🤖|linear-gradient(52deg, rgb(186 88 222) 0%, rgb(32 58 117) 100%)')
         localStorage.setItem('tv_lewd', 'lewd.json|lewd|🔥|radial-gradient(at center top, rgb(97 149 63), rgb(0 0 0))')
-        localStorage.setItem('tv_search', 'search.json|search|🔎|linear-gradient(45deg, rgb(0 47 22) 0%, rgb(41 41 41) 100%)')
+        localStorage.setItem('tv_search', 'search.json|search|🔎|radial-gradient(circle, rgb(0 162 235) 0%, rgb(26 30 35) 100%)')
         localStorage.setItem('tv_tools', 'tools.json|tools|🔧|')
         localStorage.setItem('tv_watchTV', 'icon_data.json|watchTV|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
         localStorage.setItem('_defaultjson', 'watchTV')
