@@ -1,0 +1,74 @@
+[
+    {
+        "friendly-name": "QQ邮箱",
+        "name": "qqmail",
+        "imageurl": "imgs/qqmail.png",
+        "url": "https://mail.qq.com/",
+        "context-menu-item": [
+            {
+                "name": "登录页",
+                "url": "https://mail.qq.com/"
+            }
+        ]
+    },
+    {
+        "friendly-name": "Gmail",
+        "name": "gmail",
+        "imageurl": "imgs/gmail.png",
+        "url": "https://mail.google.com/",
+        "context-menu-item": [
+            {
+                "name": "收件箱",
+                "url": "https://mail.google.com/mail/u/0/#inbox"
+            }
+        ]
+    },
+    {
+        "friendly-name": "Outlook",
+        "name": "outlook",
+        "imageurl": "imgs/outlook.png",
+        "url": "https://outlook.live.com/",
+        "context-menu-item": [
+            {
+                "name": "邮件主页",
+                "url": "https://outlook.live.com/mail/0/"
+            }
+        ]
+    },
+    {
+        "friendly-name": "163邮箱",
+        "name": "mail163",
+        "imageurl": "imgs/mail163.png",
+        "url": "https://mail.163.com/",
+        "context-menu-item": [
+            {
+                "name": "登录页",
+                "url": "https://mail.163.com/"
+            }
+        ]
+    },
+    {
+        "friendly-name": "阿里邮箱",
+        "name": "alibaba-mail",
+        "imageurl": "imgs/alibaba-mail.png",
+        "url": "https://login.alibaba-inc.com/ssoLogin.htm",
+        "context-menu-item": [
+            {
+                "name": "内网登录",
+                "url": "https://login.alibaba-inc.com/ssoLogin.htm"
+            }
+        ]
+    },
+    {
+        "friendly-name": "iCloud Mail",
+        "name": "icloud-mail",
+        "imageurl": "imgs/icloud2.png",
+        "url": "https://www.icloud.com.cn/mail/",
+        "context-menu-item": [
+            {
+                "name": "邮件主页",
+                "url": "https://www.icloud.com.cn/mail/"
+            }
+        ]
+    }
+]

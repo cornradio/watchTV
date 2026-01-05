@@ -2,7 +2,7 @@
 // localstorage 名字为 tv_xxx 
 // 颜色可以参考 https://www.grabient.com/ 并且建议使用暗色系
 function checkLS() {
-    if (localStorage.length === 0 || localStorage.getItem('tv_archive') === null){
+    if (localStorage.length === 0 || localStorage.getItem('tv_archive') === null) {
         localStorage.setItem('tv_archive', 'archive.json|archive|🗄️|')
         localStorage.setItem('tv_dengbao', 'dengbao.json|security|🛡️|radial-gradient(ellipse farthest-corner at center top, #176980, #353333)')
         localStorage.setItem('tv_forum', 'forum.json|forum|📢|')
@@ -12,6 +12,7 @@ function checkLS() {
         localStorage.setItem('tv_search', 'search.json|search|🔎|radial-gradient(circle, rgb(0 162 235) 0%, rgb(26 30 35) 100%)')
         localStorage.setItem('tv_tools', 'tools.json|tools|🔧|')
         localStorage.setItem('tv_watchTV', 'icon_data.json|watchTV|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
+        localStorage.setItem('tv_email', 'email.json|email|📧|radial-gradient(circle, rgb(0 162 235) 0%, rgb(26 30 35) 100%)')
         localStorage.setItem('_defaultjson', 'watchTV')
         console.log("🤖创建默认配置");
     }
@@ -33,14 +34,14 @@ function getUrlParamOrLS() {
 // select onchange 使用
 function redirectToURL(value) {
     if (value === 'clear') {
-        Object.keys(localStorage).forEach( (key) => {
+        Object.keys(localStorage).forEach((key) => {
             if (key.startsWith("tv_")) {
                 localStorage.removeItem(key);
             }
         });
         return;
     }
-        // 2024-11-11 09:59:43 Monday
+    // 2024-11-11 09:59:43 Monday
     if (value === 'addLS') {
         var newLSstr = prompt("请输入新配置地址字符串：\n <json_url>|<display_name>|<emoji_logo🕹️>|<gradient_color>", "tools.json|tools|🔧|");
         if (newLSstr === null) {
@@ -55,7 +56,7 @@ function redirectToURL(value) {
             localStorage.setItem("tv_" + newLSlist[1], newLSstr);
             console.log("🤖创建新配置：" + newLSstr);
         }
-        window.location.href = `?name=${newLSlist[1]}`;  
+        window.location.href = `?name=${newLSlist[1]}`;
         return;
     }
     // end 2024-11-11 09:59:43 Monday
@@ -104,7 +105,7 @@ function createSelect() {
     for (var i = 0; i < keys.length; i++) {
         key = keys[i];
         value = localStorage.getItem(key);
-        if (!key.startsWith("tv_") ) {
+        if (!key.startsWith("tv_")) {
             continue;
         }
         key = key.replace("tv_", "");
@@ -114,11 +115,11 @@ function createSelect() {
         let curEmoji = value.split("|")[2];
         let curLinkName = optionText;
         document.querySelector("#emojiName").innerHTML += `<a href="?name=${curLinkName}">${curEmoji}</a> `;
-        optionElement.text = curEmoji +" "+ optionText;
+        optionElement.text = curEmoji + " " + optionText;
         optionElement.value = optionValue;
         selectElement.appendChild(optionElement);
     }
-        //2024-11-11 09:59:43 Monday
+    //2024-11-11 09:59:43 Monday
     var optionLast2 = document.createElement("option");
     optionLast2.text = '➕ 增加配置';
     optionLast2.value = 'addLS';
