@@ -6,81 +6,25 @@
         "url": "https://chat.openai.com/",
         "context-menu-item": [
             {
-                "name": "AI-推荐列表",
-                "url": "https://github.com/xx025/carrot"
+                "name": "AI 神器大全",
+                "url": "https://aishenqi.net/#term-815"
             }
-            ,
-            {
-                "name": "AI天虎",
-                "url": "https://alo30k.aitianhu1.top/#/chat/1002"
-            }
-            ,
-            {
-                "name": "AIfree",
-                "url": "https://zb.aifree.site/"
-            }
-            ,
-            {
-                "name": "1.ai",
-                "url": "https://chat02.a1r.cc/#/chat/1002"
-            }
-            ,
-            {
-                "name": "ichat助手",
-                "url": "https://chat.letdata.net/ichat/ny6p2ayqbi4"
-            }
-            ,
-            {
-                "name": "这些不用翻墙",
-                "url": "#å"
-            }
-            
-
         ]
     },
-
     {
-        "friendly-name": "copilot",
-        "name": "copilot",
-        "imageurl": "imgs/copilot.svg",
-        "url": "https://copilot.microsoft.com/",
-        "context-menu-item": [
-            {
-                "name": "ai导航",
-                "url": "https://nav.xjai.top/"
-            }
-        ]
-    }
-    ,
-
+        "friendly-name": "claude",
+        "name": "claude",
+        "imageurl": "imgs/claude.png",
+        "url": "https://claude.ai/new",
+        "context-menu-item": []
+    },
     {
         "friendly-name": "tongyi",
         "name": "tongyi",
-        "imageurl": "imgs/tongyi.png",
+        "imageurl": "imgs/tongyi2.png",
         "url": "https://tongyi.aliyun.com/qianwen/",
-        "context-menu-item": [
-
-        ]
-    }
-    ,
-    {
-        "friendly-name": "metaso",
-        "name": "metaso",
-        "imageurl": "imgs/metaso.png",
-        "url": "https://metaso.cn/",
-        "context-menu-item": [
-            {
-                "name": "search",
-                "url": "https://www.phind.com/search?home=true"
-            },
-            {
-                "name": "chat",
-                "url": "https://www.phind.com/agent?home=true"
-            }
-
-        ]
-    }
-    ,
+        "context-menu-item": []
+    },
     {
         "friendly-name": "phind",
         "name": "phind",
@@ -95,32 +39,29 @@
                 "name": "chat",
                 "url": "https://www.phind.com/agent?home=true"
             }
-
         ]
-    }
-    ,
+    },
     {
         "friendly-name": "Kimi",
         "name": "Kimi",
-        "imageurl": "imgs/kimi2.jpg",
+        "imageurl": "imgs/kimi.png",
         "url": "https://kimi.moonshot.cn/",
-        "context-menu-item": [
-
-        ]
-    }
-    ,
-
+        "context-menu-item": []
+    },
     {
         "friendly-name": "doubao",
         "name": "doubao",
         "imageurl": "imgs/doubao.png",
         "url": "https://www.doubao.com/chat/",
-        "context-menu-item": [
-
-        ]
-    }
-    ,
-
+        "context-menu-item": []
+    },
+    {
+        "friendly-name": "githubcopilot",
+        "name": "githubcopilot",
+        "imageurl": "imgs/copilot.png",
+        "url": "https://github.com/copilot/",
+        "context-menu-item": []
+    },
     {
         "friendly-name": "aistudio",
         "name": "aistudio",
@@ -132,68 +73,22 @@
                 "url": "https://aistudio.google.com/prompts/new_chat"
             },
         ]
-    }
-    ,
+    },
     {
         "friendly-name": "duckai",
         "name": "duckai",
         "imageurl": "imgs/duckai.png",
         "url": "https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat&duckai=1",
-        "context-menu-item": [
-        ]
-    }
-    ,
+        "context-menu-item": []
+    },
     {
         "friendly-name": "perplexity",
         "name": "perplexity",
         "imageurl": "imgs/perplexity.webp",
         "url": "https://www.perplexity.ai/",
-        "context-menu-item": [
-        ]
-    }
-    ,
+        "context-menu-item": []
+    },
     {
-        "friendly-name": "aiworkspace",
-        "name": "aiworkspace",
-        "imageurl": "imgs/aiworkspace.png",
-        "url": "https://aiaw.app/workspaces",
-        "context-menu-item": [
-        ]
-    }
-    ,
-    {
-        "friendly-name": "githubcopilot",
-        "name": "githubcopilot",
-        "imageurl": "imgs/githubcopilot.png",
-        "url": "https://github.com/copilot/",
-        "context-menu-item": [
-        ]
-    }
-    ,
-    {
-        "friendly-name": "BAI",
-        "name": "BAI",
-        "imageurl": "imgs/BAI.png",
-        "url": "https://beta.theb.ai/home",
-        "context-menu-item": [
-            {
-                "name": "搜索引擎",
-                "url": "https://beta.theb.ai/search"
-            }
-            ,
-            {
-                "name": "绘图",
-                "url": "https://beta.theb.ai/image"
-            }
-            ,
-            {
-                "name": "绘图prompt",
-                "url": "https://prompthero.com/search?q=catgirl"
-            }
-        ]
-    }
-    ,
-        {
         "friendly-name": "poe",
         "name": "poe",
         "imageurl": "imgs/poe.png",
@@ -205,5 +100,41 @@
             }
         ]
     },
-
+    {
+        "friendly-name": "metaso",
+        "name": "metaso",
+        "imageurl": "imgs/metaso.png",
+        "url": "https://metaso.cn/",
+        "context-menu-item": [
+            {
+                "name": "search",
+                "url": "https://www.phind.com/search?home=true"
+            },
+            {
+                "name": "chat",
+                "url": "https://www.phind.com/agent?home=true"
+            }
+        ]
+    },
+    {
+        "friendly-name": "openrouter",
+        "name": "openrouter",
+        "imageurl": "imgs/openrouter.png",
+        "url": "https://openrouter.ai/",
+        "context-menu-item": []
+    },
+    {
+        "friendly-name": "stitch",
+        "name": "stitch",
+        "imageurl": "imgs/stitch.png",
+        "url": "https://stitch.withgoogle.com/",
+        "context-menu-item": []
+    },
+    {
+        "friendly-name": "cherry",
+        "name": "cherry",
+        "imageurl": "imgs/cherry.png",
+        "url": "https://www.cherry-ai.com/",
+        "context-menu-item": []
+    }
 ]
