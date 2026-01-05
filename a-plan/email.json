@@ -70,5 +70,29 @@
                 "url": "https://www.icloud.com.cn/mail/"
             }
         ]
+    },
+    {
+        "friendly-name": "Temp Mail",
+        "name": "temp-mail",
+        "imageurl": "imgs/tempmail.png",
+        "url": "https://tempmail.plus/en",
+        "context-menu-item": [
+            {
+                "name": "TempMail Plus",
+                "url": "https://tempmail.plus/en"
+            },
+            {
+                "name": "Temp Mail Org",
+                "url": "https://temp-mail.org/"
+            },
+            {
+                "name": "Mail.tm",
+                "url": "https://mail.tm/"
+            },
+            {
+                "name": "10 Minute Mail",
+                "url": "https://10minutemail.com/"
+            }
+        ]
     }
 ]
