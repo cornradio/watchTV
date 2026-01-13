@@ -1,17 +1,43 @@
 [
-{
-    "friendly-name": "攻防世界",
-    "name": "攻防世界",
-    "imageurl": "imgs/攻防世界.png",
-    "url": "https://adworld.xctf.org.cn/challenges/list",
-    "context-menu-item": [
-        {
-            "name": "可以导入自己的txt然后同步在电脑阅读！",
-            "url": ""
-        }
-    ]
-}
-,
+    {
+        "friendly-name": "攻防世界",
+        "name": "攻防世界",
+        "imageurl": "imgs/攻防世界.png",
+        "url": "https://adworld.xctf.org.cn/challenges/list",
+        "context-menu-item": [
+            {
+                "name": "可以导入自己的txt然后同步在电脑阅读！",
+                "url": ""
+            }
+        ]
+    }
+    ,
+    {
+        "friendly-name": "ddrk",
+        "name": "ddrk",
+        "imageurl": "imgs/ddrk.jpg",
+        "url": "https://ddys.io/",
+        "context-menu-item": [
+            {
+                "name": "黑袍纠察队",
+                "url": "https://ddys.pro/the-boys/"
+            },
+            {
+                "name": "rick&morty",
+                "url": "https://ddys.pro/rick-and-morty/"
+            }
+            ,
+            {
+                "name": "星期三",
+                "url": "https://ddys.pro/wednesday/"
+            }
+            ,
+            {
+                "name": "紫可可动漫",
+                "url": "http://www.zkk78.com/"
+            }
+        ]
+    },
 {
     "friendly-name": "Grabient",
     "name": "Grabient",
