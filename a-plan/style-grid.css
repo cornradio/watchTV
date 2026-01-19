@@ -190,7 +190,6 @@ header h1 {
 .context-menu .item:hover {
     border-left: 6px solid rgba(1, 9, 10, 0.993);
     cursor: pointer;
-    transition: 0.2s;
 
 }
 

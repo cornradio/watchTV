@@ -1,4 +1,45 @@
-[
+[   
+    {
+        "friendly-name": "zhihu",
+        "name": "zhihu",
+        "imageurl": "imgs/zhihu.png",
+        "url": "https://www.zhihu.com/",
+        "context-menu-item": [
+            {
+                "name": "写文章",
+                "url": "https://zhuanlan.zhihu.com/write"
+            },
+            {
+                "name": "知乎黑色模式",
+                "url": "https://www.zhihu.com/?theme=dark"
+            },
+            {
+                "name": "知乎白色模式",
+                "url": "https://www.zhihu.com/?theme=light"
+            }
+        ]
+    }, 
+    {
+        "friendly-name": "sspai",
+        "name": "sspai",
+        "imageurl": "imgs/sspai.png",
+        "url": "https://www.sspai.com/",
+        "context-menu-item": []
+    },
+    {
+        "friendly-name": "reddit",
+        "name": "reddit",
+        "imageurl": "imgs/reddit.png",
+        "url": "https://www.reddit.com/",
+        "context-menu-item": []
+    },
+        {
+        "friendly-name": "hellogithub",
+        "name": "hellogithub",
+        "imageurl": "imgs/hellogithub.png",
+        "url": "https://www.hellogithub.com/",
+        "context-menu-item": []
+    },
     {
         "friendly-name": "攻防世界",
         "name": "攻防世界",
