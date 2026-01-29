@@ -19,33 +19,22 @@
         "context-menu-item": []
     },
     {
+        "friendly-name": "aistudio",
+        "name": "aistudio",
+        "imageurl": "imgs/gemini.png",
+        "url": "https://gemini.google.com/app",
+        "context-menu-item": [
+            {
+                "name": "ai studio",
+                "url": "https://aistudio.google.com/prompts/new_chat"
+            },
+        ]
+    },
+    {
         "friendly-name": "tongyi",
         "name": "tongyi",
         "imageurl": "imgs/tongyi2.png",
         "url": "https://tongyi.aliyun.com/qianwen/",
-        "context-menu-item": []
-    },
-    {
-        "friendly-name": "phind",
-        "name": "phind",
-        "imageurl": "imgs/phind.png",
-        "url": "https://www.phind.com",
-        "context-menu-item": [
-            {
-                "name": "search",
-                "url": "https://www.phind.com/search?home=true"
-            },
-            {
-                "name": "chat",
-                "url": "https://www.phind.com/agent?home=true"
-            }
-        ]
-    },
-    {
-        "friendly-name": "Kimi",
-        "name": "Kimi",
-        "imageurl": "imgs/kimi.png",
-        "url": "https://kimi.moonshot.cn/",
         "context-menu-item": []
     },
     {
@@ -54,25 +43,6 @@
         "imageurl": "imgs/doubao.png",
         "url": "https://www.doubao.com/chat/",
         "context-menu-item": []
-    },
-    {
-        "friendly-name": "githubcopilot",
-        "name": "githubcopilot",
-        "imageurl": "imgs/copilot.png",
-        "url": "https://github.com/copilot/",
-        "context-menu-item": []
-    },
-    {
-        "friendly-name": "aistudio",
-        "name": "aistudio",
-        "imageurl": "imgs/gemini.png",
-        "url": "https://gemini.google.com/app/f98781f998f46950?hl=zh",
-        "context-menu-item": [
-            {
-                "name": "ai studio",
-                "url": "https://aistudio.google.com/prompts/new_chat"
-            },
-        ]
     },
     {
         "friendly-name": "duckai",
@@ -135,6 +105,22 @@
         "name": "cherry",
         "imageurl": "imgs/cherry.png",
         "url": "https://www.cherry-ai.com/",
+        "context-menu-item": []
+    }
+    ,
+        {
+        "friendly-name": "Kimi",
+        "name": "Kimi",
+        "imageurl": "imgs/kimi.png",
+        "url": "https://kimi.moonshot.cn/",
+        "context-menu-item": []
+    }
+    ,
+    {
+        "friendly-name": "githubcopilot",
+        "name": "githubcopilot",
+        "imageurl": "imgs/copilot.png",
+        "url": "https://github.com/copilot/",
         "context-menu-item": []
     }
 ]

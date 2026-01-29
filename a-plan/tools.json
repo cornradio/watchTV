@@ -3,32 +3,98 @@
         "friendly-name": "ipchecking",
         "name": "ipchecking",
         "imageurl": "imgs/ipchecking.png",
-        "url": "https://ipcheck.ing/#/",
+        "url": "https://ip.skk.moe",
         "context-menu-item": [
             {
-                "name": "Keyboard",
-                "url": "https://www.ratatype.com/keyboard-test/"
+                "name": "IP.skk.moe",
+                "url": "https://ip.skk.moe"
             },
             {
-                "name": "speedtest*cn",
-                "url": "https://www.speedtest.cn/"
+                "name": "IPPure.com",
+                "url": "https://ippure.com"
             },
             {
-                "name": "ping0",
-                "url": "https://ping0.cc/"
+                "name": "Ping0.cc",
+                "url": "https://ping0.cc"
             },
             {
-                "name": "IP 多平台查询",
+                "name": "Leak Test",
+                "url": "https://browserleaks.com/ip"
+            },
+            {
+                "name": "DNSLog.org",
+                "url": "https://dnslog.org/"
+            },
+            {
+                "name": "IP-searching",
                 "url": "http://8.153.164.13/tool/IP.html"
             },
             {
-                "name": "CVE 多平台查询",
-                "url": "http://8.153.164.13/tool/CVE.html"
+                "name": "IPCheck.ing ",
+                "url": "https://ipcheck.ing/#/"
+            },
+            {
+                "name": "Ping.pe",
+                "url": "https://ping.pe"
+            },
+            {
+                "name": "Check-Host",
+                "url": "https://check-host.net"
+            }
+        ]
+    },
+    {
+        "friendly-name": "gamepadtester",
+        "name": "gamepadtester",
+        "imageurl": "imgs/gamepadtester.png",
+        "url": "https://hardwaretester.com/gamepad",
+        "context-menu-item": [
+            {
+                "name": "9slab",
+                "url": "https://9slab.com/gamepad/home"
+            },
+            {
+                "name": "Mic Test",
+                "url": "https://webcammictest.com/check-mic.html"
+            },
+            {
+                "name": "Frame Rate Test ",
+                "url": "https://www.testufo.com/framerates#count=3&pps=960&hdr=0"
+            },
+            {
+                "name": "Keyboard Test",
+                "url": "https://www.ratatype.com/keyboard-test/"
+            },
+            {
+                "name": "Gamepad Test ",
+                "url": "https://hardwaretester.com/gamepad"
+            }
+        ]
+    },
+    {
+        "friendly-name": "speedtest",
+        "name": "speedtest",
+        "imageurl": "imgs/speedtest.png",
+        "url": "https://www.speedtest.net/",
+        "context-menu-item": [
+            {
+                "name": "cloudflare speedtest",
+                "url": "https://speed.cloudflare.com/"
+            },
+            {
+                "name": "fast.com",
+                "url": "https://fast.com/"
+            },
+            {
+                "name": "Speedtest.cn",
+                "url": "https://www.speedtest.cn/"
+            },
+            {
+                "name": "Speedtest.net",
+                "url": "https://www.speedtest.net"
             },
         ]
-    }
-    ,
-
+    },
     {
         "friendly-name": "figma",
         "name": "figma",
@@ -64,22 +130,16 @@
                 "url": "https://wallhaven.cc/search?categories=110&purity=001&topRange=1M&sorting=toplist&order=desc&ai_art_filter=1&page=3"
             }
         ]
-    }
-    
-    ,
-
+    },
     {
         "friendly-name": "notion",
         "name": "notion",
         "imageurl": "imgs/notion.png",
         "url": "https://www.notion.so/",
         "context-menu-item": [
-            {
-            }
+            {}
         ]
-    }
-    ,
-    
+    },
     {
         "friendly-name": "github",
         "name": "github",
@@ -102,40 +162,24 @@
                 "name": "tools.images",
                 "url": "https://github.com/cornradio/watchTV/upload/main/a-plan/imgs"
             },
-        ] 
-    }
-    ,
+        ]
+    },
     {
         "friendly-name": "webclip",
         "name": "webclip",
         "imageurl": "imgs/webclip.png",
-        "url": "http://8.153.164.13:88/",
+        "url": "http://8.153.164.13:8080/",
         "context-menu-item": [
             {
                 "name": "lanclip",
                 "url": "http://8.153.164.13:5000/"
             },
             {
-                "name": "getnote.top",
-                "url": "https://getnote.top/"
-            },
-            {
-                "name": "netcut.cn",
-                "url": "https://netcut.cn/"
-            },
-            {
                 "name": "localsend",
                 "url": "https://localsend.org/"
-            },
-            {
-                "name": "aliding doc",
-                "url": "https://alidocs.dingtalk.com/i/desktop"
-            },
-
-
+            }
         ]
     },
-     
     {
         "friendly-name": "icloud",
         "name": "icloud",
@@ -145,45 +189,38 @@
             {
                 "name": "坚果云",
                 "url": "https://www.jianguoyun.com/d/home#/"
-            }
-            ,
+            },
             {
                 "name": "Onedrive",
                 "url": "https://onedrive.live.com/"
-            }
-            ,
+            },
             {
                 "name": "百度网盘",
                 "url": "https://yun.baidu.com/disk/main"
-            }
-            ,
+            },
             {
                 "name": "备忘录",
                 "url": "https://www.icloud.com.cn/notes/"
-            }
-            ,
+            },
             {
                 "name": "云盘",
                 "url": "https://www.icloud.com.cn/iclouddrive/"
-            }
-            ,
+            },
             {
                 "name": "照片",
                 "url": "https://www.icloud.com.cn/photos/"
-            }
-            ,
+            },
             {
                 "name": "查找iphone",
                 "url": "https://www.icloud.com.cn/find/"
-            }
-            ,
+            },
             {
                 "name": "onedrive",
                 "url": "https://onedrive.live.com/"
             }
         ]
-    }
-    ,    {
+    },
+    {
         "friendly-name": "chromewebstore",
         "name": "chromewebstore",
         "imageurl": "imgs/chromewebstore.png",
@@ -192,51 +229,42 @@
             {
                 "name": "crx搜搜",
                 "url": "https://www.crxsoso.com/b"
-            }
-            ,
+            },
             {
                 "name": "wheel-smooth",
                 "url": "https://chrome.google.com/webstore/detail/chromium-wheel-smooth-scr/khpcanbeojalbkpgpmjpdkjnkfcgfkhb"
-            }
-            ,
+            },
             {
                 "name": "Video Speed",
                 "url": "https://chrome.google.com/webstore/detail/video-speed-controller-vi/gaiceihehajjahakcglkhmdbbdclbnlf/related"
-            }
-            ,
+            },
             {
                 "name": "Cookie-Editor",
                 "url": "https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm"
-            }
-            ,
+            },
             {
                 "name": "Stylus",
                 "url": "https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne"
-            }
-            ,
+            },
             {
                 "name": "Autofill",
                 "url": "https://chrome.google.com/webstore/detail/autofill/nlmmgnhgdeffjkdckmikfpnddkbbfkkk"
-            }
-            ,
+            },
             {
                 "name": "wappalyzer",
                 "url": "https://chrome.google.com/webstore/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg"
-            }
-            ,
+            },
             {
                 "name": "火山翻译",
                 "url": "https://chrome.google.com/webstore/detail/%E7%81%AB%E5%B1%B1%E7%BF%BB%E8%AF%91-%E5%88%92%E8%AF%8D%E5%92%8C%E7%BD%91%E9%A1%B5%E7%BF%BB%E8%AF%91/klgfhbiooeogdfodpopgppeadghjjemk"
-            }
-            ,
+            },
             {
                 "name": "SponsorBlock",
                 "url": "https://chrome.google.com/webstore/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone"
             }
-            
         ]
-    }
-    ,    {
+    },
+    {
         "friendly-name": "Maps",
         "name": "Maps",
         "imageurl": "imgs/Maps.png",
@@ -258,10 +286,8 @@
                 "name": "Google地球",
                 "url": "https://www.google.com/maps/"
             }
-        ] 
-    }
-        ,
-
+        ]
+    },
     {
         "friendly-name": "Code",
         "name": "Code",
@@ -276,9 +302,9 @@
                 "name": "VScode online",
                 "url": "https://vscode.dev/"
             }
-        ] 
-    }
-    ,   {
+        ]
+    },
+    {
         "friendly-name": "Tampermonkey",
         "name": "Tampermonkey",
         "imageurl": "imgs/Tampermonkey.png",
@@ -287,66 +313,57 @@
             {
                 "name": "greasyfork",
                 "url": "https://greasyfork.org/zh-CN"
-            }
-            ,
+            },
             {
                 "name": "sleazyfork",
                 "url": "https://sleazyfork.org/zh-CN"
-            }
-            ,
+            },
             {
                 "name": "openuserjs",
                 "url": "https://openuserjs.org/"
-            }
-            ,
+            },
             {
                 "name": "GoodNote",
                 "url": "https://greasyfork.org/zh-CN/scripts/526070"
-            }
-            ,
+            },
             {
                 "name": "煎蛋用户名搜索",
                 "url": "https://greasyfork.org/zh-CN/scripts/523770"
-            }
-            ,
+            },
             {
-                "name": "小众论坛图床",
-                "url": "https://greasyfork.org/zh-CN/scripts/529910-appinn-forum-upload-enhancer"
-            }
-            ,
+                "name": "通用图床",
+                "url": "https://greasyfork.org/zh-CN/scripts/553341-universal-image-uploader"
+            },
+            {
+                "name": "自定义搜索助手",
+                "url": "https://greasyfork.org/zh-CN/scripts/561353"
+            },
             {
                 "name": "ehunter",
                 "url": "https://github.com/hanFengSan/eHunter"
             }
-        ] 
-    }
-    ,
-
+        ]
+    },
     {
         "friendly-name": "freemind",
         "name": "freemind",
         "imageurl": "imgs/freemind.png",
         "url": "https://freemind.fit/",
         "context-menu-item": [
-            
             {
                 "name": "森林",
                 "url": "https://freemind.fit/?theme=waterfall&sounds=stream-water%2C1%3Bforest%2C1"
-            }
-            ,
+            },
             {
                 "name": "火堆",
                 "url": "https://freemind.fit/?theme=waterfall&sounds=fire%2C1"
-            }
-            ,
+            },
             {
                 "name": "海边夜晚",
                 "url": "https://freemind.fit/?theme=waterfall&sounds=waves%2C0.773%3Bnight%2C0.208"
             }
         ]
-    }
-    ,
-
+    },
     {
         "friendly-name": "iodraw",
         "name": "iodraw",
@@ -362,8 +379,7 @@
                 "url": "https://www.processon.com/"
             }
         ]
-    }
-    ,
+    },
     {
         "friendly-name": "yuquebiaoge",
         "name": "yuquebiaoge",
@@ -373,55 +389,27 @@
             {
                 "name": "我的自研软件商店",
                 "url": "https://appstore.cornradio.org/"
-            }
-            ,
+            },
             {
                 "name": "Noco DB",
                 "url": "http://8.153.164.13:8989/"
             }
-        ] 
-    }
-    ,
-    {
-        "friendly-name": "speedtest",
-        "name": "speedtest",
-        "imageurl": "imgs/speedtest.png",
-        "url": "https://www.speedtest.net/",
-        "context-menu-item": [
-            {
-                "name": "cf speedtest",
-                "url": "https://speed.cloudflare.com/"
-            }
-            ,
-            {
-                "name": "fast.com",
-                "url": "https://fast.com/"
-            }
-        ] 
-    }
-
-    ,
-
+        ]
+    },
     {
         "friendly-name": "photopea",
         "name": "photopea",
         "imageurl": "imgs/photopea.png",
         "url": "https://www.photopea.com/",
-        "context-menu-item": [
-        ] 
-    }
-    ,
-
+        "context-menu-item": []
+    },
     {
         "friendly-name": "squoosh",
         "name": "squoosh",
         "imageurl": "imgs/squoosh.png",
         "url": "https://squoosh.app/",
-        "context-menu-item": [
-        ]
-    }
-    ,
-
+        "context-menu-item": []
+    },
     {
         "friendly-name": "freecodecamp",
         "name": "freecodecamp",
@@ -434,21 +422,4 @@
             }
         ]
     }
-
-    ,
-
-    {
-        "friendly-name": "gamepadtester",
-        "name": "gamepadtester",
-        "imageurl": "imgs/gamepadtester.png",
-        "url": "https://hardwaretester.com/gamepad",
-        "context-menu-item": [
-            {
-                "name": "9slab",
-                "url": "https://9slab.com/gamepad/home"
-            }
-        ]
-    }
-
-
 ]

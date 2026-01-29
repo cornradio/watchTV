@@ -47,18 +47,7 @@
             }
         ]
     },
-    {
-        "friendly-name": "smzdm",
-        "name": "smzdm",
-        "imageurl": "imgs/smzdm.png",
-        "url": "https://www.smzdm.com/",
-        "context-menu-item": [
-            {
-                "name": "好价",
-                "url": "https://www.smzdm.com/jingxuan/"
-            }
-        ]
-    },
+
     {
         "friendly-name": "telegram",
         "name": "telegram",
@@ -68,6 +57,18 @@
             {
                 "name": "download",
                 "url": "https://telegram.org/apps"
+            }
+        ]
+    },
+    {
+        "friendly-name": "2libra",
+        "name": "2libra",
+        "imageurl": "imgs/2libra.png",
+        "url": "https://2libra.com/",
+        "context-menu-item": [
+            {
+                "name": "2libra",
+                "url": "https://2libra.com/"
             }
         ]
     },
@@ -159,5 +160,17 @@
         "imageurl": "imgs/linuxdo.png",
         "url": "https://linux.do/",
         "context-menu-item": []
+    },
+        {
+        "friendly-name": "smzdm",
+        "name": "smzdm",
+        "imageurl": "imgs/smzdm.png",
+        "url": "https://www.smzdm.com/",
+        "context-menu-item": [
+            {
+                "name": "好价",
+                "url": "https://www.smzdm.com/jingxuan/"
+            }
+        ]
     },
 ]
