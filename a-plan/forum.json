@@ -6,8 +6,8 @@
         "url": "https://www.v2ex.com/",
         "context-menu-item": [
             {
-                "name": "每日任务",
-                "url": "https://www.v2ex.com/mission/daily"
+                "name": "信息安全",
+                "url": "https://www.v2ex.com/go/security"
             }
         ]
     },
@@ -47,7 +47,6 @@
             }
         ]
     },
-
     {
         "friendly-name": "telegram",
         "name": "telegram",
@@ -112,7 +111,7 @@
             }
         ]
     },
-        {
+    {
         "friendly-name": "devto",
         "name": "devto",
         "imageurl": "imgs/devto.png",
@@ -161,7 +160,7 @@
         "url": "https://linux.do/",
         "context-menu-item": []
     },
-        {
+    {
         "friendly-name": "smzdm",
         "name": "smzdm",
         "imageurl": "imgs/smzdm.png",
