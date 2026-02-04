@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style-grid.css">
+  <title>watchTV Preview</title>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1><span id="bigName">Preview</span> <div id="emojiName"></div></h1>
+    </header>
+    <a class="mobile" style="opacity: 0.3;" onclick="switch_onmoble()">💻</a>
+    <div class="controlbox">
+      <button onclick="pageup()">⇱</button>
+      <br>
+      <button id="pagenum" onclick="alert('Use W/S or Arrow keys to change pages')">1</button>
+      <br>
+      <button onclick="pagedown()">⇲</button>
+    </div>
+    <div id="icon-holder"></div>
+  </div>
+  <div id="context-menu-holder"></div>
+  <script src="preview.js"></script>
+</body>
+</html>

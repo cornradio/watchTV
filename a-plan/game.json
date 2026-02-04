@@ -1,69 +1,46 @@
 [
-    {
-        "friendly-name": "ponytown",
-        "name": "ponytown",
-        "imageurl": "imgs/ponytown.webp",
-        "url": "https://pony.town/",
-        "context-menu-item": [
-            {
-                "name": "derpi",
-                "url": "https://derpibooru.org/"
-            }
-        ] 
-    }
-    ,
-    {
-        "friendly-name": "kook",
-        "name": "kook",
-        "imageurl": "imgs/kook.png",
-        "url": "https://www.kookapp.cn/app/",
-        "context-menu-item": [
-            {
-                "name": "MISS",
-                "url": "https://kook.top/SxeFxp"
-            }
-        ] 
-    }
-    ,
-    {
-        "friendly-name": "poki",
-        "name": "poki",
-        "imageurl": "imgs/poki.png",
-        "url": "https://poki.com/zh",
-        "context-menu-item": [
-
-        ] 
-    }
-    ,
-    {
-        "friendly-name": "tetrio",
-        "name": "tetrio",
-        "imageurl": "imgs/tetrio.png",
-        "url": "https://tetr.io/",
-        "context-menu-item": [
-        ] 
-    }
-    ,
-    {
-        "friendly-name": "discord",
-        "name": "discord",
-        "imageurl": "imgs/discord.png",
-        "url": "https://discord.com/channels/@me",
-        "context-menu-item": [
-            {
-            }
-        ]
-    }
-    ,
-    {
-        "friendly-name": "medaltv",
-        "name": "medaltv",
-        "imageurl": "imgs/medaltv.png",
-        "url": "https://medal.tv/zh-Hans",
-        "context-menu-item": [
-            {
-            }
-        ]
-    }
-    ,
+  {
+    "friendly-name": "medaltv",
+    "name": "medaltv",
+    "imageurl": "imgs/medaltv.png",
+    "url": "https://medal.tv/zh-Hans",
+    "context-menu-item": [
+      {}
+    ]
+  },
+  {
+    "friendly-name": "poki",
+    "name": "poki",
+    "imageurl": "imgs/poki.png",
+    "url": "https://poki.com/zh",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "ponytown",
+    "name": "ponytown",
+    "imageurl": "imgs/ponytown.webp",
+    "url": "https://pony.town/",
+    "context-menu-item": [
+      {
+        "name": "derpi",
+        "url": "https://derpibooru.org/"
+      }
+    ]
+  },
+  {
+    "friendly-name": "tetrio",
+    "name": "tetrio",
+    "imageurl": "imgs/tetrio.png",
+    "url": "https://tetr.io/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "discord",
+    "name": "discord",
+    "imageurl": "imgs/discord.png",
+    "url": "https://discord.com/channels/@me",
+    "context-menu-item": [
+      {}
+    ]
+  }
 ]

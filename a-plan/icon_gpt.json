@@ -1,126 +1,75 @@
 [
-    {
-        "friendly-name": "gpt-list",
-        "name": "gpt-list",
-        "imageurl": "imgs/gpt-list.png",
-        "url": "https://chat.openai.com/",
-        "context-menu-item": [
-            {
-                "name": "AI 神器大全",
-                "url": "https://aishenqi.net/#term-815"
-            }
-        ]
-    },
-    {
-        "friendly-name": "claude",
-        "name": "claude",
-        "imageurl": "imgs/claude.png",
-        "url": "https://claude.ai/new",
-        "context-menu-item": []
-    },
-    {
-        "friendly-name": "aistudio",
-        "name": "aistudio",
-        "imageurl": "imgs/gemini.png",
-        "url": "https://gemini.google.com/app",
-        "context-menu-item": [
-            {
-                "name": "ai studio",
-                "url": "https://aistudio.google.com/prompts/new_chat"
-            },
-        ]
-    },
-    {
-        "friendly-name": "tongyi",
-        "name": "tongyi",
-        "imageurl": "imgs/tongyi2.png",
-        "url": "https://tongyi.aliyun.com/qianwen/",
-        "context-menu-item": []
-    },
-    {
-        "friendly-name": "doubao",
-        "name": "doubao",
-        "imageurl": "imgs/doubao.png",
-        "url": "https://www.doubao.com/chat/",
-        "context-menu-item": []
-    },
-    {
-        "friendly-name": "duckai",
-        "name": "duckai",
-        "imageurl": "imgs/duckai.png",
-        "url": "https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat&duckai=1",
-        "context-menu-item": []
-    },
-    {
-        "friendly-name": "perplexity",
-        "name": "perplexity",
-        "imageurl": "imgs/perplexity.webp",
-        "url": "https://www.perplexity.ai/",
-        "context-menu-item": []
-    },
-    {
-        "friendly-name": "poe",
-        "name": "poe",
-        "imageurl": "imgs/poe.png",
-        "url": "https://poe.com/",
-        "context-menu-item": [
-            {
-                "name": "角色 bots",
-                "url": "https://poe.com/explore_bots?category=Popular"
-            }
-        ]
-    },
-    {
-        "friendly-name": "metaso",
-        "name": "metaso",
-        "imageurl": "imgs/metaso.png",
-        "url": "https://metaso.cn/",
-        "context-menu-item": [
-            {
-                "name": "search",
-                "url": "https://www.phind.com/search?home=true"
-            },
-            {
-                "name": "chat",
-                "url": "https://www.phind.com/agent?home=true"
-            }
-        ]
-    },
-    {
-        "friendly-name": "openrouter",
-        "name": "openrouter",
-        "imageurl": "imgs/openrouter.png",
-        "url": "https://openrouter.ai/",
-        "context-menu-item": []
-    },
-    {
-        "friendly-name": "stitch",
-        "name": "stitch",
-        "imageurl": "imgs/stitch.png",
-        "url": "https://stitch.withgoogle.com/",
-        "context-menu-item": []
-    },
-    {
-        "friendly-name": "cherry",
-        "name": "cherry",
-        "imageurl": "imgs/cherry.png",
-        "url": "https://www.cherry-ai.com/",
-        "context-menu-item": []
-    }
-    ,
-        {
-        "friendly-name": "Kimi",
-        "name": "Kimi",
-        "imageurl": "imgs/kimi.png",
-        "url": "https://kimi.moonshot.cn/",
-        "context-menu-item": []
-    }
-    ,
-    {
-        "friendly-name": "githubcopilot",
-        "name": "githubcopilot",
-        "imageurl": "imgs/copilot.png",
-        "url": "https://github.com/copilot/",
-        "context-menu-item": []
-    }
+  {
+    "friendly-name": "gpt",
+    "name": "gpt",
+    "imageurl": "imgs/gpt-list.png",
+    "url": "https://chat.openai.com/",
+    "context-menu-item": [
+      {
+        "name": "AI 神器大全",
+        "url": "https://aishenqi.net/#term-815"
+      }
+    ]
+  },
+  {
+    "friendly-name": "openrouter",
+    "name": "openrouter",
+    "imageurl": "imgs/openrouter.png",
+    "url": "https://openrouter.ai/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "cherry",
+    "name": "cherry",
+    "imageurl": "imgs/cherry.png",
+    "url": "https://www.cherry-ai.com/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "githubcopilot",
+    "name": "githubcopilot",
+    "imageurl": "imgs/copilot.png",
+    "url": "https://github.com/copilot/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "doubao",
+    "name": "doubao",
+    "imageurl": "imgs/doubao.png",
+    "url": "https://www.doubao.com/chat/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "claude",
+    "name": "claude",
+    "imageurl": "imgs/claude.png",
+    "url": "https://claude.ai/new",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "perplexity",
+    "name": "perplexity",
+    "imageurl": "imgs/perplexity.webp",
+    "url": "https://www.perplexity.ai/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "tongyi",
+    "name": "tongyi",
+    "imageurl": "imgs/tongyi2.png",
+    "url": "https://tongyi.aliyun.com/qianwen/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "aistudio",
+    "name": "aistudio",
+    "imageurl": "imgs/gemini.png",
+    "url": "https://gemini.google.com/app",
+    "context-menu-item": [
+      {
+        "name": "ai studio",
+        "url": "https://aistudio.google.com/prompts/new_chat"
+      }
+    ]
+  }
 ]

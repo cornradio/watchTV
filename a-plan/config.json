@@ -1,0 +1,93 @@
+{
+  "default": "watchTV",
+  "items": [
+    {
+      "key": "tv_dengbao",
+      "file": "dengbao.json",
+      "alias": "security",
+      "emoji": "🛡️",
+      "gradient": "linear-gradient(120deg, #3c1a5a 0%, #120a24 100%)",
+      "hidden": false
+    },
+    {
+      "key": "tv_forum",
+      "file": "forum.json",
+      "alias": "forum",
+      "emoji": "📢",
+      "gradient": "",
+      "hidden": false
+    },
+    {
+      "key": "tv_game",
+      "file": "game.json",
+      "alias": "game",
+      "emoji": "🕹️",
+      "gradient": "",
+      "hidden": false
+    },
+    {
+      "key": "tv_gpts",
+      "file": "icon_gpt.json",
+      "alias": "GPTS",
+      "emoji": "֎",
+      "gradient": "",
+      "hidden": false
+    },
+    {
+      "key": "tv_lewd",
+      "file": "lewd.json",
+      "alias": "lewd",
+      "emoji": "🔥",
+      "gradient": "linear-gradient(52deg, #5b2a6e 0%, #1b284f 100%)",
+      "hidden": false
+    },
+    {
+      "key": "tv_search",
+      "file": "search.json",
+      "alias": "search",
+      "emoji": "🔎",
+      "gradient": "radial-gradient(circle, rgb(0 162 235) 0%, rgb(26 30 35) 100%)",
+      "hidden": false
+    },
+    {
+      "key": "tv_tools",
+      "file": "tools.json",
+      "alias": "tools",
+      "emoji": "🔧",
+      "gradient": "",
+      "hidden": false
+    },
+    {
+      "key": "tv_watchTV",
+      "file": "icon_data.json",
+      "alias": "watchTV",
+      "emoji": "📺",
+      "gradient": "linear-gradient(-20deg, #047272 0%, #1d1035 100%)",
+      "hidden": false
+    },
+    {
+      "key": "tv_email",
+      "file": "email.json",
+      "alias": "email",
+      "emoji": "📧",
+      "gradient": "linear-gradient(140deg, #6b3b00 0%, #241300 100%)",
+      "hidden": false
+    },
+    {
+      "key": "tv_archive",
+      "file": "archive.json",
+      "alias": "archive",
+      "emoji": "🗄️",
+      "gradient": "",
+      "hidden": true
+    },
+    {
+      "key": "tv_config",
+      "file": "config.json",
+      "alias": "config",
+      "emoji": "📄",
+      "gradient": "",
+      "hidden": true
+    }
+  ]
+}

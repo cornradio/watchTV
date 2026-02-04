@@ -1,21 +1,40 @@
 // 默认创建如下localStorage item
 // localstorage 名字为 tv_xxx 
 // 颜色可以参考 https://www.grabient.com/ 并且建议使用暗色系
-function checkLS() {
-    if (localStorage.length === 0 || localStorage.getItem('tv_archive') === null) {
-        localStorage.setItem('tv_archive', 'archive.json|archive|🗄️|')
-        localStorage.setItem('tv_dengbao', 'dengbao.json|security|🛡️|radial-gradient(ellipse farthest-corner at center top, #176980, #353333)')
-        localStorage.setItem('tv_forum', 'forum.json|forum|📢|')
-        localStorage.setItem('tv_game', 'game.json|game|🕹️|')
-        localStorage.setItem('tv_gpts', 'icon_gpt.json|GPTS|🤖|linear-gradient(52deg, rgb(186 88 222) 0%, rgb(32 58 117) 100%)')
-        localStorage.setItem('tv_lewd', 'lewd.json|lewd|🔥|radial-gradient(at center top, rgb(97 149 63), rgb(0 0 0))')
-        localStorage.setItem('tv_search', 'search.json|search|🔎|radial-gradient(circle, rgb(0 162 235) 0%, rgb(26 30 35) 100%)')
-        localStorage.setItem('tv_tools', 'tools.json|tools|🔧|')
-        localStorage.setItem('tv_watchTV', 'icon_data.json|watchTV|📺|linear-gradient(-20deg, #047272 0%, #1d1035 100%)')
-        localStorage.setItem('tv_email', 'email.json|email|📧|radial-gradient(circle, rgb(0 162 235) 0%, rgb(26 30 35) 100%)')
-        localStorage.setItem('_defaultjson', 'watchTV')
-        console.log("🤖创建默认配置");
+async function checkLS() {
+    try {
+        const response = await fetch("config.json");
+        const config = await response.json();
+        if (localStorage.length === 0 || localStorage.getItem('tv_archive') === null) {
+            if (Array.isArray(config.items)) {
+                config.items.forEach((item) => {
+                    const key = item.key || `tv_${(item.alias || '').toLowerCase()}`;
+                    const value = `${item.file}|${item.alias}|${item.emoji || "📄"}|${item.gradient || ""}|${item.hidden ? "1" : "0"}`;
+                    localStorage.setItem(key, value);
+                });
+            }
+            if (config.default) {
+                localStorage.setItem('_defaultjson', config.default);
+            }
+            console.log("🤖创建默认配置");
+        }
+    } catch (error) {
+        console.log("🔥加载默认配置失败", error);
     }
+    // 兼容旧配置：补齐隐藏字段
+    Object.keys(localStorage).forEach((key) => {
+        if (!key.startsWith("tv_")) {
+            return;
+        }
+        const value = localStorage.getItem(key) || "";
+        const parts = value.split("|");
+        if (parts.length < 5) {
+            while (parts.length < 5) {
+                parts.push(parts.length === 4 ? "0" : "");
+            }
+            localStorage.setItem(key, parts.join("|"));
+        }
+    });
 }
 
 // 可访问 /?name=xxx 来加载指定的LS
@@ -112,7 +131,12 @@ function createSelect() {
         var optionText = key;
         var optionValue = key;
         var optionElement = document.createElement("option");
-        let curEmoji = value.split("|")[2];
+        let parts = value.split("|");
+        let curEmoji = parts[2];
+        let hidden = parts[4] === "1";
+        if (hidden) {
+            continue;
+        }
         let curLinkName = optionText;
         document.querySelector("#emojiName").innerHTML += `<a href="?name=${curLinkName}">${curEmoji}</a> `;
         optionElement.text = curEmoji + " " + optionText;
@@ -362,10 +386,11 @@ function switch_onmoble() {
 //main
 var onmobile = false
 pagemax = 1;
-checkLS();
-createSelect();
-var defaultvalue = getUrlParamOrLS();
-loadLS(defaultvalue);
-// 增加select 的 onchange trigger
-document.querySelector("#selectContainer select").value = defaultvalue;
-document.querySelector("#selectContainer select").setAttribute("onchange", "redirectToURL(this.value)");
+checkLS().then(() => {
+    createSelect();
+    var defaultvalue = getUrlParamOrLS();
+    loadLS(defaultvalue);
+    // 增加select 的 onchange trigger
+    document.querySelector("#selectContainer select").value = defaultvalue;
+    document.querySelector("#selectContainer select").setAttribute("onchange", "redirectToURL(this.value)");
+});
