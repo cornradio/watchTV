@@ -184,22 +184,6 @@
     ]
   },
   {
-    "friendly-name": "alist",
-    "name": "alist",
-    "imageurl": "imgs/alist.png",
-    "url": "http://192.168.31.11:5244",
-    "context-menu-item": [
-      {
-        "name": "local alist",
-        "url": "http://192.168.31.11:5244"
-      },
-      {
-        "name": "官方doc",
-        "url": "https://alist.nn.ci/zh/guide/"
-      }
-    ]
-  },
-  {
     "friendly-name": "yinghua",
     "name": "yinghua",
     "imageurl": "imgs/yinghua.png",
@@ -212,18 +196,18 @@
     ]
   },
   {
-    "friendly-name": "music163",
-    "name": "music163",
-    "imageurl": "imgs/mu163.webp",
-    "url": "https://music.163.com/",
+    "friendly-name": "alist",
+    "name": "alist",
+    "imageurl": "imgs/alist.png",
+    "url": "http://192.168.31.11:5244",
     "context-menu-item": [
       {
-        "name": "推荐",
-        "url": "https://music.163.com/#/discover/recommend/taste"
+        "name": "local alist",
+        "url": "http://192.168.31.11:5244"
       },
       {
-        "name": "我喜欢的",
-        "url": "https://music.163.com/#/playlist?id=94820299"
+        "name": "官方doc",
+        "url": "https://alist.nn.ci/zh/guide/"
       }
     ]
   },
@@ -248,6 +232,22 @@
       {
         "name": "订阅列表",
         "url": "https://www.youtube.com/feed/subscriptions"
+      }
+    ]
+  },
+  {
+    "friendly-name": "music163",
+    "name": "music163",
+    "imageurl": "imgs/mu163.webp",
+    "url": "https://music.163.com/",
+    "context-menu-item": [
+      {
+        "name": "推荐",
+        "url": "https://music.163.com/#/discover/recommend/taste"
+      },
+      {
+        "name": "我喜欢的",
+        "url": "https://music.163.com/#/playlist?id=94820299"
       }
     ]
   }
