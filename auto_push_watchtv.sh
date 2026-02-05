@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # */10 * * * * /bin/bash /home/kasusa/watchTV/auto_push_watchtv.sh >> /home/kasusa/auto_push_watchtv.log 2>&1 
+# https://github.com/cornradio/watchTV
 set -e
 cd /home/kasusa/watchTV
 
