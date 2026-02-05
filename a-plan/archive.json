@@ -156,6 +156,13 @@
     "context-menu-item": []
   },
   {
+    "friendly-name": "duckai",
+    "name": "duckai",
+    "imageurl": "imgs/duckai.png",
+    "url": "https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat&duckai=1",
+    "context-menu-item": []
+  },
+  {
     "friendly-name": "aivesa",
     "name": "aivesa",
     "imageurl": "imgs/aivesa.png",
@@ -186,10 +193,15 @@
     "context-menu-item": []
   },
   {
-    "friendly-name": "stitch",
-    "name": "stitch",
-    "imageurl": "imgs/stitch.png",
-    "url": "https://stitch.withgoogle.com/",
-    "context-menu-item": []
+    "friendly-name": "poe",
+    "name": "poe",
+    "imageurl": "imgs/poe.png",
+    "url": "https://poe.com/",
+    "context-menu-item": [
+      {
+        "name": "角色 bots",
+        "url": "https://poe.com/explore_bots?category=Popular"
+      }
+    ]
   }
 ]

@@ -1,10 +1,15 @@
 [
   {
-    "friendly-name": "tongyi",
-    "name": "tongyi",
-    "imageurl": "imgs/tongyi2.png",
-    "url": "https://tongyi.aliyun.com/qianwen/",
-    "context-menu-item": []
+    "friendly-name": "gpt",
+    "name": "gpt",
+    "imageurl": "imgs/gpt-list.png",
+    "url": "https://chat.openai.com/",
+    "context-menu-item": [
+      {
+        "name": "AI 神器大全",
+        "url": "https://aishenqi.net/#term-815"
+      }
+    ]
   },
   {
     "friendly-name": "claude",
@@ -21,13 +26,6 @@
     "context-menu-item": []
   },
   {
-    "friendly-name": "duckai",
-    "name": "duckai",
-    "imageurl": "imgs/duckai.png",
-    "url": "https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat&duckai=1",
-    "context-menu-item": []
-  },
-  {
     "friendly-name": "openrouter",
     "name": "openrouter",
     "imageurl": "imgs/openrouter.png",
@@ -37,14 +35,14 @@
   {
     "friendly-name": "perplexity",
     "name": "perplexity",
-    "imageurl": "imgs/perplexity.webp",
+    "imageurl": "imgs/perplexity.png",
     "url": "https://www.perplexity.ai/",
     "context-menu-item": []
   },
   {
     "friendly-name": "aistudio",
     "name": "aistudio",
-    "imageurl": "imgs/gemini.png",
+    "imageurl": "imgs/aistudio-1770272995804.png",
     "url": "https://gemini.google.com/app",
     "context-menu-item": [
       {
@@ -54,16 +52,11 @@
     ]
   },
   {
-    "friendly-name": "poe",
-    "name": "poe",
-    "imageurl": "imgs/poe.png",
-    "url": "https://poe.com/",
-    "context-menu-item": [
-      {
-        "name": "角色 bots",
-        "url": "https://poe.com/explore_bots?category=Popular"
-      }
-    ]
+    "friendly-name": "tongyi",
+    "name": "tongyi",
+    "imageurl": "imgs/tongyi2.png",
+    "url": "https://tongyi.aliyun.com/qianwen/",
+    "context-menu-item": []
   },
   {
     "friendly-name": "cherry",
@@ -73,15 +66,10 @@
     "context-menu-item": []
   },
   {
-    "friendly-name": "gpt",
-    "name": "gpt",
-    "imageurl": "imgs/gpt-list.png",
-    "url": "https://chat.openai.com/",
-    "context-menu-item": [
-      {
-        "name": "AI 神器大全",
-        "url": "https://aishenqi.net/#term-815"
-      }
-    ]
+    "friendly-name": "stitch",
+    "name": "stitch",
+    "imageurl": "imgs/stitch.png",
+    "url": "https://stitch.withgoogle.com/",
+    "context-menu-item": []
   }
 ]

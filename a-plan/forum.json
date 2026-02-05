@@ -1,175 +1,175 @@
 [
-    {
-        "friendly-name": "v2ex",
-        "name": "v2ex",
-        "imageurl": "imgs/v2ex.png",
-        "url": "https://www.v2ex.com/",
-        "context-menu-item": [
-            {
-                "name": "信息安全",
-                "url": "https://www.v2ex.com/go/security"
-            }
-        ]
-    },
-    {
-        "friendly-name": "weibo",
-        "name": "weibo",
-        "imageurl": "imgs/weibo2.png",
-        "url": "https://weibo.com/",
-        "context-menu-item": [
-            {
-                "name": "微博热搜",
-                "url": "https://weibo.com/newlogin?tabtype=search&gid=&openLoginLayer=0&url="
-            },
-            {
-                "name": "百度热搜",
-                "url": "https://top.baidu.com/board"
-            }
-        ]
-    },
-    {
-        "friendly-name": "jandan",
-        "name": "jandan",
-        "imageurl": "imgs/jandan.png",
-        "url": "https://jandan.net/",
-        "context-menu-item": [
-            {
-                "name": "热榜",
-                "url": "https://jandan.net/top"
-            },
-            {
-                "name": "无聊图",
-                "url": "https://jandan.net/pic"
-            },
-            {
-                "name": "树洞",
-                "url": "https://jandan.net/treehole"
-            }
-        ]
-    },
-    {
-        "friendly-name": "telegram",
-        "name": "telegram",
-        "imageurl": "imgs/tele.jpg",
-        "url": "https://web.telegram.org/a/",
-        "context-menu-item": [
-            {
-                "name": "download",
-                "url": "https://telegram.org/apps"
-            }
-        ]
-    },
-    {
-        "friendly-name": "2libra",
+  {
+    "friendly-name": "v2ex",
+    "name": "v2ex",
+    "imageurl": "imgs/v2ex.png",
+    "url": "https://www.v2ex.com/",
+    "context-menu-item": [
+      {
+        "name": "信息安全",
+        "url": "https://www.v2ex.com/go/security"
+      }
+    ]
+  },
+  {
+    "friendly-name": "weibo",
+    "name": "weibo",
+    "imageurl": "imgs/weibo2.png",
+    "url": "https://weibo.com/",
+    "context-menu-item": [
+      {
+        "name": "微博热搜",
+        "url": "https://weibo.com/newlogin?tabtype=search&gid=&openLoginLayer=0&url="
+      },
+      {
+        "name": "百度热搜",
+        "url": "https://top.baidu.com/board"
+      }
+    ]
+  },
+  {
+    "friendly-name": "jandan",
+    "name": "jandan",
+    "imageurl": "imgs/jandan.png",
+    "url": "https://jandan.net/",
+    "context-menu-item": [
+      {
+        "name": "热榜",
+        "url": "https://jandan.net/top"
+      },
+      {
+        "name": "无聊图",
+        "url": "https://jandan.net/pic"
+      },
+      {
+        "name": "树洞",
+        "url": "https://jandan.net/treehole"
+      }
+    ]
+  },
+  {
+    "friendly-name": "telegram",
+    "name": "telegram",
+    "imageurl": "imgs/tele.jpg",
+    "url": "https://web.telegram.org/a/",
+    "context-menu-item": [
+      {
+        "name": "download",
+        "url": "https://telegram.org/apps"
+      }
+    ]
+  },
+  {
+    "friendly-name": "2libra",
+    "name": "2libra",
+    "imageurl": "imgs/2libra.png",
+    "url": "https://2libra.com/",
+    "context-menu-item": [
+      {
         "name": "2libra",
-        "imageurl": "imgs/2libra.png",
-        "url": "https://2libra.com/",
-        "context-menu-item": [
-            {
-                "name": "2libra",
-                "url": "https://2libra.com/"
-            }
-        ]
-    },
-    {
-        "friendly-name": "appin",
-        "name": "appin",
-        "imageurl": "imgs/appin.png",
-        "url": "https://meta.appinn.net/",
-        "context-menu-item": [
-            {
-                "name": "小众软件",
-                "url": "https://www.appinn.com/"
-            },
-            {
-                "name": "小众论坛-图床插件",
-                "url": "https://greasyfork.org/zh-CN/scripts/529910-appinn-forum-upload-enhancer"
-            }
-        ]
-    },
-    {
-        "friendly-name": "twitter",
-        "name": "twitter",
-        "imageurl": "imgs/twitter.png",
-        "url": "https://x.com/",
-        "context-menu-item": [
-            {
-                "name": "好价",
-                "url": "https://www.smzdm.com/jingxuan/"
-            }
-        ]
-    },
-    {
-        "friendly-name": "threads",
-        "name": "threads",
-        "imageurl": "imgs/thread.png",
-        "url": "https://www.threads.com/",
-        "context-menu-item": [
-            {
-                "name": "Instagram",
-                "url": "https://www.instagram.com/"
-            }
-        ]
-    },
-    {
-        "friendly-name": "devto",
-        "name": "devto",
-        "imageurl": "imgs/devto.png",
-        "url": "https://dev.to/",
-        "context-menu-item": [
-            {
-                "name": "medium",
-                "url": "http://medium.com/"
-            },
-            {
-                "name": "dev.to",
-                "url": "https://dev.to/"
-            },
-            {
-                "name": "codepen",
-                "url": "https://codepen.io/"
-            },
-            {
-                "name": "css-tricks",
-                "url": "https://css-tricks.com/"
-            },
-            {
-                "name": "dribbble",
-                "url": "https://dribbble.com/"
-            }
-        ]
-    },
-    {
-        "friendly-name": "xiaohongshu",
-        "name": "xiaohongshu",
-        "imageurl": "imgs/xiaohongshu.jpg",
-        "url": "https://www.xiaohongshu.com/",
-        "context-menu-item": []
-    },
-    {
-        "friendly-name": "NGA",
-        "name": "NGA",
-        "imageurl": "imgs/NGA.png",
-        "url": "https://bbs.nga.cn/",
-        "context-menu-item": []
-    },
-    {
-        "friendly-name": "linuxdo",
-        "name": "linuxdo",
-        "imageurl": "imgs/linuxdo.png",
-        "url": "https://linux.do/",
-        "context-menu-item": []
-    },
-    {
-        "friendly-name": "smzdm",
-        "name": "smzdm",
-        "imageurl": "imgs/smzdm.png",
-        "url": "https://www.smzdm.com/",
-        "context-menu-item": [
-            {
-                "name": "好价",
-                "url": "https://www.smzdm.com/jingxuan/"
-            }
-        ]
-    },
+        "url": "https://2libra.com/"
+      }
+    ]
+  },
+  {
+    "friendly-name": "appin",
+    "name": "appin",
+    "imageurl": "imgs/appin.png",
+    "url": "https://meta.appinn.net/",
+    "context-menu-item": [
+      {
+        "name": "小众软件",
+        "url": "https://www.appinn.com/"
+      },
+      {
+        "name": "小众论坛-图床插件",
+        "url": "https://greasyfork.org/zh-CN/scripts/529910-appinn-forum-upload-enhancer"
+      }
+    ]
+  },
+  {
+    "friendly-name": "xiaohongshu",
+    "name": "xiaohongshu",
+    "imageurl": "imgs/xiaohongshu.jpg",
+    "url": "https://www.xiaohongshu.com/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "twitter",
+    "name": "twitter",
+    "imageurl": "imgs/twitter.png",
+    "url": "https://x.com/",
+    "context-menu-item": [
+      {
+        "name": "好价",
+        "url": "https://www.smzdm.com/jingxuan/"
+      }
+    ]
+  },
+  {
+    "friendly-name": "devto",
+    "name": "devto",
+    "imageurl": "imgs/devto.png",
+    "url": "https://dev.to/",
+    "context-menu-item": [
+      {
+        "name": "medium",
+        "url": "http://medium.com/"
+      },
+      {
+        "name": "dev.to",
+        "url": "https://dev.to/"
+      },
+      {
+        "name": "codepen",
+        "url": "https://codepen.io/"
+      },
+      {
+        "name": "css-tricks",
+        "url": "https://css-tricks.com/"
+      },
+      {
+        "name": "dribbble",
+        "url": "https://dribbble.com/"
+      }
+    ]
+  },
+  {
+    "friendly-name": "linuxdo",
+    "name": "linuxdo",
+    "imageurl": "imgs/linuxdo.png",
+    "url": "https://linux.do/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "NGA",
+    "name": "NGA",
+    "imageurl": "imgs/NGA.png",
+    "url": "https://bbs.nga.cn/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "threads",
+    "name": "threads",
+    "imageurl": "imgs/thread.png",
+    "url": "https://www.threads.com/",
+    "context-menu-item": [
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/"
+      }
+    ]
+  },
+  {
+    "friendly-name": "smzdm",
+    "name": "smzdm",
+    "imageurl": "imgs/smzdm.png",
+    "url": "https://www.smzdm.com/",
+    "context-menu-item": [
+      {
+        "name": "好价",
+        "url": "https://www.smzdm.com/jingxuan/"
+      }
+    ]
+  }
 ]
