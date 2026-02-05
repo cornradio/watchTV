@@ -2,14 +2,6 @@
   "default": "watchTV",
   "items": [
     {
-      "key": "tv_dengbao",
-      "file": "dengbao.json",
-      "alias": "security",
-      "emoji": "🛡️",
-      "gradient": "linear-gradient(120deg, #3c1a5a 0%, #120a24 100%)",
-      "hidden": false
-    },
-    {
       "key": "tv_game",
       "file": "game.json",
       "alias": "game",
@@ -50,14 +42,6 @@
       "hidden": false
     },
     {
-      "key": "tv_watchTV",
-      "file": "icon_data.json",
-      "alias": "watchTV",
-      "emoji": "📺",
-      "gradient": "linear-gradient(-20deg, #047272 0%, #1d1035 100%)",
-      "hidden": false
-    },
-    {
       "key": "tv_email",
       "file": "email.json",
       "alias": "email",
@@ -72,6 +56,22 @@
       "emoji": "📢",
       "gradient": "conic-gradient(from 210deg, #c5bbb8 0.000deg, #c5bbb8 24.000deg, #b8b5b8 calc(24.000deg + 0.1deg), #b8b5b8 48.000deg, #a9afb7 calc(48.000deg + 0.1deg), #a9afb7 72.000deg, #9aa8b5 calc(72.000deg + 0.1deg), #9aa8b5 96.000deg, #8ba1b3 calc(96.000deg + 0.1deg), #8ba1b3 120.000deg, #7d98af calc(120.000deg + 0.1deg), #7d98af 144.000deg, #7090ab calc(144.000deg + 0.1deg), #7090ab 168.000deg, #6587a6 calc(168.000deg + 0.1deg), #6587a6 192.000deg, #5c7ea1 calc(192.000deg + 0.1deg), #5c7ea1 216.000deg, #55759b calc(216.000deg + 0.1deg), #55759b 240.000deg, #516c94 calc(240.000deg + 0.1deg), #516c94 264.000deg, #4f638d calc(264.000deg + 0.1deg), #4f638d 288.000deg, #505a85 calc(288.000deg + 0.1deg), #505a85 312.000deg, #54537d calc(312.000deg + 0.1deg), #54537d 336.000deg, #5b4b74 calc(336.000deg + 0.1deg) 360.000deg)",
       "hidden": false
+    },
+    {
+      "key": "tv_dengbao",
+      "file": "dengbao.json",
+      "alias": "security",
+      "emoji": "🛡️",
+      "gradient": "linear-gradient(120deg, #3c1a5a 0%, #120a24 100%)",
+      "hidden": false
+    },
+    {
+      "key": "tv_watchTV",
+      "file": "icon_data.json",
+      "alias": "watchTV",
+      "emoji": "📺",
+      "gradient": "linear-gradient(-20deg, #047272 0%, #1d1035 100%)",
+      "hidden": true
     }
   ]
 }
