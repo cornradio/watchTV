@@ -1,49 +1,33 @@
 [
   {
-    "friendly-name": "cctv",
-    "name": "cctv",
-    "imageurl": "imgs/cctv.jpg",
-    "url": "https://tv.cctv.com/live/cctv13",
+    "friendly-name": "ktv",
+    "name": "ktv",
+    "imageurl": "imgs/ktv-1770260157095.png",
+    "url": "https://sp.tearemix.com/",
     "context-menu-item": [
       {
-        "name": "CCTV1 综合",
-        "url": "https://tv.cctv.com/live/cctv1"
+        "name": "人人影视",
+        "url": "https://m.yichengwlkj.com/"
       },
       {
-        "name": "CCTV2 财经",
-        "url": "https://tv.cctv.com/live/cctv2"
+        "name": "南方四剑客",
+        "url": "https://3catslave.com/2016/10/27/%E5%8D%97%E6%96%B9%E5%9B%9B%E8%B3%A4%E5%AE%A2-%E4%B8%AD%E6%96%87%E9%85%8D%E9%9F%B3%E7%89%88%E6%9C%AC/"
       },
       {
-        "name": "CCTV4 国际",
-        "url": "https://tv.cctv.com/live/cctv4"
+        "name": "樱花动漫",
+        "url": "https://www.yinhuadm.cc/"
       },
       {
-        "name": "CCTV5 体育",
-        "url": "https://tv.cctv.com/live/cctv5"
+        "name": "libvio",
+        "url": "https://www.libvio.site/"
       },
       {
-        "name": "CCTV6 电影",
-        "url": "https://tv.cctv.com/live/cctv6"
+        "name": "麦田影院",
+        "url": "https://www.mtyy5.com/"
       },
       {
-        "name": "CCTV9 记录",
-        "url": "https://tv.cctv.com/live/cctvjilu"
-      },
-      {
-        "name": "CCTV10 科教",
-        "url": "https://tv.cctv.com/live/cctv10"
-      },
-      {
-        "name": "CCTV12 法治",
-        "url": "https://tv.cctv.com/live/cctv12"
-      },
-      {
-        "name": "CCTV13 新闻",
-        "url": "https://tv.cctv.com/live/cctv13"
-      },
-      {
-        "name": "CCTV14 少儿 ",
-        "url": "https://tv.cctv.com/live/cctvchild"
+        "name": "更多免费影视",
+        "url": "https://x.com/search?q=%E5%85%8D%E8%B4%B9%E5%BD%B1%E8%A7%86"
       }
     ]
   },
@@ -152,34 +136,50 @@
     ]
   },
   {
-    "friendly-name": "ktv",
-    "name": "ktv",
-    "imageurl": "imgs/4ktv.png",
-    "url": "",
+    "friendly-name": "cctv",
+    "name": "cctv",
+    "imageurl": "imgs/cctv.jpg",
+    "url": "https://tv.cctv.com/live/cctv13",
     "context-menu-item": [
       {
-        "name": "人人影视",
-        "url": "https://m.yichengwlkj.com/"
+        "name": "CCTV1 综合",
+        "url": "https://tv.cctv.com/live/cctv1"
       },
       {
-        "name": "南方四剑客",
-        "url": "https://3catslave.com/2016/10/27/%E5%8D%97%E6%96%B9%E5%9B%9B%E8%B3%A4%E5%AE%A2-%E4%B8%AD%E6%96%87%E9%85%8D%E9%9F%B3%E7%89%88%E6%9C%AC/"
+        "name": "CCTV2 财经",
+        "url": "https://tv.cctv.com/live/cctv2"
       },
       {
-        "name": "樱花动漫",
-        "url": "https://www.yinhuadm.cc/"
+        "name": "CCTV4 国际",
+        "url": "https://tv.cctv.com/live/cctv4"
       },
       {
-        "name": "libvio",
-        "url": "https://www.libvio.site/"
+        "name": "CCTV5 体育",
+        "url": "https://tv.cctv.com/live/cctv5"
       },
       {
-        "name": "麦田影院",
-        "url": "https://www.mtyy5.com/"
+        "name": "CCTV6 电影",
+        "url": "https://tv.cctv.com/live/cctv6"
       },
       {
-        "name": "更多免费影视",
-        "url": "https://x.com/search?q=%E5%85%8D%E8%B4%B9%E5%BD%B1%E8%A7%86"
+        "name": "CCTV9 记录",
+        "url": "https://tv.cctv.com/live/cctvjilu"
+      },
+      {
+        "name": "CCTV10 科教",
+        "url": "https://tv.cctv.com/live/cctv10"
+      },
+      {
+        "name": "CCTV12 法治",
+        "url": "https://tv.cctv.com/live/cctv12"
+      },
+      {
+        "name": "CCTV13 新闻",
+        "url": "https://tv.cctv.com/live/cctv13"
+      },
+      {
+        "name": "CCTV14 少儿 ",
+        "url": "https://tv.cctv.com/live/cctvchild"
       }
     ]
   },
@@ -203,7 +203,7 @@
     "friendly-name": "yinghua",
     "name": "yinghua",
     "imageurl": "imgs/yinghua.png",
-    "url": "https://yhdm.one/",
+    "url": "https://www.yinhuadm.cc/",
     "context-menu-item": []
   },
   {

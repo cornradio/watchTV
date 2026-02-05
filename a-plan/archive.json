@@ -1,21 +1,9 @@
 [
   {
-    "friendly-name": "poe",
-    "name": "poe",
-    "imageurl": "imgs/poe.png",
-    "url": "https://poe.com/",
-    "context-menu-item": [
-      {
-        "name": "角色 bots",
-        "url": "https://poe.com/explore_bots?category=Popular"
-      }
-    ]
-  },
-  {
-    "friendly-name": "duckai",
-    "name": "duckai",
-    "imageurl": "imgs/duckai.png",
-    "url": "https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat&duckai=1",
+    "friendly-name": "githubcopilot",
+    "name": "githubcopilot",
+    "imageurl": "imgs/copilot.png",
+    "url": "https://github.com/copilot/",
     "context-menu-item": []
   },
   {
