@@ -4,11 +4,13 @@
 set -e
 cd /home/kasusa/watchTV
 
-# 检查是否有改动
 git add -A
 if git diff --cached --quiet; then
   exit 0
 fi
 
 git commit -m "auto: sync"
+
+git fetch origin
+git rebase origin/main
 git push
