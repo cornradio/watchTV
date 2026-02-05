@@ -1,157 +1,5 @@
 [
   {
-    "friendly-name": "ktv",
-    "name": "ktv",
-    "imageurl": "imgs/4ktv.png",
-    "url": "",
-    "context-menu-item": [
-      {
-        "name": "人人影视",
-        "url": "https://m.yichengwlkj.com/"
-      },
-      {
-        "name": "南方四剑客",
-        "url": "https://3catslave.com/2016/10/27/%E5%8D%97%E6%96%B9%E5%9B%9B%E8%B3%A4%E5%AE%A2-%E4%B8%AD%E6%96%87%E9%85%8D%E9%9F%B3%E7%89%88%E6%9C%AC/"
-      },
-      {
-        "name": "樱花动漫",
-        "url": "https://www.yinhuadm.cc/"
-      },
-      {
-        "name": "libvio",
-        "url": "https://www.libvio.site/"
-      },
-      {
-        "name": "麦田影院",
-        "url": "https://www.mtyy5.com/"
-      },
-      {
-        "name": "更多免费影视",
-        "url": "https://x.com/search?q=%E5%85%8D%E8%B4%B9%E5%BD%B1%E8%A7%86"
-      }
-    ]
-  },
-  {
-    "friendly-name": "NF",
-    "name": "NF",
-    "imageurl": "imgs/nf.png",
-    "url": "https://www.nfyingshi.com//",
-    "context-menu-item": [
-      {
-        "name": "Netflix中国",
-        "url": "https://www.nfmovies.com/"
-      }
-    ]
-  },
-  {
-    "friendly-name": "youtube",
-    "name": "youtube",
-    "imageurl": "imgs/yt.jpg",
-    "url": "https://www.youtube.com/",
-    "context-menu-item": [
-      {
-        "name": "yt-music",
-        "url": "https://music.youtube.com/"
-      },
-      {
-        "name": "历史记录",
-        "url": "https://www.youtube.com/feed/history"
-      },
-      {
-        "name": "稍后观看",
-        "url": "https://www.youtube.com/playlist?list=WL"
-      },
-      {
-        "name": "订阅列表",
-        "url": "https://www.youtube.com/feed/subscriptions"
-      }
-    ]
-  },
-  {
-    "friendly-name": "douyin",
-    "name": "douyin",
-    "imageurl": "imgs/douyin.png",
-    "url": "https://www.douyin.com/",
-    "context-menu-item": [
-      {
-        "name": "tiktok",
-        "url": "https://www.tiktok.com/"
-      },
-      {
-        "name": "up主后台",
-        "url": "https://creator.douyin.com/creator-micro/home"
-      },
-      {
-        "name": "赞过",
-        "url": "https://www.douyin.com/user/self?showTab=like"
-      },
-      {
-        "name": "电影电视剧",
-        "url": "https://www.douyin.com/vs"
-      },
-      {
-        "name": "信息流",
-        "url": "https://www.douyin.com/discover"
-      },
-      {
-        "name": "关注",
-        "url": "https://www.douyin.com/follow"
-      }
-    ]
-  },
-  {
-    "friendly-name": "bilibili",
-    "name": "bilibili",
-    "imageurl": "imgs/bili.jpg",
-    "url": "https://www.bilibili.com/",
-    "context-menu-item": [
-      {
-        "name": "稿件管理",
-        "url": "https://member.bilibili.com/platform/upload-manager/article"
-      },
-      {
-        "name": "搜索",
-        "url": "https://search.bilibili.com/all"
-      },
-      {
-        "name": "电影",
-        "url": "https://www.bilibili.com/movie/"
-      },
-      {
-        "name": "纪录片",
-        "url": "https://www.bilibili.com/documentary"
-      },
-      {
-        "name": "关注",
-        "url": "https://t.bilibili.com/"
-      },
-      {
-        "name": "历史记录",
-        "url": "https://www.bilibili.com/account/history"
-      },
-      {
-        "name": "通知中心",
-        "url": "https://message.bilibili.com/#/reply"
-      }
-    ]
-  },
-  {
-    "friendly-name": "alist",
-    "name": "alist",
-    "imageurl": "imgs/alist.png",
-    "url": "http://192.168.31.11:5244",
-    "context-menu-item": [
-      {
-        "name": "local alist",
-        "url": "http://192.168.31.11:5244"
-      },
-      {
-        "name": "官方doc",
-        "url": "https://alist.nn.ci/zh/guide/"
-      }
-    ]
-  },
-  {
     "friendly-name": "cctv",
     "name": "cctv",
     "imageurl": "imgs/cctv.jpg",
@@ -196,6 +44,205 @@
       {
         "name": "CCTV14 少儿 ",
         "url": "https://tv.cctv.com/live/cctvchild"
+      }
+    ]
+  },
+  {
+    "friendly-name": "NF",
+    "name": "NF",
+    "imageurl": "imgs/nf.png",
+    "url": "https://www.nfyingshi.com//",
+    "context-menu-item": [
+      {
+        "name": "Netflix中国",
+        "url": "https://www.nfmovies.com/"
+      }
+    ]
+  },
+  {
+    "friendly-name": "douyin",
+    "name": "douyin",
+    "imageurl": "imgs/douyin.png",
+    "url": "https://www.douyin.com/",
+    "context-menu-item": [
+      {
+        "name": "tiktok",
+        "url": "https://www.tiktok.com/"
+      },
+      {
+        "name": "up主后台",
+        "url": "https://creator.douyin.com/creator-micro/home"
+      },
+      {
+        "name": "赞过",
+        "url": "https://www.douyin.com/user/self?showTab=like"
+      },
+      {
+        "name": "电影电视剧",
+        "url": "https://www.douyin.com/vs"
+      },
+      {
+        "name": "信息流",
+        "url": "https://www.douyin.com/discover"
+      },
+      {
+        "name": "关注",
+        "url": "https://www.douyin.com/follow"
+      }
+    ]
+  },
+  {
+    "friendly-name": "ddrk",
+    "name": "ddrk",
+    "imageurl": "imgs/ddrk.jpg",
+    "url": "https://ddys.io/",
+    "context-menu-item": [
+      {
+        "name": "黑袍纠察队",
+        "url": "https://ddys.pro/the-boys/"
+      },
+      {
+        "name": "rick&morty",
+        "url": "https://ddys.pro/rick-and-morty/"
+      },
+      {
+        "name": "星期三",
+        "url": "https://ddys.pro/wednesday/"
+      },
+      {
+        "name": "紫可可动漫",
+        "url": "http://www.zkk78.com/"
+      }
+    ]
+  },
+  {
+    "friendly-name": "bilibili",
+    "name": "bilibili",
+    "imageurl": "imgs/bili.jpg",
+    "url": "https://www.bilibili.com/",
+    "context-menu-item": [
+      {
+        "name": "稿件管理",
+        "url": "https://member.bilibili.com/platform/upload-manager/article"
+      },
+      {
+        "name": "搜索",
+        "url": "https://search.bilibili.com/all"
+      },
+      {
+        "name": "电影",
+        "url": "https://www.bilibili.com/movie/"
+      },
+      {
+        "name": "纪录片",
+        "url": "https://www.bilibili.com/documentary"
+      },
+      {
+        "name": "关注",
+        "url": "https://t.bilibili.com/"
+      },
+      {
+        "name": "历史记录",
+        "url": "https://www.bilibili.com/account/history"
+      },
+      {
+        "name": "通知中心",
+        "url": "https://message.bilibili.com/#/reply"
+      }
+    ]
+  },
+  {
+    "friendly-name": "ktv",
+    "name": "ktv",
+    "imageurl": "imgs/4ktv.png",
+    "url": "",
+    "context-menu-item": [
+      {
+        "name": "人人影视",
+        "url": "https://m.yichengwlkj.com/"
+      },
+      {
+        "name": "南方四剑客",
+        "url": "https://3catslave.com/2016/10/27/%E5%8D%97%E6%96%B9%E5%9B%9B%E8%B3%A4%E5%AE%A2-%E4%B8%AD%E6%96%87%E9%85%8D%E9%9F%B3%E7%89%88%E6%9C%AC/"
+      },
+      {
+        "name": "樱花动漫",
+        "url": "https://www.yinhuadm.cc/"
+      },
+      {
+        "name": "libvio",
+        "url": "https://www.libvio.site/"
+      },
+      {
+        "name": "麦田影院",
+        "url": "https://www.mtyy5.com/"
+      },
+      {
+        "name": "更多免费影视",
+        "url": "https://x.com/search?q=%E5%85%8D%E8%B4%B9%E5%BD%B1%E8%A7%86"
+      }
+    ]
+  },
+  {
+    "friendly-name": "alist",
+    "name": "alist",
+    "imageurl": "imgs/alist.png",
+    "url": "http://192.168.31.11:5244",
+    "context-menu-item": [
+      {
+        "name": "local alist",
+        "url": "http://192.168.31.11:5244"
+      },
+      {
+        "name": "官方doc",
+        "url": "https://alist.nn.ci/zh/guide/"
+      }
+    ]
+  },
+  {
+    "friendly-name": "yinghua",
+    "name": "yinghua",
+    "imageurl": "imgs/yinghua.png",
+    "url": "https://yhdm.one/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "music163",
+    "name": "music163",
+    "imageurl": "imgs/mu163.webp",
+    "url": "https://music.163.com/",
+    "context-menu-item": [
+      {
+        "name": "推荐",
+        "url": "https://music.163.com/#/discover/recommend/taste"
+      },
+      {
+        "name": "我喜欢的",
+        "url": "https://music.163.com/#/playlist?id=94820299"
+      }
+    ]
+  },
+  {
+    "friendly-name": "youtube",
+    "name": "youtube",
+    "imageurl": "imgs/yt.jpg",
+    "url": "https://www.youtube.com/",
+    "context-menu-item": [
+      {
+        "name": "yt-music",
+        "url": "https://music.youtube.com/"
+      },
+      {
+        "name": "历史记录",
+        "url": "https://www.youtube.com/feed/history"
+      },
+      {
+        "name": "稍后观看",
+        "url": "https://www.youtube.com/playlist?list=WL"
+      },
+      {
+        "name": "订阅列表",
+        "url": "https://www.youtube.com/feed/subscriptions"
       }
     ]
   }
