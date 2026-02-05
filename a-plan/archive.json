@@ -163,6 +163,22 @@
     "context-menu-item": []
   },
   {
+    "friendly-name": "yuquebiaoge",
+    "name": "yuquebiaoge",
+    "imageurl": "imgs/yuquebiaoge.png",
+    "url": "https://www.yuque.com/pingguoajie/wk48mo/cm1helqrdpnt61yg?singleDoc#PR4g",
+    "context-menu-item": [
+      {
+        "name": "我的自研软件商店",
+        "url": "https://appstore.cornradio.org/"
+      },
+      {
+        "name": "Noco DB",
+        "url": "http://8.153.164.13:8989/"
+      }
+    ]
+  },
+  {
     "friendly-name": "aivesa",
     "name": "aivesa",
     "imageurl": "imgs/aivesa.png",
@@ -203,5 +219,12 @@
         "url": "https://poe.com/explore_bots?category=Popular"
       }
     ]
+  },
+  {
+    "friendly-name": "photopea",
+    "name": "photopea",
+    "imageurl": "imgs/photopea.png",
+    "url": "https://www.photopea.com/",
+    "context-menu-item": []
   }
 ]

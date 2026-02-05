@@ -12,10 +12,29 @@
     ]
   },
   {
-    "friendly-name": "claude",
-    "name": "claude",
-    "imageurl": "imgs/claude.png",
-    "url": "https://claude.ai/new",
+    "friendly-name": "aistudio",
+    "name": "aistudio",
+    "imageurl": "imgs/aistudio-1770272995804.png",
+    "url": "https://gemini.google.com/app",
+    "context-menu-item": [
+      {
+        "name": "ai studio",
+        "url": "https://aistudio.google.com/prompts/new_chat"
+      }
+    ]
+  },
+  {
+    "friendly-name": "perplexity",
+    "name": "perplexity",
+    "imageurl": "imgs/perplexity.png",
+    "url": "https://www.perplexity.ai/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "tongyi",
+    "name": "tongyi",
+    "imageurl": "imgs/tongyi-1770273224739.png",
+    "url": "https://www.qianwen.com/",
     "context-menu-item": []
   },
   {
@@ -33,29 +52,10 @@
     "context-menu-item": []
   },
   {
-    "friendly-name": "perplexity",
-    "name": "perplexity",
-    "imageurl": "imgs/perplexity.png",
-    "url": "https://www.perplexity.ai/",
-    "context-menu-item": []
-  },
-  {
-    "friendly-name": "aistudio",
-    "name": "aistudio",
-    "imageurl": "imgs/aistudio-1770272995804.png",
-    "url": "https://gemini.google.com/app",
-    "context-menu-item": [
-      {
-        "name": "ai studio",
-        "url": "https://aistudio.google.com/prompts/new_chat"
-      }
-    ]
-  },
-  {
-    "friendly-name": "tongyi",
-    "name": "tongyi",
-    "imageurl": "imgs/tongyi2.png",
-    "url": "https://tongyi.aliyun.com/qianwen/",
+    "friendly-name": "claude",
+    "name": "claude",
+    "imageurl": "imgs/claude.png",
+    "url": "https://claude.ai/new",
     "context-menu-item": []
   },
   {

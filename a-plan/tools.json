@@ -28,70 +28,6 @@
     ]
   },
   {
-    "friendly-name": "msnweather",
-    "name": "msnweather",
-    "imageurl": "imgs/weather.png",
-    "url": "https://www.msn.cn/zh-cn/weather/forecast/",
-    "context-menu-item": [
-      {
-        "name": "降水地图",
-        "url": "https://www.msn.cn/zh-cn/weather/maps?type=precipitation"
-      },
-      {
-        "name": "气温地图",
-        "url": "https://www.msn.cn/zh-cn/weather/maps?type=temperature"
-      },
-      {
-        "name": "云图",
-        "url": "https://www.msn.cn/zh-cn/weather/maps/cloud"
-      }
-    ]
-  },
-  {
-    "friendly-name": "speedtest",
-    "name": "speedtest",
-    "imageurl": "imgs/speedtest.png",
-    "url": "https://www.speedtest.net/",
-    "context-menu-item": [
-      {
-        "name": "cloudflare speedtest",
-        "url": "https://speed.cloudflare.com/"
-      },
-      {
-        "name": "fast.com",
-        "url": "https://fast.com/"
-      },
-      {
-        "name": "Speedtest.cn",
-        "url": "https://www.speedtest.cn/"
-      },
-      {
-        "name": "Speedtest.net",
-        "url": "https://www.speedtest.net"
-      }
-    ]
-  },
-  {
-    "friendly-name": "figma",
-    "name": "figma",
-    "imageurl": "imgs/figma.png",
-    "url": "https://figma.com/",
-    "context-menu-item": [
-      {
-        "name": "设计图",
-        "url": "https://www.figma.com/file/new"
-      },
-      {
-        "name": "白板",
-        "url": "https://www.figma.com/file/new?editor_type=whiteboard"
-      },
-      {
-        "name": "社区",
-        "url": "https://www.figma.com/community"
-      }
-    ]
-  },
-  {
     "friendly-name": "ipchecking",
     "name": "ipchecking",
     "imageurl": "imgs/ipchecking.png",
@@ -136,107 +72,26 @@
     ]
   },
   {
-    "friendly-name": "wallheaven",
-    "name": "wallheaven",
-    "imageurl": "imgs/wallheaven.png",
-    "url": "https://wallhaven.cc/toplist",
+    "friendly-name": "speedtest",
+    "name": "speedtest",
+    "imageurl": "imgs/speedtest-1770273589350.png",
+    "url": "https://www.speedtest.net/",
     "context-menu-item": [
       {
-        "name": "NSFW",
-        "url": "https://wallhaven.cc/search?categories=111&purity=011&sorting=hot&order=desc&ai_art_filter=0&page=2"
+        "name": "cloudflare speedtest",
+        "url": "https://speed.cloudflare.com/"
       },
       {
-        "name": "NSFW-needlogin",
-        "url": "https://wallhaven.cc/search?categories=110&purity=001&topRange=1M&sorting=toplist&order=desc&ai_art_filter=1&page=3"
-      }
-    ]
-  },
-  {
-    "friendly-name": "notion",
-    "name": "notion",
-    "imageurl": "imgs/notion.png",
-    "url": "https://www.notion.so/",
-    "context-menu-item": [
-      {}
-    ]
-  },
-  {
-    "friendly-name": "github",
-    "name": "github",
-    "imageurl": "imgs/github.png",
-    "url": "https://github.com",
-    "context-menu-item": [
-      {
-        "name": "HelloGitHub",
-        "url": "https://hellogithub.com/periodical/volume/1"
+        "name": "fast.com",
+        "url": "https://fast.com/"
       },
       {
-        "name": "blog post",
-        "url": "https://github.com/cornradio/hugo-stacktheme/tree/master/content/post"
+        "name": "Speedtest.cn",
+        "url": "https://www.speedtest.cn/"
       },
       {
-        "name": "tools.json",
-        "url": "https://github.com/cornradio/watchTV/edit/main/a-plan/tools.json"
-      },
-      {
-        "name": "tools.images",
-        "url": "https://github.com/cornradio/watchTV/upload/main/a-plan/imgs"
-      }
-    ]
-  },
-  {
-    "friendly-name": "webclip",
-    "name": "webclip",
-    "imageurl": "imgs/webclip.png",
-    "url": "http://8.153.164.13:8080/",
-    "context-menu-item": [
-      {
-        "name": "lanclip",
-        "url": "http://8.153.164.13:5000/"
-      },
-      {
-        "name": "localsend",
-        "url": "https://localsend.org/"
-      }
-    ]
-  },
-  {
-    "friendly-name": "icloud",
-    "name": "icloud",
-    "imageurl": "imgs/icloud.png",
-    "url": "https://www.icloud.com.cn/",
-    "context-menu-item": [
-      {
-        "name": "坚果云",
-        "url": "https://www.jianguoyun.com/d/home#/"
-      },
-      {
-        "name": "Onedrive",
-        "url": "https://onedrive.live.com/"
-      },
-      {
-        "name": "百度网盘",
-        "url": "https://yun.baidu.com/disk/main"
-      },
-      {
-        "name": "备忘录",
-        "url": "https://www.icloud.com.cn/notes/"
-      },
-      {
-        "name": "云盘",
-        "url": "https://www.icloud.com.cn/iclouddrive/"
-      },
-      {
-        "name": "照片",
-        "url": "https://www.icloud.com.cn/photos/"
-      },
-      {
-        "name": "查找iphone",
-        "url": "https://www.icloud.com.cn/find/"
-      },
-      {
-        "name": "onedrive",
-        "url": "https://onedrive.live.com/"
+        "name": "Speedtest.net",
+        "url": "https://www.speedtest.net"
       }
     ]
   },
@@ -285,42 +140,84 @@
     ]
   },
   {
-    "friendly-name": "Maps",
-    "name": "Maps",
-    "imageurl": "imgs/Maps.png",
-    "url": "https://ditu.amap.com/",
+    "name": "appstore",
+    "imageurl": "imgs/appstore.png",
+    "url": "https://appstore.cornradio.org/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "wallheaven",
+    "name": "wallheaven",
+    "imageurl": "imgs/wallheaven.png",
+    "url": "https://wallhaven.cc/toplist",
     "context-menu-item": [
       {
-        "name": "高德",
-        "url": "https://ditu.amap.com/"
+        "name": "NSFW",
+        "url": "https://wallhaven.cc/search?categories=111&purity=011&sorting=hot&order=desc&ai_art_filter=0&page=2"
       },
       {
-        "name": "百度",
-        "url": "https://map.baidu.com/"
-      },
-      {
-        "name": "Google地图",
-        "url": "https://www.google.com/maps/"
-      },
-      {
-        "name": "Google地球",
-        "url": "https://www.google.com/maps/"
+        "name": "NSFW-needlogin",
+        "url": "https://wallhaven.cc/search?categories=110&purity=001&topRange=1M&sorting=toplist&order=desc&ai_art_filter=1&page=3"
       }
     ]
   },
   {
-    "friendly-name": "Code",
-    "name": "Code",
-    "imageurl": "imgs/code.png",
-    "url": "https://vscode.dev/",
+    "friendly-name": "msnweather",
+    "name": "msnweather",
+    "imageurl": "imgs/weather.png",
+    "url": "https://www.msn.cn/zh-cn/weather/forecast/",
     "context-menu-item": [
       {
-        "name": "下载code",
-        "url": "https://code.visualstudio.com/"
+        "name": "降水地图",
+        "url": "https://www.msn.cn/zh-cn/weather/maps?type=precipitation"
       },
       {
-        "name": "VScode online",
-        "url": "https://vscode.dev/"
+        "name": "气温地图",
+        "url": "https://www.msn.cn/zh-cn/weather/maps?type=temperature"
+      },
+      {
+        "name": "云图",
+        "url": "https://www.msn.cn/zh-cn/weather/maps/cloud"
+      }
+    ]
+  },
+  {
+    "friendly-name": "github",
+    "name": "github",
+    "imageurl": "imgs/github.png",
+    "url": "https://github.com",
+    "context-menu-item": [
+      {
+        "name": "HelloGitHub",
+        "url": "https://hellogithub.com/periodical/volume/1"
+      },
+      {
+        "name": "blog post",
+        "url": "https://github.com/cornradio/hugo-stacktheme/tree/master/content/post"
+      },
+      {
+        "name": "tools.json",
+        "url": "https://github.com/cornradio/watchTV/edit/main/a-plan/tools.json"
+      },
+      {
+        "name": "tools.images",
+        "url": "https://github.com/cornradio/watchTV/upload/main/a-plan/imgs"
+      }
+    ]
+  },
+  {
+    "friendly-name": "webclip",
+    "name": "webclip",
+    "imageurl": "imgs/webclip.png",
+    "url": "http://8.153.164.13:8080/",
+    "context-menu-item": [
+      {
+        "name": "lanclip",
+        "url": "http://8.153.164.13:5000/"
+      },
+      {
+        "name": "localsend",
+        "url": "https://localsend.org/"
       }
     ]
   },
@@ -343,24 +240,116 @@
         "url": "https://openuserjs.org/"
       },
       {
-        "name": "GoodNote",
-        "url": "https://greasyfork.org/zh-CN/scripts/526070"
-      },
-      {
-        "name": "煎蛋用户名搜索",
-        "url": "https://greasyfork.org/zh-CN/scripts/523770"
-      },
-      {
         "name": "通用图床",
         "url": "https://greasyfork.org/zh-CN/scripts/553341-universal-image-uploader"
       },
       {
-        "name": "自定义搜索助手",
-        "url": "https://greasyfork.org/zh-CN/scripts/561353"
-      },
-      {
         "name": "ehunter",
         "url": "https://github.com/hanFengSan/eHunter"
+      },
+      {
+        "name": "cornradio‘s",
+        "url": "https://greasyfork.org/zh-CN/users/734613-cornradio"
+      }
+    ]
+  },
+  {
+    "friendly-name": "figma",
+    "name": "figma",
+    "imageurl": "imgs/figma.png",
+    "url": "https://figma.com/",
+    "context-menu-item": [
+      {
+        "name": "设计图",
+        "url": "https://www.figma.com/file/new"
+      },
+      {
+        "name": "白板",
+        "url": "https://www.figma.com/file/new?editor_type=whiteboard"
+      },
+      {
+        "name": "社区",
+        "url": "https://www.figma.com/community"
+      }
+    ]
+  },
+  {
+    "friendly-name": "icloud",
+    "name": "icloud",
+    "imageurl": "imgs/icloud.png",
+    "url": "https://www.icloud.com.cn/",
+    "context-menu-item": [
+      {
+        "name": "坚果云",
+        "url": "https://www.jianguoyun.com/d/home#/"
+      },
+      {
+        "name": "Onedrive",
+        "url": "https://onedrive.live.com/"
+      },
+      {
+        "name": "百度网盘",
+        "url": "https://yun.baidu.com/disk/main"
+      },
+      {
+        "name": "备忘录",
+        "url": "https://www.icloud.com.cn/notes/"
+      },
+      {
+        "name": "云盘",
+        "url": "https://www.icloud.com.cn/iclouddrive/"
+      },
+      {
+        "name": "照片",
+        "url": "https://www.icloud.com.cn/photos/"
+      },
+      {
+        "name": "查找iphone",
+        "url": "https://www.icloud.com.cn/find/"
+      },
+      {
+        "name": "onedrive",
+        "url": "https://onedrive.live.com/"
+      }
+    ]
+  },
+  {
+    "friendly-name": "Code",
+    "name": "Code",
+    "imageurl": "imgs/code.png",
+    "url": "https://vscode.dev/",
+    "context-menu-item": [
+      {
+        "name": "下载code",
+        "url": "https://code.visualstudio.com/"
+      },
+      {
+        "name": "VScode online",
+        "url": "https://vscode.dev/"
+      }
+    ]
+  },
+  {
+    "friendly-name": "Maps",
+    "name": "Maps",
+    "imageurl": "imgs/Maps.png",
+    "url": "https://ditu.amap.com/",
+    "context-menu-item": [
+      {
+        "name": "高德",
+        "url": "https://ditu.amap.com/"
+      },
+      {
+        "name": "百度",
+        "url": "https://map.baidu.com/"
+      },
+      {
+        "name": "Google地图",
+        "url": "https://www.google.com/maps/"
+      },
+      {
+        "name": "Google地球",
+        "url": "https://www.google.com/maps/"
       }
     ]
   },
@@ -401,36 +390,6 @@
     ]
   },
   {
-    "friendly-name": "yuquebiaoge",
-    "name": "yuquebiaoge",
-    "imageurl": "imgs/yuquebiaoge.png",
-    "url": "https://www.yuque.com/pingguoajie/wk48mo/cm1helqrdpnt61yg?singleDoc#PR4g",
-    "context-menu-item": [
-      {
-        "name": "我的自研软件商店",
-        "url": "https://appstore.cornradio.org/"
-      },
-      {
-        "name": "Noco DB",
-        "url": "http://8.153.164.13:8989/"
-      }
-    ]
-  },
-  {
-    "friendly-name": "photopea",
-    "name": "photopea",
-    "imageurl": "imgs/photopea.png",
-    "url": "https://www.photopea.com/",
-    "context-menu-item": []
-  },
-  {
-    "friendly-name": "squoosh",
-    "name": "squoosh",
-    "imageurl": "imgs/squoosh.png",
-    "url": "https://squoosh.app/",
-    "context-menu-item": []
-  },
-  {
     "friendly-name": "freecodecamp",
     "name": "freecodecamp",
     "imageurl": "imgs/freecodecamp.png",
@@ -440,6 +399,22 @@
         "name": "javascript",
         "url": "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures"
       }
+    ]
+  },
+  {
+    "friendly-name": "squoosh",
+    "name": "squoosh",
+    "imageurl": "imgs/squoosh.png",
+    "url": "https://squoosh.app/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "notion",
+    "name": "notion",
+    "imageurl": "imgs/notion.png",
+    "url": "https://www.notion.so/",
+    "context-menu-item": [
+      {}
     ]
   }
 ]
