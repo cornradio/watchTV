@@ -1,13 +1,13 @@
 [
   {
-    "friendly-name": "QQ邮箱",
-    "name": "qqmail",
-    "imageurl": "imgs/qqmail.png",
-    "url": "https://mail.qq.com/",
+    "friendly-name": "Gmail",
+    "name": "gmail",
+    "imageurl": "imgs/gmail.png",
+    "url": "https://mail.google.com/",
     "context-menu-item": [
       {
-        "name": "登录页",
-        "url": "https://mail.qq.com/"
+        "name": "收件箱",
+        "url": "https://mail.google.com/mail/u/0/#inbox"
       }
     ]
   },
@@ -84,14 +84,14 @@
     ]
   },
   {
-    "friendly-name": "Gmail",
-    "name": "gmail",
-    "imageurl": "imgs/gmail.png",
-    "url": "https://mail.google.com/",
+    "friendly-name": "qqmail",
+    "name": "qqmail",
+    "imageurl": "imgs/qqmail.png",
+    "url": "https://mail.qq.com/",
     "context-menu-item": [
       {
-        "name": "收件箱",
-        "url": "https://mail.google.com/mail/u/0/#inbox"
+        "name": "登录页",
+        "url": "https://mail.qq.com/"
       }
     ]
   }

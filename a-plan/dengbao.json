@@ -70,13 +70,6 @@
     "context-menu-item": []
   },
   {
-    "friendly-name": "waybackmachine",
-    "name": "waybackmachine",
-    "imageurl": "imgs/waybackmachine.png",
-    "url": "https://archive.org/web/",
-    "context-menu-item": []
-  },
-  {
     "friendly-name": "cyberchef",
     "name": "cyberchef",
     "imageurl": "imgs/cyberchef.png",
@@ -91,6 +84,13 @@
         "url": "https://web-check.xyz/"
       }
     ]
+  },
+  {
+    "friendly-name": "waybackmachine",
+    "name": "waybackmachine",
+    "imageurl": "imgs/waybackmachine.png",
+    "url": "https://archive.org/web/",
+    "context-menu-item": []
   },
   {
     "friendly-name": "cmd5",
