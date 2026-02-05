@@ -1,134 +1,107 @@
 [
-    
-    {
-        "friendly-name": "webcheck",
+  {
+    "friendly-name": "webcheck",
+    "name": "webcheck",
+    "imageurl": "imgs/webcheck.png",
+    "url": "https://web-check.xyz/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "fofa",
+    "name": "fofa",
+    "imageurl": "imgs/fofa.png",
+    "url": "https://fofa.info/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "hackthebox",
+    "name": "hackthebox",
+    "imageurl": "imgs/hackthebox.png",
+    "url": "https://app.hackthebox.com/home",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "dnsdumper",
+    "name": "dnsdumper",
+    "imageurl": "imgs/dnsdumper.png",
+    "url": "https://dnsdumpster.com/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "devtoys",
+    "name": "devtoys",
+    "imageurl": "imgs/devtoys.png",
+    "url": "https://apps.microsoft.com/detail/9PGCV4V3BK4W?hl=zh-cn&gl=US",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "google",
+    "name": "google",
+    "imageurl": "imgs/google.png",
+    "url": "https://www.google.com/",
+    "context-menu-item": [
+      {
+        "name": "google-hacking-database",
+        "url": "https://www.exploit-db.com/google-hacking-database"
+      },
+      {
+        "name": "site:xxx.com",
+        "url": "https://www.google.com/search?q=site:a.com"
+      },
+      {
+        "name": "inurl:admin",
+        "url": "https://www.google.com/search?q=inurl:admin"
+      },
+      {
+        "name": "filetype:pdf",
+        "url": "https://www.google.com/search?q=filetype:pdf"
+      },
+      {
+        "name": "intitle:admin",
+        "url": "https://www.google.com/search?q=intitle:admin"
+      }
+    ]
+  },
+  {
+    "friendly-name": "tryhackme",
+    "name": "tryhackme",
+    "imageurl": "imgs/tryhackme-1770282204851.png",
+    "url": "https://tryhackme.com/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "waybackmachine",
+    "name": "waybackmachine",
+    "imageurl": "imgs/waybackmachine.png",
+    "url": "https://archive.org/web/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "cyberchef",
+    "name": "cyberchef",
+    "imageurl": "imgs/cyberchef.png",
+    "url": "https://gchq.github.io/CyberChef/",
+    "context-menu-item": [
+      {
+        "name": "github",
+        "url": "https://github.com/gchq/CyberChef"
+      },
+      {
         "name": "webcheck",
-        "imageurl": "imgs/webcheck.png",
-        "url": "https://web-check.xyz/",
-        "context-menu-item": [
-        ]
-    },
-    {
-        "friendly-name": "fofa",
-        "name": "fofa",
-        "imageurl": "imgs/fofa.png",
-        "url": "https://fofa.info/",
-        "context-menu-item": [
-        ]
-    },
-    {
-        "friendly-name": "cyberchef",
-        "name": "cyberchef",
-        "imageurl": "imgs/cyberchef.png",
-        "url": "https://gchq.github.io/CyberChef/",
-        "context-menu-item": [
-            {
-                "name": "github",
-                "url": "https://github.com/gchq/CyberChef"
-            },
-            {
-                "name": "webcheck",
-                "url": "https://web-check.xyz/"
-            }
-        ]
-    },
-
-    {
-        "friendly-name": "cmd5",
-        "name": "cmd5",
-        "imageurl": "imgs/cmd5.png",
-        "url": "https://www.cmd5.com/",
-        "context-menu-item": [
-            {
-                "name": "crackstation",
-                "url": "https://crackstation.net/"
-            },
-        ]
-    },
-    {
-        "friendly-name": "waybackmachine",
-        "name": "waybackmachine",
-        "imageurl": "imgs/waybackmachine.png",
-        "url": "https://archive.org/web/",
-        "context-menu-item": [
-        ]
-    },
-    {
-        "friendly-name": "google",
-        "name": "google",
-        "imageurl": "imgs/google.png",
-        "url": "https://www.google.com/",
-        "context-menu-item": [
-            {
-                "name": "google-hacking-database",
-                "url": "https://www.exploit-db.com/google-hacking-database"
-            },
-            {
-                "name": "site:xxx.com",
-                "url": "https://www.google.com/search?q=site:a.com"
-            },
-            {
-                "name": "inurl:admin",
-                "url": "https://www.google.com/search?q=inurl:admin"
-            },
-            {
-                "name": "filetype:pdf",
-                "url": "https://www.google.com/search?q=filetype:pdf"
-            },
-            {
-                "name": "intitle:admin",
-                "url": "https://www.google.com/search?q=intitle:admin"
-            },
-        ]
-    },
-    {
-        "friendly-name": "ipinfo",
-        "name": "ipinfo",
-        "imageurl": "imgs/ipinfo.png",
-        "url": "https://ipinfo.io/",
-        "context-menu-item": [
-            {
-                "name": "ip111.cn",
-                "url": "http://www.ip111.cn/"
-            }
-        ] 
-    }
-    ,
-    {
-        "friendly-name": "dnsdumper",
-        "name": "dnsdumper",
-        "imageurl": "imgs/dnsdumper.png",
-        "url": "https://dnsdumpster.com/",
-        "context-menu-item": [
-        ]
-    },
-    {
-        "friendly-name": "tryhackme",
-        "name": "tryhackme",
-        "imageurl": "imgs/tryhackme.png",
-        "url": "https://tryhackme.com/",
-        "context-menu-item": [
-        ] 
-    }
-    ,
-
-
-    {
-        "friendly-name": "hackthebox",
-        "name": "hackthebox",
-        "imageurl": "imgs/hackthebox.png",
-        "url": "https://app.hackthebox.com/home",
-        "context-menu-item": [
-        ] 
-    }
-    ,
-    {
-        "friendly-name": "devtoys",
-        "name": "devtoys",
-        "imageurl": "imgs/devtoys.png",
-        "url": "https://apps.microsoft.com/detail/9PGCV4V3BK4W?hl=zh-cn&gl=US",
-        "context-menu-item": [
-        ] 
-    }
-
+        "url": "https://web-check.xyz/"
+      }
+    ]
+  },
+  {
+    "friendly-name": "cmd5",
+    "name": "cmd5",
+    "imageurl": "imgs/cmd5.png",
+    "url": "https://www.cmd5.com/",
+    "context-menu-item": [
+      {
+        "name": "crackstation",
+        "url": "https://crackstation.net/"
+      }
+    ]
+  }
 ]

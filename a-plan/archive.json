@@ -79,6 +79,18 @@
     "context-menu-item": []
   },
   {
+    "friendly-name": "ipinfo",
+    "name": "ipinfo",
+    "imageurl": "imgs/ipinfo.png",
+    "url": "https://ipinfo.io/",
+    "context-menu-item": [
+      {
+        "name": "ip111.cn",
+        "url": "http://www.ip111.cn/"
+      }
+    ]
+  },
+  {
     "friendly-name": "攻防世界",
     "name": "攻防世界",
     "imageurl": "imgs/攻防世界.png",
