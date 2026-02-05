@@ -90,6 +90,7 @@ header h1 {
 
 
 .app {
+        backdrop-filter: blur(20px);
     position: relative;
     top: 50%;
     left: 50%;

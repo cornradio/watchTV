@@ -33,6 +33,14 @@ function isSafeJsonFilename(name) {
   return /^[a-zA-Z0-9_.-]+\.json$/.test(name);
 }
 
+function isSafeImageFilename(name) {
+  if (!/^[a-zA-Z0-9_.-]+$/.test(name)) {
+    return false;
+  }
+  const ext = path.extname(name).toLowerCase();
+  return allowedExtensions.has(ext);
+}
+
 function sanitizeBasename(name) {
   const base = name.replace(/[^a-zA-Z0-9_-]/g, "_");
   return base || "icon";
@@ -46,6 +54,16 @@ function getJsonFiles() {
   return fs
     .readdirSync(PLAN_DIR)
     .filter((file) => file.endsWith(".json"))
+    .sort((a, b) => a.localeCompare(b));
+}
+
+function getImageFiles() {
+  if (!fs.existsSync(UPLOAD_DIR)) {
+    return [];
+  }
+  return fs
+    .readdirSync(UPLOAD_DIR)
+    .filter((file) => allowedExtensions.has(path.extname(file).toLowerCase()))
     .sort((a, b) => a.localeCompare(b));
 }
 
@@ -210,6 +228,38 @@ app.post("/api/upload", requirePassword, upload.single("icon"), (req, res) => {
     return res.status(400).json({ error: "no file" });
   }
   res.json({ filename: req.file.filename, url: `imgs/${req.file.filename}` });
+});
+
+app.get("/api/images", requirePassword, (req, res) => {
+  try {
+    const files = getImageFiles();
+    res.json({ files });
+  } catch (error) {
+    res.status(500).json({ error: "failed to list images" });
+  }
+});
+
+app.post("/api/images/delete", requirePassword, (req, res) => {
+  const files = Array.isArray(req.body && req.body.files) ? req.body.files : [];
+  if (!files.length) {
+    return res.status(400).json({ error: "no files" });
+  }
+  const deleted = [];
+  const failed = [];
+  files.forEach((file) => {
+    if (!isSafeImageFilename(file)) {
+      failed.push(file);
+      return;
+    }
+    const target = path.join(UPLOAD_DIR, file);
+    try {
+      fs.unlinkSync(target);
+      deleted.push(file);
+    } catch (error) {
+      failed.push(file);
+    }
+  });
+  res.json({ deleted, failed });
 });
 
 app.use((err, req, res, next) => {

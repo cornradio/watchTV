@@ -16,60 +16,43 @@
     ]
   },
   {
-    "friendly-name": "emojiall",
-    "name": "emojiall",
-    "imageurl": "imgs/emojiall.png",
-    "url": "https://www.emojiall.com/zh-hans",
+    "friendly-name": "freechat",
+    "name": "freechat",
+    "imageurl": "imgs/freechat.png",
+    "url": "https://e1.free-chat.asia/",
     "context-menu-item": [
       {
-        "name": "快速复制",
-        "url": "https://www.emojiall.com/zh-hans/copy"
+        "name": "主站",
+        "url": "https://ic.free-chat.asia/"
       },
       {
-        "name": "小游戏",
-        "url": "https://www.emojiall.com/zh-hans/game-list"
+        "name": "Prompt",
+        "url": "https://chatgpt1.nextweb.fun/#/new-chat"
       },
       {
-        "name": "组合梗",
-        "url": "https://www.emojiall.com/zh-hans/combine_list"
+        "name": "旧版",
+        "url": "https://h.free-chat.asia/"
+      },
+      {
+        "name": "endless chat（外网）",
+        "url": "https://endless-chat.netlify.app/"
+      },
+      {
+        "name": "账号分享",
+        "url": "https://free-accounts.vercel.app/list"
+      },
+      {
+        "name": "openai官方api",
+        "url": "https://platform.openai.com/docs/quickstart/build-your-application"
       }
     ]
   },
   {
-    "friendly-name": "metaso",
-    "name": "metaso",
-    "imageurl": "imgs/metaso.png",
-    "url": "https://metaso.cn/",
-    "context-menu-item": [
-      {
-        "name": "search",
-        "url": "https://www.phind.com/search?home=true"
-      },
-      {
-        "name": "chat",
-        "url": "https://www.phind.com/agent?home=true"
-      }
-    ]
-  },
-  {
-    "friendly-name": "zhihu",
-    "name": "zhihu",
-    "imageurl": "imgs/zhihu.png",
-    "url": "https://www.zhihu.com/",
-    "context-menu-item": [
-      {
-        "name": "写文章",
-        "url": "https://zhuanlan.zhihu.com/write"
-      },
-      {
-        "name": "知乎黑色模式",
-        "url": "https://www.zhihu.com/?theme=dark"
-      },
-      {
-        "name": "知乎白色模式",
-        "url": "https://www.zhihu.com/?theme=light"
-      }
-    ]
+    "friendly-name": "doubao",
+    "name": "doubao",
+    "imageurl": "imgs/doubao.png",
+    "url": "https://www.doubao.com/chat/",
+    "context-menu-item": []
   },
   {
     "friendly-name": "hellogithub",
@@ -103,17 +86,37 @@
     ]
   },
   {
+    "friendly-name": "emojiall",
+    "name": "emojiall",
+    "imageurl": "imgs/emojiall.png",
+    "url": "https://www.emojiall.com/zh-hans",
+    "context-menu-item": [
+      {
+        "name": "快速复制",
+        "url": "https://www.emojiall.com/zh-hans/copy"
+      },
+      {
+        "name": "小游戏",
+        "url": "https://www.emojiall.com/zh-hans/game-list"
+      },
+      {
+        "name": "组合梗",
+        "url": "https://www.emojiall.com/zh-hans/combine_list"
+      }
+    ]
+  },
+  {
+    "friendly-name": "qwen",
+    "name": "qwen",
+    "imageurl": "imgs/qwen.png",
+    "url": "https://chat.qwen.ai/",
+    "context-menu-item": []
+  },
+  {
     "friendly-name": "Grabient",
     "name": "Grabient",
     "imageurl": "imgs/grabient.png",
     "url": "https://www.grabient.com/",
-    "context-menu-item": []
-  },
-  {
-    "friendly-name": "Kimi",
-    "name": "Kimi",
-    "imageurl": "imgs/kimi.png",
-    "url": "https://kimi.moonshot.cn/",
     "context-menu-item": []
   },
   {
@@ -129,38 +132,6 @@
     ]
   },
   {
-    "friendly-name": "freechat",
-    "name": "freechat",
-    "imageurl": "imgs/freechat.png",
-    "url": "https://e1.free-chat.asia/",
-    "context-menu-item": [
-      {
-        "name": "主站",
-        "url": "https://ic.free-chat.asia/"
-      },
-      {
-        "name": "Prompt",
-        "url": "https://chatgpt1.nextweb.fun/#/new-chat"
-      },
-      {
-        "name": "旧版",
-        "url": "https://h.free-chat.asia/"
-      },
-      {
-        "name": "endless chat（外网）",
-        "url": "https://endless-chat.netlify.app/"
-      },
-      {
-        "name": "账号分享",
-        "url": "https://free-accounts.vercel.app/list"
-      },
-      {
-        "name": "openai官方api",
-        "url": "https://platform.openai.com/docs/quickstart/build-your-application"
-      }
-    ]
-  },
-  {
     "friendly-name": "edclub",
     "name": "edclub",
     "imageurl": "imgs/edclub.png",
@@ -168,10 +139,10 @@
     "context-menu-item": []
   },
   {
-    "friendly-name": "duckai",
-    "name": "duckai",
-    "imageurl": "imgs/duckai.png",
-    "url": "https://duckduckgo.com/?q=DuckDuckGo+AI+Chat&ia=chat&duckai=1",
+    "friendly-name": "metaso",
+    "name": "qwenaaaa",
+    "imageurl": "imgs/qwen.png",
+    "url": "https://chat.qwen.ai/",
     "context-menu-item": []
   },
   {
@@ -237,6 +208,13 @@
     "name": "photopea",
     "imageurl": "imgs/photopea.png",
     "url": "https://www.photopea.com/",
+    "context-menu-item": []
+  },
+  {
+    "friendly-name": "github",
+    "name": "github",
+    "imageurl": "imgs/github.png",
+    "url": "https://github.com/search?q=",
     "context-menu-item": []
   }
 ]

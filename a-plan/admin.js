@@ -44,6 +44,16 @@ const saveSettingsBtn = document.getElementById("saveSettingsBtn");
 const closeSettingsBtn = document.getElementById("closeSettingsBtn");
 const resetSettingsBtn = document.getElementById("resetSettingsBtn");
 const addJsonBtn = document.getElementById("addJsonBtn");
+const fileIconBar = document.getElementById("fileIconBar");
+const manageImagesBtn = document.getElementById("manageImagesBtn");
+const imageManager = document.getElementById("imageManager");
+const imageGrid = document.getElementById("imageGrid");
+const deleteImagesBtn = document.getElementById("deleteImagesBtn");
+const refreshImagesBtn = document.getElementById("refreshImagesBtn");
+const closeImagesBtn = document.getElementById("closeImagesBtn");
+const selectAllImagesBtn = document.getElementById("selectAllImagesBtn");
+const imageUploadInput = document.getElementById("imageUploadInput");
+const uploadImagesBtn = document.getElementById("uploadImagesBtn");
 
 const ARCHIVE_FILE = "archive.json";
 const GRADIENT_PRESETS = [
@@ -79,10 +89,26 @@ const state = {
 let previewReady = false;
 let pendingPreviewPayload = null;
 let pendingPulse = null;
+let editorDirty = false;
+let fileDirty = false;
 
 function setDragging(active) {
   itemList.classList.toggle("dragging", active);
   archiveList.classList.toggle("dragging", active);
+}
+
+function setEditorDirty(dirty) {
+  editorDirty = dirty;
+  if (applyItemBtn) {
+    applyItemBtn.classList.toggle("button-glow", dirty);
+  }
+}
+
+function setFileDirty(dirty) {
+  fileDirty = dirty;
+  if (saveBtn) {
+    saveBtn.classList.toggle("button-glow", dirty);
+  }
 }
 
 function requestPulse(listType, index) {
@@ -131,6 +157,7 @@ function swapItems(listType, indexA, indexB) {
     syncRawFromData();
     renderItemList();
     requestPulse("items", indexB);
+    setFileDirty(true);
   } else {
     renderArchiveList();
     requestPulse("archive", indexB);
@@ -166,6 +193,7 @@ function moveItem(listType, fromIndex, toIndex) {
     syncRawFromData();
     renderItemList();
     requestPulse("items", insertIndex);
+    setFileDirty(true);
   } else {
     renderArchiveList();
     requestPulse("archive", insertIndex);
@@ -201,8 +229,8 @@ function moveBetweenLists(sourceType, targetType, fromIndex, toIndex) {
   syncRawFromData();
   requestPulse(targetType, insertIndex);
   saveArchive();
-  if (state.currentFile) {
-    saveFile();
+  if (sourceType === "items" || targetType === "items") {
+    setFileDirty(true);
   }
 }
 
@@ -342,6 +370,50 @@ function setPreviewRatio(mode) {
   localStorage.setItem("watchtv_preview_ratio", ratio);
 }
 
+function storePreviewRect() {
+  if (!livePreview) {
+    return;
+  }
+  const rect = livePreview.getBoundingClientRect();
+  const payload = {
+    left: Math.round(rect.left),
+    top: Math.round(rect.top),
+    width: Math.round(rect.width),
+    height: Math.round(rect.height),
+  };
+  localStorage.setItem("watchtv_preview_rect", JSON.stringify(payload));
+}
+
+function restorePreviewRect() {
+  if (!livePreview) {
+    return;
+  }
+  const raw = localStorage.getItem("watchtv_preview_rect");
+  if (!raw) {
+    return;
+  }
+  try {
+    const rect = JSON.parse(raw);
+    if (!rect) {
+      return;
+    }
+    if (rect.width) {
+      livePreview.style.width = `${rect.width}px`;
+    }
+    if (rect.height) {
+      livePreview.style.height = `${rect.height}px`;
+    }
+    if (typeof rect.left === "number" && typeof rect.top === "number") {
+      livePreview.style.left = `${rect.left}px`;
+      livePreview.style.top = `${rect.top}px`;
+      livePreview.style.right = "auto";
+      livePreview.style.bottom = "auto";
+    }
+  } catch (error) {
+    // ignore parse errors
+  }
+}
+
 function setupResizeHandle() {
   const handle = document.querySelector(".live-preview-resize");
   if (!handle || !livePreview) {
@@ -380,6 +452,51 @@ function setupResizeHandle() {
     const onUp = () => {
       document.removeEventListener("mousemove", onMove);
       document.removeEventListener("mouseup", onUp);
+      storePreviewRect();
+    };
+
+    document.addEventListener("mousemove", onMove);
+    document.addEventListener("mouseup", onUp);
+  });
+}
+
+function setupPreviewDrag() {
+  if (!livePreview) {
+    return;
+  }
+  const header = livePreview.querySelector(".live-preview-header");
+  if (!header) {
+    return;
+  }
+  let startX = 0;
+  let startY = 0;
+  let startLeft = 0;
+  let startTop = 0;
+
+  header.addEventListener("mousedown", (event) => {
+    if (event.target.closest("button, input, select")) {
+      return;
+    }
+    event.preventDefault();
+    const rect = livePreview.getBoundingClientRect();
+    startX = event.clientX;
+    startY = event.clientY;
+    startLeft = rect.left;
+    startTop = rect.top;
+
+    const onMove = (moveEvent) => {
+      const dx = moveEvent.clientX - startX;
+      const dy = moveEvent.clientY - startY;
+      livePreview.style.left = `${startLeft + dx}px`;
+      livePreview.style.top = `${startTop + dy}px`;
+      livePreview.style.right = "auto";
+      livePreview.style.bottom = "auto";
+    };
+
+    const onUp = () => {
+      document.removeEventListener("mousemove", onMove);
+      document.removeEventListener("mouseup", onUp);
+      storePreviewRect();
     };
 
     document.addEventListener("mousemove", onMove);
@@ -529,6 +646,14 @@ async function apiFetch(path, options = {}) {
 
 function renderFileOptions() {
   fileSelect.innerHTML = "";
+  if (fileIconBar) {
+    fileIconBar.innerHTML = "";
+  }
+  const metaMap = new Map(
+    (configState.items || [])
+      .filter((item) => item.file !== "archive.json" && item.file !== "config.json")
+      .map((item) => [item.file, item])
+  );
   const placeholder = document.createElement("option");
   placeholder.value = "";
   placeholder.textContent = "Select JSON";
@@ -538,9 +663,46 @@ function renderFileOptions() {
     if (file === "archive.json" || file === "config.json") {
       return;
     }
+    const meta = metaMap.get(file);
+    const alias = meta && meta.alias ? meta.alias : file.replace(/\.json$/i, "");
+    const emoji = meta && meta.emoji ? meta.emoji : "📄";
+    if (meta && meta.hidden) {
+      return;
+    }
+    if (fileIconBar) {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "file-icon";
+      btn.innerHTML = `<span class="emoji">${emoji}</span>`;
+      btn.title = alias;
+      btn.addEventListener("click", () => {
+        fileSelect.value = file;
+        loadFile(file);
+      });
+      btn.addEventListener("dblclick", () => {
+        const next = prompt("Rename", alias);
+        if (next === null) {
+          return;
+        }
+        const clean = next.trim();
+        if (!clean) {
+          return;
+        }
+        if (meta) {
+          meta.alias = clean;
+          saveConfig();
+          syncLocalStorageEntries(state.files);
+          renderFileOptions();
+        }
+      });
+      if (file === state.currentFile) {
+        btn.classList.add("active");
+      }
+      fileIconBar.appendChild(btn);
+    }
     const option = document.createElement("option");
     option.value = file;
-    option.textContent = file;
+    option.textContent = `${emoji} ${alias}`;
     fileSelect.appendChild(option);
   });
   if (state.currentFile) {
@@ -841,6 +1003,7 @@ function clearForm() {
   fieldUrl.value = "";
   contextList.innerHTML = "";
   updatePreview();
+  setEditorDirty(false);
 }
 
 function renderContextRows(items) {
@@ -859,17 +1022,20 @@ function addContextRow(entry = {}) {
   nameInput.type = "text";
   nameInput.placeholder = "name";
   nameInput.value = entry.name || "";
+  nameInput.addEventListener("input", () => setEditorDirty(true));
 
   const urlInput = document.createElement("input");
   urlInput.type = "text";
   urlInput.placeholder = "url";
   urlInput.value = entry.url || "";
+  urlInput.addEventListener("input", () => setEditorDirty(true));
 
   const removeBtn = document.createElement("button");
   removeBtn.type = "button";
   removeBtn.textContent = "Remove";
   removeBtn.addEventListener("click", () => {
     row.remove();
+    setEditorDirty(true);
   });
 
   row.appendChild(nameInput);
@@ -892,6 +1058,7 @@ function selectItem(index) {
   renderContextRows(item["context-menu-item"]);
   updatePreview();
   renderItemList();
+  setEditorDirty(false);
 }
 
 function readContextRows() {
@@ -928,6 +1095,8 @@ function applyFormToItem() {
   syncRawFromData();
   renderItemList();
   updatePreview();
+  setEditorDirty(false);
+  setFileDirty(true);
   setStatus("Item updated.");
 }
 
@@ -954,6 +1123,7 @@ function parseRawToData() {
     clearForm();
     updateRawHighlight();
     sendPreviewData();
+    setFileDirty(true);
     setStatus("Raw JSON applied.");
   } catch (error) {
     setStatus("Raw JSON parse failed.", true);
@@ -965,9 +1135,9 @@ async function loadFiles() {
   try {
     const result = await apiFetch("/api/files");
     state.files = result.files || [];
-    renderFileOptions();
     await loadConfig();
     syncLocalStorageEntries(state.files);
+    renderFileOptions();
     await loadArchive();
     setStatus("Files loaded.");
   } catch (error) {
@@ -999,13 +1169,124 @@ async function saveConfig() {
   });
 }
 
+async function loadImages() {
+  if (!imageGrid) {
+    return;
+  }
+  imageGrid.innerHTML = "";
+  try {
+    const result = await apiFetch("/api/images");
+    const files = Array.isArray(result.files) ? result.files : [];
+    renderImageGrid(files);
+  } catch (error) {
+    const note = document.createElement("div");
+    note.style.color = "#ff9b9b";
+    note.style.fontSize = "12px";
+    note.textContent = error.message;
+    imageGrid.appendChild(note);
+  }
+}
+
+function renderImageGrid(files) {
+  if (!imageGrid) {
+    return;
+  }
+  imageGrid.innerHTML = "";
+  if (!files.length) {
+    const empty = document.createElement("div");
+    empty.style.color = "#9fb1c4";
+    empty.style.fontSize = "12px";
+    empty.textContent = "No images in imgs/";
+    imageGrid.appendChild(empty);
+    return;
+  }
+  files.forEach((file) => {
+    const card = document.createElement("div");
+    card.className = "image-card-item";
+    const img = document.createElement("img");
+    img.src = `imgs/${file}`;
+    img.alt = file;
+    const label = document.createElement("label");
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.dataset.file = file;
+    label.appendChild(checkbox);
+    label.appendChild(document.createTextNode(` ${file}`));
+    card.appendChild(img);
+    card.appendChild(label);
+    imageGrid.appendChild(card);
+  });
+}
+
+function getSelectedImages() {
+  if (!imageGrid) {
+    return [];
+  }
+  const boxes = imageGrid.querySelectorAll('input[type="checkbox"]:checked');
+  return Array.from(boxes).map((box) => box.dataset.file).filter(Boolean);
+}
+
+async function deleteSelectedImages() {
+  const files = getSelectedImages();
+  if (!files.length) {
+    setStatus("Select images to delete.", true);
+    return;
+  }
+  if (!confirm(`Delete ${files.length} images?`)) {
+    return;
+  }
+  try {
+    await apiFetch("/api/images/delete", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ files }),
+    });
+    await loadImages();
+    setStatus("Images deleted.");
+  } catch (error) {
+    setStatus(error.message, true);
+  }
+}
+
+async function uploadImagesFromManager(filesOverride) {
+  const files = Array.isArray(filesOverride)
+    ? filesOverride
+    : (imageUploadInput && imageUploadInput.files ? Array.from(imageUploadInput.files) : []);
+  if (!files.length) {
+    setStatus("Choose images to upload.", true);
+    return;
+  }
+  setStatus(`Uploading ${files.length} images...`);
+  try {
+    for (const file of files) {
+      const formData = new FormData();
+      formData.append("icon", file);
+      await apiFetch("/api/upload", {
+        method: "POST",
+        body: formData,
+      });
+    }
+    imageUploadInput.value = "";
+    await loadImages();
+    setStatus("Images uploaded.");
+  } catch (error) {
+    setStatus(error.message, true);
+  }
+}
+
 function syncLocalStorageEntries(files) {
   if (!Array.isArray(files)) {
     return;
   }
+  configState.items = configState.items.filter(
+    (item) => item.file !== "archive.json" && item.file !== "config.json"
+  );
   const existing = new Set(configState.items.map((item) => item.file));
   files.forEach((file) => {
     if (!file.endsWith(".json")) {
+      return;
+    }
+    if (file === "archive.json" || file === "config.json") {
       return;
     }
     const name = file.replace(/\.json$/i, "");
@@ -1043,11 +1324,38 @@ function parseLocalStorageValue(value, fallbackFile, fallbackName) {
   };
 }
 
+function ensureGradientDatalist() {
+  const existing = document.getElementById("gradientPresets");
+  if (existing) {
+    return existing;
+  }
+  const datalist = document.createElement("datalist");
+  datalist.id = "gradientPresets";
+  GRADIENT_PRESETS.forEach((preset) => {
+    if (!preset.value) {
+      return;
+    }
+    const option = document.createElement("option");
+    option.value = preset.value;
+    option.label = preset.label;
+    datalist.appendChild(option);
+  });
+  document.body.appendChild(datalist);
+  return datalist;
+}
+
 function renderSettings() {
   if (!settingsBody) {
     return;
   }
   settingsBody.innerHTML = "";
+  ensureGradientDatalist();
+  const hints = document.createElement("div");
+  hints.className = "settings-hints";
+  hints.innerHTML =
+    'Inspiration: <a href="https://grabient.com/" target="_blank" rel="noopener">Grabient</a>' +
+    '<a href="https://cssgradient.io/" target="_blank" rel="noopener">CSS Gradient</a>';
+  settingsBody.appendChild(hints);
   const items = Array.isArray(configState.items) ? configState.items : [];
   const visibleRows = [];
   const hiddenRows = [];
@@ -1100,34 +1408,22 @@ function renderSettings() {
     aliasInput.value = current.name || name;
     aliasInput.className = "settings-alias";
 
-    const gradientSelect = document.createElement("select");
-    gradientSelect.className = "settings-gradient";
+    const gradientInput = document.createElement("input");
+    gradientInput.type = "text";
+    gradientInput.className = "settings-gradient";
+    gradientInput.placeholder = "gradient css";
+    gradientInput.value = current.gradient || "";
+    gradientInput.setAttribute("list", "gradientPresets");
     const swatch = document.createElement("div");
     swatch.className = "settings-swatch";
     const gradientWrap = document.createElement("div");
     gradientWrap.className = "settings-gradient-wrap";
-    let hasMatch = false;
-    GRADIENT_PRESETS.forEach((preset) => {
-      const option = document.createElement("option");
-      option.value = preset.value;
-      option.textContent = preset.label;
-      if (preset.value === current.gradient) {
-        option.selected = true;
-        hasMatch = true;
-      }
-      gradientSelect.appendChild(option);
-    });
-    if (!hasMatch && current.gradient) {
-      const option = document.createElement("option");
-      option.value = current.gradient;
-      option.textContent = "Custom";
-      option.selected = true;
-      gradientSelect.appendChild(option);
-    }
-    swatch.style.background = gradientSelect.value || "#1f252d";
-    gradientSelect.addEventListener("change", () => {
-      swatch.style.background = gradientSelect.value || "#1f252d";
-    });
+    const updateSwatch = () => {
+      swatch.style.backgroundImage = "";
+      swatch.style.background = gradientInput.value.trim() || "#1f252d";
+    };
+    updateSwatch();
+    gradientInput.addEventListener("input", updateSwatch);
 
     const hideLabel = document.createElement("label");
     hideLabel.style.display = "inline-flex";
@@ -1175,7 +1471,7 @@ function renderSettings() {
       deleteJsonConfig(item.file, row.dataset.key);
     });
 
-    gradientWrap.appendChild(gradientSelect);
+    gradientWrap.appendChild(gradientInput);
     gradientWrap.appendChild(swatch);
 
     row.appendChild(label);
@@ -1214,9 +1510,9 @@ function saveSettings() {
     const key = row.dataset.key;
     const file = row.dataset.file;
     const aliasInput = row.querySelector(".settings-alias");
-    const gradientSelect = row.querySelector(".settings-gradient");
+    const gradientInput = row.querySelector(".settings-gradient");
     const hideInput = row.querySelector('input[type="checkbox"]');
-    const gradient = gradientSelect ? gradientSelect.value : "";
+    const gradient = gradientInput ? gradientInput.value.trim() : "";
     const emoji = row.dataset.emoji || "📄";
     const alias = aliasInput && aliasInput.value.trim() ? aliasInput.value.trim() : file.replace(/\.json$/i, "");
     const hidden = hideInput && hideInput.checked ? "1" : "0";
@@ -1340,6 +1636,9 @@ async function loadFile(name) {
     renderItemList();
     clearForm();
     sendPreviewData();
+    renderFileOptions();
+    setFileDirty(false);
+    setEditorDirty(false);
     setStatus(`Loaded ${name}.`);
   } catch (error) {
     setStatus(error.message, true);
@@ -1360,6 +1659,7 @@ async function saveFile() {
       body: JSON.stringify(payload),
     });
     syncRawFromData();
+    setFileDirty(false);
     setStatus("Saved.");
   } catch (error) {
     setStatus(error.message, true);
@@ -1406,6 +1706,7 @@ async function uploadIconFile(file, filenameOverride) {
     });
     fieldImageUrl.value = result.url;
     updatePreview();
+    setEditorDirty(true);
     setStatus(`Uploaded ${result.filename}. Image URL set.`);
   } catch (error) {
     setStatus(error.message, true);
@@ -1460,7 +1761,15 @@ function formatRaw() {
 }
 
 connectBtn.addEventListener("click", () => {
-  const password = getPassword();
+  let password = getPassword();
+  if (!password) {
+    const next = prompt("Enter admin password");
+    if (next === null) {
+      return;
+    }
+    passwordInput.value = next.trim();
+    password = getPassword();
+  }
   if (!password) {
     setStatus("Password required.", true);
     return;
@@ -1469,9 +1778,11 @@ connectBtn.addEventListener("click", () => {
   loadFiles();
 });
 
-loadBtn.addEventListener("click", () => {
-  loadFile(fileSelect.value);
-});
+if (loadBtn) {
+  loadBtn.addEventListener("click", () => {
+    loadFile(fileSelect.value);
+  });
+}
 
 saveBtn.addEventListener("click", saveFile);
 uploadBtn.addEventListener("click", uploadIcon);
@@ -1533,6 +1844,69 @@ if (saveSettingsBtn) {
   });
 }
 
+if (manageImagesBtn && imageManager) {
+  manageImagesBtn.addEventListener("click", () => {
+    imageManager.classList.add("active");
+    loadImages();
+  });
+}
+
+if (closeImagesBtn && imageManager) {
+  closeImagesBtn.addEventListener("click", () => {
+    imageManager.classList.remove("active");
+  });
+}
+
+if (refreshImagesBtn) {
+  refreshImagesBtn.addEventListener("click", () => {
+    loadImages();
+  });
+}
+
+if (deleteImagesBtn) {
+  deleteImagesBtn.addEventListener("click", () => {
+    deleteSelectedImages();
+  });
+}
+
+if (uploadImagesBtn) {
+  uploadImagesBtn.addEventListener("click", () => {
+    uploadImagesFromManager();
+  });
+}
+
+if (selectAllImagesBtn && imageGrid) {
+  selectAllImagesBtn.addEventListener("click", () => {
+    const boxes = imageGrid.querySelectorAll('input[type="checkbox"]');
+    const shouldSelect = Array.from(boxes).some((box) => !box.checked);
+    boxes.forEach((box) => {
+      box.checked = shouldSelect;
+    });
+  });
+}
+
+if (imageGrid) {
+  imageGrid.addEventListener("dragover", (event) => {
+    event.preventDefault();
+    imageGrid.classList.add("drag-over");
+  });
+  imageGrid.addEventListener("dragleave", (event) => {
+    if (!imageGrid.contains(event.relatedTarget)) {
+      imageGrid.classList.remove("drag-over");
+    }
+  });
+  imageGrid.addEventListener("drop", (event) => {
+    event.preventDefault();
+    imageGrid.classList.remove("drag-over");
+    const files = Array.from(event.dataTransfer.files || []).filter((file) =>
+      file.type && file.type.startsWith("image/")
+    );
+    if (files.length) {
+      uploadImagesFromManager(files);
+    }
+  });
+}
+
 if (resetSettingsBtn) {
   resetSettingsBtn.addEventListener("click", () => {
     restoreDefaultLocalStorage();
@@ -1566,6 +1940,7 @@ addItemBtn.addEventListener("click", () => {
   selectItem(state.data.length - 1);
   syncRawFromData();
   sendPreviewData();
+  setFileDirty(true);
   setStatus("Item added.");
 });
 
@@ -1580,16 +1955,21 @@ deleteItemBtn.addEventListener("click", () => {
   clearForm();
   syncRawFromData();
   sendPreviewData();
+  setFileDirty(true);
   setStatus("Item deleted.");
 });
 
 applyItemBtn.addEventListener("click", applyFormToItem);
-addContextBtn.addEventListener("click", () => addContextRow());
+addContextBtn.addEventListener("click", () => {
+  addContextRow();
+  setEditorDirty(true);
+});
 applyRawBtn.addEventListener("click", parseRawToData);
 formatRawBtn.addEventListener("click", formatRaw);
 
 contextList.addEventListener("input", () => {
   sendPreviewDraft();
+  setEditorDirty(true);
 });
 
 previewIcon.addEventListener("click", () => {
@@ -1609,7 +1989,10 @@ if (previewOpenBtn) {
 }
 
 [fieldName, fieldImageUrl, fieldUrl].forEach((field) => {
-  field.addEventListener("input", updatePreview);
+  field.addEventListener("input", () => {
+    updatePreview();
+    setEditorDirty(true);
+  });
 });
 
 fieldImageUrl.addEventListener("paste", handleImagePaste);
@@ -1623,6 +2006,17 @@ previewIcon.addEventListener("contextmenu", (event) => {
 document.addEventListener("click", (event) => {
   if (!previewMenu.contains(event.target)) {
     hidePreviewMenu();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "s") {
+    event.preventDefault();
+    if (editorDirty) {
+      applyFormToItem();
+    } else if (fileDirty) {
+      saveFile();
+    }
   }
 });
 
@@ -1664,6 +2058,8 @@ livePreview.classList.add("active");
 livePreviewBtn.classList.add("active");
 ensurePreviewFrame();
 setupResizeHandle();
+setupPreviewDrag();
+restorePreviewRect();
 
 if (savedPassword) {
   loadFiles();

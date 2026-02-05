@@ -5,9 +5,14 @@ async function checkLS() {
     try {
         const response = await fetch("config.json");
         const config = await response.json();
-        if (localStorage.length === 0 || localStorage.getItem('tv_archive') === null) {
+        const keys = Object.keys(localStorage);
+        const hasTv = keys.some((key) => key.startsWith("tv_"));
+        if (!hasTv) {
             if (Array.isArray(config.items)) {
                 config.items.forEach((item) => {
+                    if (item.file === "archive.json" || item.file === "config.json") {
+                        return;
+                    }
                     const key = item.key || `tv_${(item.alias || '').toLowerCase()}`;
                     const value = `${item.file}|${item.alias}|${item.emoji || "📄"}|${item.gradient || ""}|${item.hidden ? "1" : "0"}`;
                     localStorage.setItem(key, value);
@@ -18,6 +23,9 @@ async function checkLS() {
             }
             console.log("🤖创建默认配置");
         }
+        // 强制移除内置项，避免被刷新回来
+        localStorage.removeItem("tv_archive");
+        localStorage.removeItem("tv_config");
     } catch (error) {
         console.log("🔥加载默认配置失败", error);
     }
