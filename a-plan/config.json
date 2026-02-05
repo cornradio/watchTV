@@ -71,7 +71,7 @@
       "alias": "watchTV",
       "emoji": "📺",
       "gradient": "linear-gradient(-20deg, #047272 0%, #1d1035 100%)",
-      "hidden": true
+      "hidden": false
     }
   ]
 }
