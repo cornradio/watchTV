@@ -204,7 +204,12 @@
     "name": "yinghua",
     "imageurl": "imgs/yinghua.png",
     "url": "https://www.yinhuadm.cc/",
-    "context-menu-item": []
+    "context-menu-item": [
+      {
+        "name": "飞哥 第四季",
+        "url": "https://www.yinhuadm.cc/p/20064-1-1.html"
+      }
+    ]
   },
   {
     "friendly-name": "music163",

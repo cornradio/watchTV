@@ -49,7 +49,12 @@
     "name": "openrouter",
     "imageurl": "imgs/openrouter.png",
     "url": "https://openrouter.ai/",
-    "context-menu-item": []
+    "context-menu-item": [
+      {
+        "name": "claude 中转站",
+        "url": "https://docs.anyrouter.top/"
+      }
+    ]
   },
   {
     "friendly-name": "claude",
