@@ -35,14 +35,26 @@ function renderIcons(icons, label) {
     const iconId = `icon-${index}`;
     const menuId = `menu-${index}`;
 
-    const iconElement = document.createElement("div");
+    const iconElement = document.createElement("a");
     iconElement.id = iconId;
     iconElement.className = "icon";
+    iconElement.href = icon && icon.url ? icon.url : "#";
+    iconElement.target = "_blank";
+    iconElement.rel = "noopener";
     if (icon && icon.imageurl) {
       iconElement.style.backgroundImage = `url("${icon.imageurl}")`;
     }
-    iconElement.addEventListener("click", () => {
-      gourl(icon.url, icon.name);
+    iconElement.addEventListener("click", (event) => {
+      const url = icon && icon.url ? icon.url : "";
+      if (onmobile) {
+        event.preventDefault();
+        active_this(index, url);
+        return;
+      }
+      if (url) {
+        event.preventDefault();
+        window.open(url, "_blank", "noopener");
+      }
     });
     page.appendChild(iconElement);
 
@@ -187,16 +199,16 @@ function gourl(url, iconName) {
     removeActiveMenus();
     active_this(iconName, url);
   } else if (url) {
-    window.open(url);
+    window.open(url, "_blank", "noopener");
   }
 }
 
 function active_this(iconName, url) {
   try {
-    document.querySelector("#" + iconName + "-menu").classList.add("active");
+    document.getElementById("menu-" + iconName).classList.add("active");
   } catch (error) {
     if (url) {
-      window.open(url);
+      window.open(url, "_blank", "noopener");
     }
   }
 }
@@ -211,12 +223,52 @@ function switch_onmoble() {
   }
 }
 
+function normalizeBackground(value) {
+  if (!value) {
+    return "";
+  }
+  const text = String(value).trim();
+  const match = text.match(/background(?:-image)?\s*:\s*([^;]+);?/i);
+  if (match && match[1]) {
+    return match[1].trim();
+  }
+  return text.replace(/;+\s*$/, "");
+}
+
+function applyBackground(value) {
+  const normalized = normalizeBackground(value);
+  if (normalized) {
+    document.body.style.background = normalized;
+  } else {
+    document.body.style.background = "";
+  }
+}
+
+function getBackgroundForFile(fileName) {
+  if (!fileName) {
+    return "";
+  }
+  const keys = Object.keys(localStorage);
+  for (const key of keys) {
+    if (!key.startsWith("tv_")) {
+      continue;
+    }
+    const value = localStorage.getItem(key) || "";
+    const parts = value.split("|");
+    if (parts[0] === fileName) {
+      return parts[3] || "";
+    }
+  }
+  return "";
+}
+
 const file = getFileParam();
 if (!file) {
   document.querySelector("#bigName").textContent = "No file";
 } else {
   document.title = `Preview - ${file}`;
   loadJSON(file);
+  applyBackground(getBackgroundForFile(file));
 }
 
 window.addEventListener("message", (event) => {
@@ -227,6 +279,7 @@ window.addEventListener("message", (event) => {
   try {
     const label = payload.name ? `Live - ${payload.name}` : "Live Preview";
     renderIcons(payload.data || [], label);
+    applyBackground(payload.background || "");
   } catch (error) {
     console.error(error);
   }

@@ -517,6 +517,29 @@ function buildPreviewDraft() {
   return data;
 }
 
+function normalizeBackground(value) {
+  if (!value) {
+    return "";
+  }
+  const text = String(value).trim();
+  const match = text.match(/background(?:-image)?\s*:\s*([^;]+);?/i);
+  if (match && match[1]) {
+    return match[1].trim();
+  }
+  return text.replace(/;+\s*$/, "");
+}
+
+function getCurrentGradient() {
+  if (!state.currentFile) {
+    return "";
+  }
+  const match = (configState.items || []).find(
+    (item) => item.file === state.currentFile
+  );
+  const raw = match && match.gradient ? match.gradient : "";
+  return normalizeBackground(raw);
+}
+
 function sendPreviewDraft() {
   if (!livePreview.classList.contains("active")) {
     return;
@@ -528,6 +551,7 @@ function sendPreviewDraft() {
     type: "preview-data",
     name: state.currentFile,
     data: buildPreviewDraft(),
+    background: getCurrentGradient(),
   };
   ensurePreviewFrame();
   if (previewReady && previewFrame.contentWindow) {
@@ -570,6 +594,7 @@ function sendPreviewData() {
     type: "preview-data",
     name: state.currentFile,
     data: state.data || [],
+    background: getCurrentGradient(),
   };
   ensurePreviewFrame();
   if (previewReady && previewFrame.contentWindow) {
