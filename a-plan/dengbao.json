@@ -28,39 +28,10 @@
     "context-menu-item": []
   },
   {
-    "friendly-name": "devtoys",
-    "name": "devtoys",
-    "imageurl": "imgs/devtoys.png",
-    "url": "https://apps.microsoft.com/detail/9PGCV4V3BK4W?hl=zh-cn&gl=US",
+    "name": "v2sec",
+    "imageurl": "imgs/v2sec-1770298548218.png",
+    "url": "https://www.v2ex.com/go/security",
     "context-menu-item": []
-  },
-  {
-    "friendly-name": "google",
-    "name": "google",
-    "imageurl": "imgs/google.png",
-    "url": "https://www.google.com/",
-    "context-menu-item": [
-      {
-        "name": "google-hacking-database",
-        "url": "https://www.exploit-db.com/google-hacking-database"
-      },
-      {
-        "name": "site:xxx.com",
-        "url": "https://www.google.com/search?q=site:a.com"
-      },
-      {
-        "name": "inurl:admin",
-        "url": "https://www.google.com/search?q=inurl:admin"
-      },
-      {
-        "name": "filetype:pdf",
-        "url": "https://www.google.com/search?q=filetype:pdf"
-      },
-      {
-        "name": "intitle:admin",
-        "url": "https://www.google.com/search?q=intitle:admin"
-      }
-    ]
   },
   {
     "friendly-name": "tryhackme",
@@ -103,5 +74,12 @@
         "url": "https://crackstation.net/"
       }
     ]
+  },
+  {
+    "friendly-name": "devtoys",
+    "name": "devtoys",
+    "imageurl": "imgs/devtoys.png",
+    "url": "https://apps.microsoft.com/detail/9PGCV4V3BK4W?hl=zh-cn&gl=US",
+    "context-menu-item": []
   }
 ]
