@@ -86,6 +86,22 @@
     ]
   },
   {
+    "friendly-name": "music163",
+    "name": "music163",
+    "imageurl": "imgs/mu163.webp",
+    "url": "https://music.163.com/",
+    "context-menu-item": [
+      {
+        "name": "推荐",
+        "url": "https://music.163.com/#/discover/recommend/taste"
+      },
+      {
+        "name": "我喜欢的",
+        "url": "https://music.163.com/#/playlist?id=94820299"
+      }
+    ]
+  },
+  {
     "friendly-name": "emojiall",
     "name": "emojiall",
     "imageurl": "imgs/emojiall.png",
@@ -258,6 +274,30 @@
       {
         "name": "我喜欢的",
         "url": "https://music.163.com/#/playlist?id=94820299"
+      }
+    ]
+  },
+  {
+    "friendly-name": "ddrk",
+    "name": "ddrk",
+    "imageurl": "imgs/ddrk.jpg",
+    "url": "https://ddys.io/",
+    "context-menu-item": [
+      {
+        "name": "黑袍纠察队",
+        "url": "https://ddys.pro/the-boys/"
+      },
+      {
+        "name": "rick&morty",
+        "url": "https://ddys.pro/rick-and-morty/"
+      },
+      {
+        "name": "星期三",
+        "url": "https://ddys.pro/wednesday/"
+      },
+      {
+        "name": "紫可可动漫",
+        "url": "http://www.zkk78.com/"
       }
     ]
   }
