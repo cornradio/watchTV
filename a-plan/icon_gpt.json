@@ -1,15 +1,10 @@
 [
   {
-    "friendly-name": "gpt",
-    "name": "gpt",
-    "imageurl": "imgs/gpt-list.png",
-    "url": "https://chat.openai.com/",
-    "context-menu-item": [
-      {
-        "name": "AI 神器大全",
-        "url": "https://aishenqi.net/#term-815"
-      }
-    ]
+    "friendly-name": "claude",
+    "name": "claude",
+    "imageurl": "imgs/claude.png",
+    "url": "https://claude.ai/new",
+    "context-menu-item": []
   },
   {
     "friendly-name": "aistudio",
@@ -38,29 +33,34 @@
     "context-menu-item": []
   },
   {
-    "friendly-name": "doubao",
-    "name": "doubao",
-    "imageurl": "imgs/doubao.png",
-    "url": "https://www.doubao.com/chat/",
-    "context-menu-item": []
-  },
-  {
-    "friendly-name": "openrouter",
-    "name": "openrouter",
-    "imageurl": "imgs/openrouter.png",
-    "url": "https://openrouter.ai/",
+    "friendly-name": "twitter",
+    "name": "grok",
+    "imageurl": "imgs/twitter.png",
+    "url": "https://x.com/i/grok",
     "context-menu-item": [
       {
-        "name": "claude 中转站",
-        "url": "https://docs.anyrouter.top/"
+        "name": "好价",
+        "url": "https://www.smzdm.com/jingxuan/"
       }
     ]
   },
   {
-    "friendly-name": "claude",
-    "name": "claude",
-    "imageurl": "imgs/claude.png",
-    "url": "https://claude.ai/new",
+    "friendly-name": "gpt",
+    "name": "gpt",
+    "imageurl": "imgs/gpt-list.png",
+    "url": "https://chat.openai.com/",
+    "context-menu-item": [
+      {
+        "name": "AI 神器大全",
+        "url": "https://aishenqi.net/#term-815"
+      }
+    ]
+  },
+  {
+    "friendly-name": "doubao",
+    "name": "doubao",
+    "imageurl": "imgs/doubao.png",
+    "url": "https://www.doubao.com/chat/",
     "context-menu-item": []
   },
   {
@@ -76,5 +76,17 @@
     "imageurl": "imgs/stitch.png",
     "url": "https://stitch.withgoogle.com/",
     "context-menu-item": []
+  },
+  {
+    "friendly-name": "openrouter",
+    "name": "openrouter",
+    "imageurl": "imgs/openrouter.png",
+    "url": "https://openrouter.ai/",
+    "context-menu-item": [
+      {
+        "name": "claude 中转站",
+        "url": "https://docs.anyrouter.top/"
+      }
+    ]
   }
 ]
