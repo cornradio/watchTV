@@ -64,6 +64,28 @@
     "context-menu-item": []
   },
   {
+    "name": "FEIBUYUN",
+    "imageurl": "imgs/pasted-icon-1770562918741.png",
+    "url": "https://s.threatbook.com/",
+    "context-menu-item": [
+      {
+        "name": "IP查询",
+        "url": "http://8.153.164.13/tool/IP.html"
+      },
+      {
+        "name": "CVE查询",
+        "url": "http://8.153.164.13/tool/CVE.html"
+      }
+    ]
+  },
+  {
+    "friendly-name": "devtoys",
+    "name": "devtoys",
+    "imageurl": "imgs/devtoys.png",
+    "url": "https://apps.microsoft.com/detail/9PGCV4V3BK4W?hl=zh-cn&gl=US",
+    "context-menu-item": []
+  },
+  {
     "friendly-name": "cmd5",
     "name": "cmd5",
     "imageurl": "imgs/cmd5.png",
@@ -74,12 +96,5 @@
         "url": "https://crackstation.net/"
       }
     ]
-  },
-  {
-    "friendly-name": "devtoys",
-    "name": "devtoys",
-    "imageurl": "imgs/devtoys.png",
-    "url": "https://apps.microsoft.com/detail/9PGCV4V3BK4W?hl=zh-cn&gl=US",
-    "context-menu-item": []
   }
 ]
