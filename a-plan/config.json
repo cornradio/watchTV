@@ -78,7 +78,7 @@
       "file": "work.json",
       "alias": "work",
       "emoji": "🎯",
-      "gradient": "",
+      "gradient": "linear-gradient(-20deg, #047272 0%, #1d1035 100%)",
       "hidden": false
     }
   ]
