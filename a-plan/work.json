@@ -35,17 +35,13 @@
     ]
   },
   {
-    "name": "fulong",
-    "imageurl": "imgs/fulong.png",
-    "url": "https://mssp.aliyun-inc.com/#/vhp27",
+    "name": "qz",
+    "imageurl": "imgs/qz-1770619111495.png",
+    "url": "https://idealab.alibaba-inc.com/ideaTalk#/ideaTALK/",
     "context-menu-item": [
       {
-        "name": "登录后台",
-        "url": "https://mssp.aliyun-inc.com/#/eprkc"
-      },
-      {
-        "name": "风险评估任务",
-        "url": "https://mssp.aliyun-inc.com/#/k6z5i"
+        "name": "qz",
+        "url": "http://8.153.164.13/qz/"
       }
     ]
   },
@@ -77,10 +73,19 @@
     ]
   },
   {
-    "name": "qz",
-    "imageurl": "imgs/qz-1770619111495.png",
-    "url": "http://8.153.164.13/qz/",
-    "context-menu-item": []
+    "name": "fulong",
+    "imageurl": "imgs/fulong.png",
+    "url": "https://mssp.aliyun-inc.com/#/vhp27",
+    "context-menu-item": [
+      {
+        "name": "登录后台",
+        "url": "https://mssp.aliyun-inc.com/#/eprkc"
+      },
+      {
+        "name": "风险评估任务",
+        "url": "https://mssp.aliyun-inc.com/#/k6z5i"
+      }
+    ]
   },
   {
     "name": "alic",
@@ -100,21 +105,6 @@
       {
         "name": "大盘",
         "url": "http://yundun-test.alibaba-inc.com/#/yundun/dashboard"
-      }
-    ]
-  },
-  {
-    "name": "FEIBUYUN",
-    "imageurl": "imgs/pasted-icon-1770562918741.png",
-    "url": "https://s.threatbook.com/",
-    "context-menu-item": [
-      {
-        "name": "IP查询",
-        "url": "http://8.153.164.13/tool/IP.html"
-      },
-      {
-        "name": "CVE查询",
-        "url": "http://8.153.164.13/tool/CVE.html"
       }
     ]
   }

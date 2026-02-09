@@ -81,5 +81,20 @@
     "imageurl": "imgs/tryhackme-1770282204851.png",
     "url": "https://tryhackme.com/",
     "context-menu-item": []
+  },
+  {
+    "name": "FEIBUYUN",
+    "imageurl": "imgs/pasted-icon-1770562918741.png",
+    "url": "https://s.threatbook.com/",
+    "context-menu-item": [
+      {
+        "name": "IP查询",
+        "url": "http://8.153.164.13/tool/IP.html"
+      },
+      {
+        "name": "CVE查询",
+        "url": "http://8.153.164.13/tool/CVE.html"
+      }
+    ]
   }
 ]
