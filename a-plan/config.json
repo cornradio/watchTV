@@ -38,7 +38,7 @@
       "file": "tools.json",
       "alias": "tools",
       "emoji": "🔧",
-      "gradient": "",
+      "gradient": "conic-gradient(from 180deg, #000011 0.000deg, #000000 10.909deg, #000000 21.818deg, #000000 32.727deg, #000000 43.636deg, #000000 54.545deg, #000000 65.455deg, #000000 76.364deg, #080000 87.273deg, #250000 98.182deg, #420000 109.091deg, #600000 120.000deg, #7c0000 130.909deg, #960000 141.818deg, #ae0100 152.727deg, #c31b00 163.636deg, #d33500 174.545deg, #e0500f 185.455deg, #e86a29 196.364deg, #ec8344 207.273deg, #eb9a5e 218.182deg, #e5ae77 229.091deg, #dac08f 240.000deg, #cbcea4 250.909deg, #b8d9b7 261.818deg, #a2e0c7 272.727deg, #88e3d3 283.636deg, #6de2dc 294.545deg, #50dde0 305.455deg, #33d4e1 316.364deg, #15c7dd 327.273deg, #00b7d5 338.182deg, #00a3c9 349.091deg, #008eba 360.000deg)",
       "hidden": false
     },
     {

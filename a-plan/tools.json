@@ -1,31 +1,9 @@
 [
   {
-    "friendly-name": "gamepadtester",
-    "name": "gamepadtester",
-    "imageurl": "imgs/gamepadtester.png",
-    "url": "https://hardwaretester.com/gamepad",
-    "context-menu-item": [
-      {
-        "name": "9slab",
-        "url": "https://9slab.com/gamepad/home"
-      },
-      {
-        "name": "Mic Test",
-        "url": "https://webcammictest.com/check-mic.html"
-      },
-      {
-        "name": "Frame Rate Test ",
-        "url": "https://www.testufo.com/framerates#count=3&pps=960&hdr=0"
-      },
-      {
-        "name": "Keyboard Test",
-        "url": "https://www.ratatype.com/keyboard-test/"
-      },
-      {
-        "name": "Gamepad Test ",
-        "url": "https://hardwaretester.com/gamepad"
-      }
-    ]
+    "name": "hackmd",
+    "imageurl": "imgs/pasted-icon-1770621870960.png",
+    "url": "https://hackmd.io/",
+    "context-menu-item": []
   },
   {
     "friendly-name": "ipchecking",
@@ -144,7 +122,7 @@
   {
     "friendly-name": "Tampermonkey",
     "name": "Tampermonkey",
-    "imageurl": "imgs/Tampermonkey.png",
+    "imageurl": "imgs/Tampermonkey-1770621903195.png",
     "url": "https://www.tampermonkey.net/",
     "context-menu-item": [
       {
@@ -174,46 +152,30 @@
     ]
   },
   {
-    "friendly-name": "chromewebstore",
-    "name": "chromewebstore",
-    "imageurl": "imgs/chromewebstore.png",
-    "url": "https://chrome.google.com/webstore/category/extensions",
+    "friendly-name": "gamepadtester",
+    "name": "gamepadtester",
+    "imageurl": "imgs/gamepadtester-1770622088029.png",
+    "url": "https://hardwaretester.com/gamepad",
     "context-menu-item": [
       {
-        "name": "crx搜搜",
-        "url": "https://www.crxsoso.com/b"
+        "name": "9slab-手柄测试",
+        "url": "https://9slab.com/gamepad/home"
       },
       {
-        "name": "wheel-smooth",
-        "url": "https://chrome.google.com/webstore/detail/chromium-wheel-smooth-scr/khpcanbeojalbkpgpmjpdkjnkfcgfkhb"
+        "name": "麦克风测试",
+        "url": "https://webcammictest.com/check-mic.html"
       },
       {
-        "name": "Video Speed",
-        "url": "https://chrome.google.com/webstore/detail/video-speed-controller-vi/gaiceihehajjahakcglkhmdbbdclbnlf/related"
+        "name": "ufo 帧率测试",
+        "url": "https://www.testufo.com/framerates#count=3&pps=960&hdr=0"
       },
       {
-        "name": "Cookie-Editor",
-        "url": "https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm"
+        "name": "键盘测试",
+        "url": "https://www.ratatype.com/keyboard-test/"
       },
       {
-        "name": "Stylus",
-        "url": "https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne"
-      },
-      {
-        "name": "Autofill",
-        "url": "https://chrome.google.com/webstore/detail/autofill/nlmmgnhgdeffjkdckmikfpnddkbbfkkk"
-      },
-      {
-        "name": "wappalyzer",
-        "url": "https://chrome.google.com/webstore/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg"
-      },
-      {
-        "name": "火山翻译",
-        "url": "https://chrome.google.com/webstore/detail/%E7%81%AB%E5%B1%B1%E7%BF%BB%E8%AF%91-%E5%88%92%E8%AF%8D%E5%92%8C%E7%BD%91%E9%A1%B5%E7%BF%BB%E8%AF%91/klgfhbiooeogdfodpopgppeadghjjemk"
-      },
-      {
-        "name": "SponsorBlock",
-        "url": "https://chrome.google.com/webstore/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone"
+        "name": "手柄测试",
+        "url": "https://hardwaretester.com/gamepad"
       }
     ]
   },
@@ -242,9 +204,7 @@
     "name": "notion",
     "imageurl": "imgs/notion.png",
     "url": "https://www.notion.so/",
-    "context-menu-item": [
-      {}
-    ]
+    "context-menu-item": []
   },
   {
     "friendly-name": "wallheaven",
@@ -414,6 +374,50 @@
       {
         "name": "社区",
         "url": "https://www.figma.com/community"
+      }
+    ]
+  },
+  {
+    "friendly-name": "chromewebstore",
+    "name": "chromewebstore",
+    "imageurl": "imgs/chromewebstore.png",
+    "url": "https://chrome.google.com/webstore/category/extensions",
+    "context-menu-item": [
+      {
+        "name": "crx搜搜",
+        "url": "https://www.crxsoso.com/b"
+      },
+      {
+        "name": "wheel-smooth",
+        "url": "https://chrome.google.com/webstore/detail/chromium-wheel-smooth-scr/khpcanbeojalbkpgpmjpdkjnkfcgfkhb"
+      },
+      {
+        "name": "Video Speed",
+        "url": "https://chrome.google.com/webstore/detail/video-speed-controller-vi/gaiceihehajjahakcglkhmdbbdclbnlf/related"
+      },
+      {
+        "name": "Cookie-Editor",
+        "url": "https://chrome.google.com/webstore/detail/cookie-editor/hlkenndednhfkekhgcdicdfddnkalmdm"
+      },
+      {
+        "name": "Stylus",
+        "url": "https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne"
+      },
+      {
+        "name": "Autofill",
+        "url": "https://chrome.google.com/webstore/detail/autofill/nlmmgnhgdeffjkdckmikfpnddkbbfkkk"
+      },
+      {
+        "name": "wappalyzer",
+        "url": "https://chrome.google.com/webstore/detail/wappalyzer-technology-pro/gppongmhjkpfnbhagpmjfkannfbllamg"
+      },
+      {
+        "name": "火山翻译",
+        "url": "https://chrome.google.com/webstore/detail/%E7%81%AB%E5%B1%B1%E7%BF%BB%E8%AF%91-%E5%88%92%E8%AF%8D%E5%92%8C%E7%BD%91%E9%A1%B5%E7%BF%BB%E8%AF%91/klgfhbiooeogdfodpopgppeadghjjemk"
+      },
+      {
+        "name": "SponsorBlock",
+        "url": "https://chrome.google.com/webstore/detail/sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone"
       }
     ]
   }
