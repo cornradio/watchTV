@@ -36,5 +36,44 @@
         "url": "https://mssp.aliyun-inc.com/#/k6z5i"
       }
     ]
+  },
+  {
+    "name": "QT",
+    "imageurl": "imgs/qiantang-1770618632652.png",
+    "url": "https://alidocs.dingtalk.com/i/nodes/ZgpG2NdyVXRmQ0jgCQjYnp0G8MwvDqPk?",
+    "context-menu-item": [
+      {
+        "name": "aso",
+        "url": "https://opsone-cn-hangzhou-qtcredit-d01.console.ops.iaas.credit-inc.cn/aso/login?oauth_callback=https%3A%2F%2Fopsone-cn-hangzhou-qtcredit-d01.console.ops.iaas.credit-inc.cn%2F"
+      },
+      {
+        "name": "堡垒机-租户",
+        "url": "https://110.75.143.128/bhost/index"
+      },
+      {
+        "name": "堡垒机-平台",
+        "url": "https://110.75.143.154:8443/bhost/index"
+      },
+      {
+        "name": "escan",
+        "url": "https://110.75.143.154:22888/#/escan/tindex"
+      },
+      {
+        "name": "ascm",
+        "url": "https://one.console.con.iaas.credit-inc.cn/ascm/login?oauth_callback=https%3A%2F%2Fone.console.con.iaas.credit-inc.cn%2Fascm%2Fworkbench"
+      }
+    ]
+  },
+  {
+    "name": "qz",
+    "imageurl": "imgs/qz-1770619111495.png",
+    "url": "http://8.153.164.13/qz/",
+    "context-menu-item": []
+  },
+  {
+    "name": "alic",
+    "imageurl": "imgs/alic-1770619189861.png",
+    "url": "https://home.console.aliyun.com/home/dashboard/ProductAndService",
+    "context-menu-item": []
   }
 ]
