@@ -19,6 +19,18 @@
       {
         "name": "公混项目",
         "url": "https://alidocs.dingtalk.com/i/spaces/nb9XJrvDaBPaaXyA/overview"
+      },
+      {
+        "name": "语雀",
+        "url": "https://aliyuque.antfin.com/dashboard"
+      },
+      {
+        "name": "26大模型安全演练",
+        "url": "https://alidocs.dingtalk.com/i/nodes/R1zknDm0WR6XzZ4Lt2Y5oa2KWBQEx5rG"
+      },
+      {
+        "name": "重点工单统计",
+        "url": "https://alidocs.dingtalk.com/i/nodes/qnYMoO1rWxrkmoj2I0KgxnY9J47Z3je9"
       }
     ]
   },
@@ -72,8 +84,38 @@
   },
   {
     "name": "alic",
-    "imageurl": "imgs/alic-1770619189861.png",
+    "imageurl": "imgs/alic-1770619237486.png",
     "url": "https://home.console.aliyun.com/home/dashboard/ProductAndService",
     "context-menu-item": []
+  },
+  {
+    "name": "shuguang",
+    "imageurl": "imgs/pasted-icon-1770619519513.png",
+    "url": "https://astoolbox.alibaba.net/console/index.html#/webterminal",
+    "context-menu-item": [
+      {
+        "name": "百宝箱",
+        "url": "https://astoolbox.alibaba.net/console/index.html#/webterminal"
+      },
+      {
+        "name": "大盘",
+        "url": "http://yundun-test.alibaba-inc.com/#/yundun/dashboard"
+      }
+    ]
+  },
+  {
+    "name": "FEIBUYUN",
+    "imageurl": "imgs/pasted-icon-1770562918741.png",
+    "url": "https://s.threatbook.com/",
+    "context-menu-item": [
+      {
+        "name": "IP查询",
+        "url": "http://8.153.164.13/tool/IP.html"
+      },
+      {
+        "name": "CVE查询",
+        "url": "http://8.153.164.13/tool/CVE.html"
+      }
+    ]
   }
 ]

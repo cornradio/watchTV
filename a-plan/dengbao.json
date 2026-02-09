@@ -34,13 +34,6 @@
     "context-menu-item": []
   },
   {
-    "friendly-name": "tryhackme",
-    "name": "tryhackme",
-    "imageurl": "imgs/tryhackme-1770282204851.png",
-    "url": "https://tryhackme.com/",
-    "context-menu-item": []
-  },
-  {
     "friendly-name": "cyberchef",
     "name": "cyberchef",
     "imageurl": "imgs/cyberchef.png",
@@ -64,21 +57,6 @@
     "context-menu-item": []
   },
   {
-    "name": "FEIBUYUN",
-    "imageurl": "imgs/pasted-icon-1770562918741.png",
-    "url": "https://s.threatbook.com/",
-    "context-menu-item": [
-      {
-        "name": "IP查询",
-        "url": "http://8.153.164.13/tool/IP.html"
-      },
-      {
-        "name": "CVE查询",
-        "url": "http://8.153.164.13/tool/CVE.html"
-      }
-    ]
-  },
-  {
     "friendly-name": "devtoys",
     "name": "devtoys",
     "imageurl": "imgs/devtoys.png",
@@ -96,5 +74,12 @@
         "url": "https://crackstation.net/"
       }
     ]
+  },
+  {
+    "friendly-name": "tryhackme",
+    "name": "tryhackme",
+    "imageurl": "imgs/tryhackme-1770282204851.png",
+    "url": "https://tryhackme.com/",
+    "context-menu-item": []
   }
 ]
