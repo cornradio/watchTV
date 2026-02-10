@@ -116,6 +116,10 @@
       {
         "name": "localsend",
         "url": "https://localsend.org/"
+      },
+      {
+        "name": "wcp-图床",
+        "url": "https://wcp.cornradio.org/t2.html"
       }
     ]
   },
