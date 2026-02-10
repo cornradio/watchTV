@@ -80,7 +80,12 @@
     "name": "tryhackme",
     "imageurl": "imgs/tryhackme-1770282204851.png",
     "url": "https://tryhackme.com/",
-    "context-menu-item": []
+    "context-menu-item": [
+      {
+        "name": "ovpnvpn",
+        "url": "https://tryhackme.com/access"
+      }
+    ]
   },
   {
     "name": "FEIBUYUN",
