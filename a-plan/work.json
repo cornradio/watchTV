@@ -25,10 +25,6 @@
         "url": "https://aliyuque.antfin.com/dashboard"
       },
       {
-        "name": "26大模型安全演练",
-        "url": "https://alidocs.dingtalk.com/i/nodes/R1zknDm0WR6XzZ4Lt2Y5oa2KWBQEx5rG"
-      },
-      {
         "name": "重点工单统计",
         "url": "https://alidocs.dingtalk.com/i/nodes/qnYMoO1rWxrkmoj2I0KgxnY9J47Z3je9"
       }
@@ -105,6 +101,25 @@
       {
         "name": "大盘",
         "url": "http://yundun-test.alibaba-inc.com/#/yundun/dashboard"
+      }
+    ]
+  },
+  {
+    "name": "test",
+    "imageurl": "imgs/pasted-icon-1770791707533.png",
+    "url": "",
+    "context-menu-item": [
+      {
+        "name": "大模型演练",
+        "url": "https://alidocs.dingtalk.com/i/nodes/R1zknDm0WR6XzZ4Lt2Y5oa2KWBQEx5rG"
+      },
+      {
+        "name": "技术分享",
+        "url": "https://alidocs.dingtalk.com/i/nodes/gwva2dxOW4vRkd9DUav51Nd4Jbkz3BRL?utm_scene=person_space"
+      },
+      {
+        "name": "工单统计",
+        "url": "https://alidocs.dingtalk.com/i/nodes/qnYMoO1rWxrkmoj2I0KgxnY9J47Z3je9"
       }
     ]
   }
