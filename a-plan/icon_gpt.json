@@ -15,6 +15,10 @@
       {
         "name": "ai studio",
         "url": "https://aistudio.google.com/prompts/new_chat"
+      },
+      {
+        "name": "ai google",
+        "url": "https://www.google.com/search?q=&sourceid=chrome&ie=UTF-8&udm=50&aep=48&cud=0&qsubts=1770739704729&source=chrome.crn.obic"
       }
     ]
   },
