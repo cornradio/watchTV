@@ -101,7 +101,12 @@
     "name": "appstore",
     "imageurl": "imgs/appstore.png",
     "url": "https://appstore.cornradio.org/",
-    "context-menu-item": []
+    "context-menu-item": [
+      {
+        "name": "chrome - theme",
+        "url": "chrome://settings/appearance"
+      }
+    ]
   },
   {
     "friendly-name": "webclip",
