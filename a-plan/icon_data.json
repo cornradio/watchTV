@@ -210,5 +210,29 @@
         "url": "https://x.com/search?q=%E5%85%8D%E8%B4%B9%E5%BD%B1%E8%A7%86"
       }
     ]
+  },
+  {
+    "friendly-name": "ddrk",
+    "name": "ddrk",
+    "imageurl": "imgs/ddrk.jpg",
+    "url": "https://ddys.io/",
+    "context-menu-item": [
+      {
+        "name": "黑袍纠察队",
+        "url": "https://ddys.pro/the-boys/"
+      },
+      {
+        "name": "rick&morty",
+        "url": "https://ddys.pro/rick-and-morty/"
+      },
+      {
+        "name": "星期三",
+        "url": "https://ddys.pro/wednesday/"
+      },
+      {
+        "name": "紫可可动漫",
+        "url": "http://www.zkk78.com/"
+      }
+    ]
   }
 ]
